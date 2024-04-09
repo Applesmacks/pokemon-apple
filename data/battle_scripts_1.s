@@ -3815,6 +3815,8 @@ BattleScript_FirstChargingTurnAfterAttackString:
 
 BattleScript_TwoTurnMovesSecondPowerHerbActivates:
 	call BattleScript_PowerHerbActivation
+	trygulpmissile @ Edge case for Cramorant ability Gulp Missile
+BattleScript_FromTwoTurnMovesSecondTurnRet:
 	call BattleScript_TwoTurnMovesSecondTurnRet
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 @ before Gen 5, charge moves did not print an attack string on the charge turn
