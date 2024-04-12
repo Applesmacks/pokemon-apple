@@ -95,6 +95,8 @@ Route119_EventScript_BattleMayMudkip::
 	end
 
 Route119_EventScript_DefeatedMay::
+	setvar VAR_LEVEL_CAP 65
+	setflag FLAG_ROUTE119_RIVAL_BEAT
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyHM
 	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
@@ -479,8 +481,12 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	releaseall
 	end
 
+Route119_EventScript_MegaStone::
+	giveitem ITEM_MEGA_RING
+return
+
 Route119_Text_MayIntro:
-	.string "MAY: {PLAYER}{KUN}!\n"
+	.string "KATI: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
@@ -494,12 +500,12 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "MAY: But I had absolutely nothing to\n"
+	.string "KATI: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
 Route119_Text_MayExplainFly:
-	.string "MAY: Use FLY, and your POKéMON will\n"
+	.string "KATI: Use FLY, and your POKéMON will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
 	.string "But, to use FLY, you have to get\n"
@@ -509,7 +515,14 @@ Route119_Text_MayExplainFly:
 	.string "LITTLEROOT for a change.\p"
 	.string "I bet your mom's worried about you,\n"
 	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+	.string "See you again soon!$"
+
+Route119_Text_MayExplainMegas:
+	.string "KATI: This is a Mega Ring. It will\n"
+	.string "allow you to mega evolve your POKEMON.\p"
+	.string "Hopefully that gives you the edge you\n"
+	.string "need in your coming battles.\p"
+	.string "See you again soon!$"
 
 Route119_Text_BrendanIntro:
 	.string "BRENDAN: {PLAYER}! So this is where\n"

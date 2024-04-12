@@ -4552,7 +4552,7 @@ u16 GetKantoPokedexCount(u8 caseID)
     u16 count = 0;
     u16 i;
 
-    for (i = 0; i < KANTO_DEX_COUNT; i++)
+    for (i = 0; i < 151; i++)
     {
         switch (caseID)
         {
@@ -4587,7 +4587,7 @@ bool8 HasAllKantoMons(void)
     u32 i;
 
     // -1 excludes Mew
-    for (i = 0; i < KANTO_DEX_COUNT - 1; i++)
+    for (i = 0; i < 151 - 1; i++)
     {
         if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))
             return FALSE;

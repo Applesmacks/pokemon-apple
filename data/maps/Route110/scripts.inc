@@ -165,6 +165,32 @@ Route110_EventScript_PlayerRidingAcroBike::
 	release
 	end
 
+Route110_EventScript_CyclingCheck::
+	lock
+	faceplayer
+	compare VAR_CYCLING_ROAD_WINS, 99
+	goto_if_eq Route110_EventScript_Completed
+	msgbox Route110_Text_BeatTrainers, MSGBOX_DEFAULT
+	compare VAR_CYCLING_ROAD_WINS, 6
+	goto_if_eq Route110_EventScript_Prize
+	msgbox Route110_Text_DoChallenge, MSGBOX_DEFAULT
+	release
+	end
+
+Route110_EventScript_Completed::
+	msgbox Route110_Text_Completed, MSGBOX_DEFAULT
+	release
+	end
+
+Route110_EventScript_Prize::
+	msgbox Route110_Text_Congrats, MSGBOX_DEFAULT
+	giveitem ITEM_TM_TAILWIND
+	giveitem ITEM_TM_TRICK_ROOM
+	setvar VAR_CYCLING_ROAD_WINS, 99
+	release
+	end
+
+
 Route110_EventScript_Edward::
 	trainerbattle_single TRAINER_EDWARD, Route110_Text_EdwardIntro, Route110_Text_EdwardDefeated
 	msgbox Route110_Text_EdwardPostBattle, MSGBOX_AUTOCLOSE
@@ -203,11 +229,13 @@ Route110_EventScript_Dale::
 
 Route110_EventScript_Jacob::
 	trainerbattle_single TRAINER_JACOB, Route110_Text_JacobIntro, Route110_Text_JacobDefeated
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	msgbox Route110_Text_JacobPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Anthony::
 	trainerbattle_single TRAINER_ANTHONY, Route110_Text_AnthonyIntro, Route110_Text_AnthonyDefeated
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	msgbox Route110_Text_AnthonyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -215,6 +243,7 @@ Route110_EventScript_Benjamin::
 	trainerbattle_single TRAINER_BENJAMIN_1, Route110_Text_BenjaminIntro, Route110_Text_BenjaminDefeated, Route110_EventScript_BenjaminRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_BenjaminRematch
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	msgbox Route110_Text_BenjaminPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -234,6 +263,7 @@ Route110_EventScript_BenjaminRematch::
 
 Route110_EventScript_Jasmine::
 	trainerbattle_single TRAINER_JASMINE, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	msgbox Route110_Text_JasminePostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -242,6 +272,7 @@ Route110_EventScript_Abigail::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_AbigailRematch
 	msgbox Route110_Text_AbigailPostBattle, MSGBOX_DEFAULT
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	release
 	end
 
@@ -299,6 +330,7 @@ Route110_EventScript_Joseph::
 
 Route110_EventScript_Alyssa::
 	trainerbattle_single TRAINER_ALYSSA, Route110_Text_AlyssaIntro, Route110_Text_AlyssaDefeated
+	addvar VAR_CYCLING_ROAD_WINS, 1
 	msgbox Route110_Text_AlyssaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -426,6 +458,7 @@ Route110_EventScript_MayBattleMudkip::
 	end
 
 Route110_EventScript_MayDefeated::
+	setvar VAR_LEVEL_CAP, 32
 	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
 	msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT
@@ -760,7 +793,7 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "KATI: Hi, {PLAYER}{KUN}, long time no see!\p"
 	.string "While I was searching for other\n"
 	.string "POKéMON, my POKéMON grew stronger.\p"
 	.string "So…\n"
@@ -771,13 +804,13 @@ Route110_Text_MayDefeated:
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis:
-	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
+	.string "KATI: {PLAYER}{KUN}, you've been busy\n"
 	.string "training, too, haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "MAY: That's an ITEMFINDER.\p"
+	.string "KATI: That's an ITEMFINDER.\p"
 	.string "Try it out. If there is an item that's\n"
 	.string "not visible, it emits a sound.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
@@ -967,7 +1000,7 @@ Route110_Text_ThereIsNoRecord:
 Route110_Text_ImagineSeeingYouHere:
 	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
-	.string "And where might my {RIVAL} be?$"
+	.string "And where might my KATI be?$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -987,8 +1020,24 @@ Route110_Text_RegisteredBirchInPokenav:
 
 Route110_Text_KeepAnEyeOutForRival:
 	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
-	.string "Please keep an eye out for my {RIVAL}.\n"
+	.string "Please keep an eye out for my KATI.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"
 	.string "See you again, {PLAYER}{KUN}!$"
 
+Route110_Text_BeatTrainers:
+	.string "Hello, TRAINER! I am offering\n"
+	.string "a few very special items to\l"
+	.string "anyone who can defeat all six of\l"
+	.string "the TRAINERS on the CYCLING ROAD.$"
+
+Route110_Text_DoChallenge:
+	.string "Come back if you pull it off!$"
+
+Route110_Text_Completed:
+	.string "Congrats again on beating all\n"
+	.string "six of the CYCLISTS!$"
+
+Route110_Text_Congrats:
+	.string "Looks like you've done it! Here\n"
+	.string "is your very special prize!$"

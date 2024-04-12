@@ -15,7 +15,7 @@ gText_RestoredPkmnToFullHealth::
 	.string "to full health.$"
 
 gText_WeHopeToSeeYouAgain::
-	.string "We hope to see you again!$"
+	.string "Good luck on your journey!$"
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"

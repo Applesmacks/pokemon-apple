@@ -43,11 +43,16 @@ VictoryRoad_1F_EventScript_WallyEntranceBattle::
 	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
 	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
+	setvar VAR_LEVEL_CAP, 100
 	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
 	copyobjectxytoperm LOCALID_WALLY_ENTRANCE
 	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
+	end
+
+VictoryRoad_1F_EventScript_DrakeSign::
+	msgbox VictoryRoad_1F_Text_DrakeSign, MSGBOX_SIGN
 	end
 
 VictoryRoad_1F_Movement_WallyApproachPlayer1:
@@ -218,3 +223,6 @@ VictoryRoad_1F_Text_KatelynnDefeat:
 VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 	.string "See if I care.$"
+
+VictoryRoad_1F_Text_DrakeSign:
+	.string "DRAKE'S FINAL CHALLENGE$"

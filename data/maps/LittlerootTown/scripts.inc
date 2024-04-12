@@ -51,6 +51,49 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
+	call_if_set FLAG_IS_CHAMPION, LittlerootTown_EventScript_MoveKati
+	end
+
+LittlerootTown_EventScript_MoveKati::
+	setobjectxy 9, 8, 17
+	return
+
+LittlerootTown_EventScript_Kati::
+	lock
+	faceplayer
+	goto_if_set FLAG_GROWLITHE_RECEIVED, LittlerootTown_EventScript_KatiTakeCare
+	msgbox LittlerootTown_Text_KatiHi, MSGBOX_YESNO
+	switch VAR_RESULT
+	case YES, LittlerootTown_EventScript_KatiAttemptGive
+	case NO, LittlerootTown_EventScript_KatiRegrettable
+	release
+	end
+
+LittlerootTown_EventScript_KatiAttemptGive::
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq LittlerootTown_EventScript_KatiPartyFull
+	givemon SPECIES_GROWLITHE, 5, ITEM_NONE
+	setflag FLAG_GROWLITHE_RECEIVED
+	msgbox LittlerootTown_Text_ReceivedGrowlithe, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	release
+	end
+
+LittlerootTown_EventScript_KatiRegrettable::
+	msgbox LittlerootTown_Text_KatiRegrettable, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_EventScript_KatiTakeCare::
+	msgbox LittlerootTown_Text_KatiTakeCare, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_EventScript_KatiPartyFull::
+	msgbox LittlerootTown_Text_KatiPartyFull, MSGBOX_DEFAULT
+	release
 	end
 
 LittlerootTown_EventScript_LeftLabAfterDexUpgrade::
@@ -118,6 +161,7 @@ LittlerootTown_EventScript_StepOffTruckMale::
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setflag FLAG_SYS_B_DASH
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
 	waitstate
 	releaseall
@@ -128,6 +172,7 @@ LittlerootTown_EventScript_StepOffTruckFemale::
 	setvar VAR_0x8004, 14
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
+	setflag FLAG_SYS_B_DASH
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
 	waitstate
@@ -1019,3 +1064,23 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_KatiHi:
+	.string "Hi, {PLAYER}!\p"
+	.string "Congrats on becoming the CHAMPION.\n"
+	.string "I got you a gift to celebrate, your\l"
+	.string "very own GROWLITHE! You want it?$"
+
+LittlerootTown_Text_KatiPartyFull:
+	.string "Looks like your party is full. Can you\n"
+	.string "make a spot and come back?$"
+
+LittlerootTown_Text_ReceivedGrowlithe:
+	.string "Received GROWLITHE!$"
+
+LittlerootTown_Text_KatiTakeCare:
+	.string "Hope your GROWLITHE becomes as strong\n"
+	.string "as mine someday!$"
+
+LittlerootTown_Text_KatiRegrettable:
+	.string "Okie dokie, I'll be here when you decide\n"
+	.string "you want it.$"

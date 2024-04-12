@@ -22,26 +22,34 @@ LilycoveCity_DepartmentStore_5F_EventScript_ClerkFarLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration2 LilycoveCity_DepartmentStore_5F_Pokemart_Dolls
+	pokemart LilycoveCity_DepartmentStore_5F_Pokemart_Dolls
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Pokemart_Dolls:
-	.2byte DECOR_PICHU_DOLL
-	.2byte DECOR_PIKACHU_DOLL
-	.2byte DECOR_MARILL_DOLL
-	.2byte DECOR_JIGGLYPUFF_DOLL
-	.2byte DECOR_DUSKULL_DOLL
-	.2byte DECOR_WYNAUT_DOLL
-	.2byte DECOR_BALTOY_DOLL
-	.2byte DECOR_KECLEON_DOLL
-	.2byte DECOR_AZURILL_DOLL
-	.2byte DECOR_SKITTY_DOLL
-	.2byte DECOR_SWABLU_DOLL
-	.2byte DECOR_GULPIN_DOLL
-	.2byte DECOR_NONE
+	.2byte ITEM_VENUSAURITE
+	.2byte ITEM_CHARIZARDITE_X
+	.2byte ITEM_CHARIZARDITE_Y
+	.2byte ITEM_BLASTOISINITE
+	.2byte ITEM_BEEDRILLITE
+	.2byte ITEM_PIDGEOTITE
+	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_GENGARITE
+	.2byte ITEM_PINSIRITE
+	.2byte ITEM_GYARADOSITE
+	.2byte ITEM_AERODACTYLITE
+	.2byte ITEM_AMPHAROSITE
+	.2byte ITEM_SCIZORITE
+	.2byte ITEM_HERACRONITE
+	.2byte ITEM_HOUNDOOMINITE
+	.2byte ITEM_TYRANITARITE
+	.2byte ITEM_SCEPTILITE
+	.2byte ITEM_BLAZIKENITE
+	.2byte ITEM_SWAMPERTITE
+	.2byte ITEM_GARDEVOIRITE
+	.2byte ITEM_NONE
 	release
 	end
 
@@ -50,23 +58,35 @@ LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration2 LilycoveCity_DepartmentStore_5F_Pokemart_Cushions
+	pokemart LilycoveCity_DepartmentStore_5F_Pokemart_Cushions
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Pokemart_Cushions:
-	.2byte DECOR_PIKA_CUSHION
-	.2byte DECOR_ROUND_CUSHION
-	.2byte DECOR_ZIGZAG_CUSHION
-	.2byte DECOR_SPIN_CUSHION
-	.2byte DECOR_DIAMOND_CUSHION
-	.2byte DECOR_BALL_CUSHION
-	.2byte DECOR_GRASS_CUSHION
-	.2byte DECOR_FIRE_CUSHION
-	.2byte DECOR_WATER_CUSHION
-	.2byte DECOR_NONE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_MAWILITE
+	.2byte ITEM_AGGRONITE
+	.2byte ITEM_MEDICHAMITE
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SHARPEDONITE
+	.2byte ITEM_CAMERUPTITE
+	.2byte ITEM_ALTARIANITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_ABSOLITE
+	.2byte ITEM_GLALITITE
+	.2byte ITEM_SALAMENCITE
+	.2byte ITEM_METAGROSSITE
+	.2byte ITEM_LATIASITE
+	.2byte ITEM_LATIOSITE
+	.2byte ITEM_LOPUNNITE
+	.2byte ITEM_GARCHOMPITE
+	.2byte ITEM_LUCARIONITE
+	.2byte ITEM_ABOMASITE
+	.2byte ITEM_GALLADITE
+	.2byte ITEM_AUDINITE
+	.2byte ITEM_NONE
 	release
 	end
 

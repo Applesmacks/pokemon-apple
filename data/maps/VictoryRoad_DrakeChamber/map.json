@@ -1,0 +1,166 @@
+{
+  "id": "MAP_VICTORY_ROAD_DRAKE_CHAMBER",
+  "name": "VictoryRoad_DrakeChamber",
+  "layout": "LAYOUT_VICTORY_ROAD_DRAKE_CHAMBER",
+  "music": "MUS_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_VICTORY_ROAD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "x": 4,
+      "y": 1,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DrakeChamber_EventScript_TalkDrakeEntrance",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DrakeChamber_EventScript_RayRizzo",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DrakeChamber_EventScript_SejunPark",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 13,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DrakeChamber_EventScript_RyotaOtsubo",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 15,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DrakeChamber_EventScript_EmilioForbes",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 17,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "DrakeChamber_EventScript_WolfeGlick",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "x": 13,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "DrakeChamber_EventScript_TalkDrakeExit",
+      "flag": "FLAG_DRAKE_CHAMBER_COMPLETE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_VICTORY_ROAD_1F",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 22,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_ARCHIVE_OF_LEGENDS_1",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_DRAKE_CHAMBER_STATE",
+      "var_value": "0",
+      "script": "DrakeChamber_EventScript_CompleteTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_DRAKE_CHAMBER_STATE",
+      "var_value": "0",
+      "script": "DrakeChamber_EventScript_CompleteTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_DRAKE_CHAMBER_STATE",
+      "var_value": "0",
+      "script": "DrakeChamber_EventScript_CompleteTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_DRAKE_CHAMBER_STATE",
+      "var_value": "0",
+      "script": "DrakeChamber_EventScript_CompleteTrigger4"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -448,6 +448,7 @@ static void DoStandardWildBattle(bool32 isDouble)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = 0;
     if (isDouble)
@@ -469,6 +470,7 @@ void DoStandardWildBattle_Debug(void)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = 0;
     if (InBattlePyramid())
@@ -488,6 +490,7 @@ void BattleSetup_StartRoamerBattle(void)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_ROAMER;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -502,6 +505,7 @@ static void DoSafariBattle(void)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndSafariBattle;
     gBattleTypeFlags = BATTLE_TYPE_SAFARI;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -512,6 +516,7 @@ static void DoBattlePikeWildBattle(void)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_PIKE;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -546,6 +551,7 @@ void StartWallyTutorialBattle(void)
 {
     CreateMaleMon(&gEnemyParty[0], SPECIES_RALTS, 5);
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
     gBattleTypeFlags = BATTLE_TYPE_WALLY_TUTORIAL;
     CreateBattleStartTask(B_TRANSITION_SLICE, 0);
@@ -554,6 +560,7 @@ void StartWallyTutorialBattle(void)
 void BattleSetup_StartScriptedWildBattle(void)
 {
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = 0;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -566,6 +573,7 @@ void BattleSetup_StartScriptedWildBattle(void)
 void BattleSetup_StartScriptedDoubleWildBattle(void)
 {
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_DOUBLE;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -578,6 +586,7 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
 void BattleSetup_StartLatiBattle(void)
 {
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
     CreateBattleStartTask(GetWildBattleTransition(), 0);
@@ -590,6 +599,7 @@ void BattleSetup_StartLatiBattle(void)
 void BattleSetup_StartLegendaryBattle(void)
 {
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
 
@@ -632,6 +642,7 @@ void BattleSetup_StartLegendaryBattle(void)
 void StartGroudonKyogreBattle(void)
 {
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
 
@@ -652,6 +663,7 @@ void StartRegiBattle(void)
     u16 species;
 
     LockPlayerFieldControls();
+    FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
 
@@ -696,6 +708,7 @@ static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    FlagSet(FLAG_NO_BAG);
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike())
     {
@@ -713,6 +726,7 @@ static void CB2_EndScriptedWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    FlagSet(FLAG_NO_BAG);
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {

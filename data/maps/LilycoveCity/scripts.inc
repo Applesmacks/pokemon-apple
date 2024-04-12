@@ -241,7 +241,7 @@ LilycoveCity_EventScript_May::
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattle
-	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
+	@goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
 	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleMayTreecko
@@ -254,7 +254,7 @@ LilycoveCity_EventScript_MayAskToBattleAgain::
 	return
 
 LilycoveCity_EventScript_MayAskToBattle::
-	msgbox LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_YESNO
+	msgbox LilycoveCity_Text_MayShoppingLetsBattle, MSGBOX_DEFAULT
 	return
 
 LilycoveCity_EventScript_DeclineMayBattle::
@@ -329,6 +329,8 @@ LilycoveCity_EventScript_DefeatedMay::
 	call_if_set FLAG_BADGE06_GET, LilycoveCity_EventScript_CheckFinalBadge
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_MayCollectBadges
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_EventScript_MayPokemonLeague
+	giveitem ITEM_MEGA_RING
+	msgbox LilycoveCity_Text_MayExplainMegas, MSGBOX_DEFAULT
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL
 	goto LilycoveCity_EventScript_RivalFlyAway
@@ -413,7 +415,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "MAY: Oh, hey?\n"
+	.string "KATI: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of DOLLS and\n"
 	.string "POSTERS.\p"
@@ -426,17 +428,17 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "me your POKéMON, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
+	.string "KATI: Oh, why? {PLAYER}{KUN}, haven't you\n"
 	.string "been raising your POKéMON?\p"
 	.string "That's not a very good showing as a\n"
 	.string "TRAINER…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "MAY: Come on, battle with me, so I can\n"
+	.string "KATI: Come on, battle with me, so I can\n"
 	.string "check out your POKéMON!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "MAY: The POKéMON I raised won't be\n"
+	.string "KATI: The POKéMON I raised won't be\n"
 	.string "beaten by your POKéMON, {PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
@@ -447,7 +449,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "strong, {PLAYER}{KUN}, didn't it?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "MAY: I'm thinking of going back to\n"
+	.string "KATI: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
 	.string "I've caught a decent group of POKéMON,\n"
 	.string "and my POKéDEX is coming along, so\l"
@@ -460,7 +462,7 @@ LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "Well, while you're collecting BADGES,\n"
 	.string "{PLAYER}{KUN}, I'm going to work on my\l"
 	.string "POKéDEX. I'll complete it before you!\p"
-	.string "See you!$"
+	.string "But first, have this!$"
 
 LilycoveCity_Text_MayYouGoingToPokemonLeague:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
@@ -470,7 +472,7 @@ LilycoveCity_Text_MayYouGoingToPokemonLeague:
 	.string "POKéDEX?\p"
 	.string "I might've lost to you in battling,\n"
 	.string "but I'll finish my POKéDEX before you!\p"
-	.string "See you!$"
+	.string "But first, have this!$"
 
 LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
@@ -480,7 +482,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "POKéDEX?\p"
 	.string "I might've lost to you in battling,\n"
 	.string "but I'll finish my POKéDEX before you!\p"
-	.string "See you!$"
+	.string "But first, have this!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
@@ -758,4 +760,11 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "So we were delighted to see a rare\n"
 	.string "POKéMON as soon as we arrived.\p"
 	.string "I mean, we are totally happy!$"
+
+LilycoveCity_Text_MayExplainMegas:
+	.string "KATI: This is a Mega Ring. It will\n"
+	.string "allow you to mega evolve your POKEMON.\p"
+	.string "Hopefully that gives you the edge you\n"
+	.string "need in your coming battles.\p"
+	.string "See you again soon!$"
 

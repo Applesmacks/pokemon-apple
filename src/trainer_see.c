@@ -623,7 +623,7 @@ static bool8 JumpInPlaceBuriedTrainer(u8 taskId, struct Task *task, struct Objec
     if (gSprites[task->tOutOfAshSpriteId].animCmdIndex == 2)
     {
         trainerObj->fixedPriority = 0;
-        trainerObj->triggerGroundEffectsOnMove = TRUE;
+        trainerObj->triggerGroundEffectsOnMove = 1;
 
         sprite = &gSprites[trainerObj->spriteId];
         sprite->oam.priority = 2;

@@ -33,6 +33,7 @@
 #include "pokeblock.h"
 #include "pokemon.h"
 #include "script.h"
+#include "script_pokemon_util.h"
 #include "sound.h"
 #include "strings.h"
 #include "string_util.h"
@@ -670,6 +671,17 @@ static void CB2_OpenPokeblockFromBag(void)
 {
     OpenPokeblockCase(PBLOCK_CASE_FIELD, CB2_ReturnToBagMenuPocket);
 }
+
+// static void ItemUseOutOfBattle_InfiniteCandy(u8 taskID)
+// {
+//     gItemUseCB = ItemUseCB_InfiniteCandy();
+//     SetUpItemUseCallback(taskID);
+// }
+
+// static void ItemUseOutOfBattle_MobileCenter(void)
+// {
+//     HealPlayerParty();
+// }
 
 static void Task_OpenRegisteredPokeblockCase(u8 taskId)
 {

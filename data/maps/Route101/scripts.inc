@@ -44,6 +44,7 @@ Route101_EventScript_StartBirchRescue::
 	releaseall
 	end
 
+
 Route101_EventScript_PreventExitSouth::
 	lockall
 	msgbox Route101_Text_DontLeaveMe, MSGBOX_DEFAULT
@@ -70,6 +71,7 @@ Route101_EventScript_PreventExitNorth::
 	waitmovement 0
 	releaseall
 	end
+
 
 Route101_Movement_PreventExitSouth:
 	walk_up

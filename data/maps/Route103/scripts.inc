@@ -11,7 +11,7 @@ Route103_OnTransition:
 	end
 
 Route103_OnLoad:
-	call_if_set FLAG_SYS_GAME_CLEAR, Route103_EventScript_OpenAlteringCave
+	call Route103_EventScript_OpenAlteringCave
 	end
 
 Route103_EventScript_OpenAlteringCave::
@@ -193,6 +193,17 @@ Route103_EventScript_Boy::
 	msgbox Route103_Text_ShouldHaveBroughtPotion, MSGBOX_NPC
 	end
 
+Route103_EventScript_Fisherman::
+	goto_if_set FLAG_UNUSED_0x020 Route103_EventScript_FishermanFurtherSpeak
+	msgbox Route103_Text_HaveARod, MSGBOX_NPC
+	giveitem ITEM_SUPER_ROD, 1
+	setflag FLAG_UNUSED_0x020
+	end
+
+Route103_EventScript_FishermanFurtherSpeak::
+	msgbox Route103_Text_RodGiven, MSGBOX_NPC
+	end
+
 Route103_EventScript_Man::
 	msgbox Route103_Text_ShortcutToOldale, MSGBOX_NPC
 	end
@@ -289,7 +300,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "MAY: Let's see… The POKéMON found\n"
+	.string "KATI: Let's see… The POKéMON found\n"
 	.string "on ROUTE 103 include…$"
 
 Route103_Text_MayLetsBattle:
@@ -306,7 +317,7 @@ Route103_Text_MayDefeated:
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
+	.string "KATI: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that POKéMON,\n"
 	.string "but it already likes you.\p"
@@ -352,4 +363,13 @@ Route103_Text_ShortcutToOldale:
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
+
+Route103_Text_HaveARod:
+	.string "You look like someone who\n"
+	.string "could use a SUPER ROD!\p"
+	.string "No need to thank me.$"
+
+Route103_Text_RodGiven:
+	.string "With your help all of the\n"
+	.string "WATER Pokemon will be eradicated!$"
 

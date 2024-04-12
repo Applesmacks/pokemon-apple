@@ -203,6 +203,7 @@ MauvilleCity_EventScript_ScottExitEast::
 MauvilleCity_EventScript_BattleWally::
 	msgbox MauvilleCity_Text_WallyHereICome, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, MauvilleCity_Text_WallyDefeat
+	setvar VAR_LEVEL_CAP, 40
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox MauvilleCity_Text_WallyIllGoBackToVerdanturf, MSGBOX_DEFAULT
@@ -225,6 +226,36 @@ MauvilleCity_EventScript_WallyRequestBattleAgain::
 	waitmovement 0
 	msgbox MauvilleCity_Text_WallyPleaseBattleMe, MSGBOX_YESNO
 	goto MauvilleCity_EventScript_BattleWallyPrompt
+	end
+
+MauvilleCity_EventScript_Blockman1::
+	lock
+	msgbox MauvilleCity_Text_Blockman, MSGBOX_DEFAULT
+	release
+	end
+
+MauvilleCity_EventScript_Blockman2::
+	lock
+	msgbox MauvilleCity_Text_Blockman, MSGBOX_DEFAULT
+	release
+	end
+
+MauvilleCity_EventScript_Blockman3::
+	lock
+	msgbox MauvilleCity_Text_Blockman, MSGBOX_DEFAULT
+	release
+	end
+
+MauvilleCity_EventScript_Blockman4::
+	lock
+	msgbox MauvilleCity_Text_Blockman, MSGBOX_DEFAULT
+	release
+	end
+
+MauvilleCity_EventScript_Blockman5::
+	lock
+	msgbox MauvilleCity_Text_Blockman, MSGBOX_DEFAULT
+	release
 	end
 
 MauvilleCity_Movement_WallyExitNorth1:
@@ -578,7 +609,7 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "I'll be cheering for you!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
+	.string "ZACH: Oh, {PLAYER}{KUN}!\n"
 	.string "You look like you have a lot of zip!\l"
 	.string "That's a good thing, wahahahaha!\p"
 	.string "Fine! I've decided!\n"
@@ -593,7 +624,7 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "NEW MAUVILLE.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "WATTSON: Don't you worry about it.\n"
+	.string "ZACH: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
@@ -601,7 +632,7 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "Wahahahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "ZACH: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
@@ -609,7 +640,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "ZACH: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
 	.string "the young step up and take charge!$"
 
@@ -640,7 +671,7 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
+	.string "LEADER: ZACH\l"
 	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:
@@ -666,3 +697,9 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+MauvilleCity_Text_Blockman:
+	.string "Today, we are protesting against\n"
+	.string "trainers who aren't able to SURF.\p"
+	.string "They are weak and therefore aren't\n"
+	.string "allowed to go to ROUTE 118.$"	

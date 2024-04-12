@@ -1,4 +1,5 @@
 .set LOCALID_STEVEN, 19
+.set LOCALID_DRAKE, 22
 
 Route118_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition
@@ -11,6 +12,7 @@ Route118_OnTransition:
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_118_EAST, AbnormalWeather_StartGroudonWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_118_WEST, AbnormalWeather_StartGroudonWeather
+	call_if_set FLAG_ROUTE119_RIVAL_BEAT, Route118_EventScript_HideDrake
 	end
 
 Route118_OnLoad:
@@ -21,6 +23,118 @@ Route118_OnLoad:
 Route118_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
+
+Route118_EventScript_HideDrake::
+	removeobject LOCALID_DRAKE
+	return
+
+Route118_EventScript_Drake::
+	lock
+	faceplayer
+	goto_if_set FLAG_ROUTE118_DRAKE_POKEMON, Route118_EventScript_DrakeGoodLuck
+	goto_if_set FLAG_ROUTE118_DRAKE_BEAT, Route118_EventScript_DrakePokemonCheck
+	msgbox Route118_Text_DrakeHello, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route118_EventScript_DrakeBattle
+	goto_if_eq VAR_RESULT, NO, Route118_EventScript_DrakeBummer
+	end
+
+Route118_EventScript_DrakeGoodLuck::
+	msgbox Route118_Text_DrakeStrong
+	release
+	end
+
+Route118_EventScript_DrakeBattle::
+	msgbox Route118_Text_DrakeIntro
+	trainerbattle_no_intro TRAINER_DRAKE_118, Route118_Text_DrakeDefeat
+	msgbox Route118_Text_DrakeDefeated, MSGBOX_DEFAULT
+	setflag FLAG_ROUTE118_DRAKE_BEAT
+	release
+	end
+
+Route118_EventScript_DrakePokemonCheck::
+	msgbox Route118_Text_DrakeCheck, MSGBOX_DEFAULT
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq Route118_EventScript_DrakePartyFull
+	goto Route118_EventScript_DrakeGivePokemon
+	release
+	end
+
+Route118_EventScript_DrakePartyFull::
+	msgbox Route118_Text_DrakePartyFull, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeGivePokemon::
+	msgbox Route118_Text_DrakeGive, MSGBOX_DEFAULT
+	random 5
+	switch VAR_RESULT
+	case 0, Route118_EventScript_DrakeKubfu
+	case 1, Route118_EventScript_DrakeMeltan
+	case 2, Route118_EventScript_DrakeTypeNull
+	case 3, Route118_EventScript_DrakePoipole
+	case 4, Route118_EventScript_DrakeRiolu
+	return
+
+Route118_EventScript_DrakeKubfu::
+	bufferspeciesname 1, SPECIES_KUBFU
+	givemon SPECIES_KUBFU, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeMeltan::
+	bufferspeciesname 1, SPECIES_MELTAN
+	givemon SPECIES_MELTAN, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeTypeNull::
+	bufferspeciesname 1, SPECIES_TYPE_NULL
+	givemon SPECIES_TYPE_NULL, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakePoipole::
+	bufferspeciesname 1, SPECIES_POIPOLE
+	givemon SPECIES_POIPOLE, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeRiolu::
+	bufferspeciesname 1, SPECIES_RIOLU
+	givemon SPECIES_RIOLU, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeBummer::
+	msgbox Route118_Text_DrakeBummer, MSGBOX_DEFAULT
+	release
+	end
 
 Route118_EventScript_GoodRodFisherman::
 	lock
@@ -299,4 +413,55 @@ Route118_Text_RouteSignMauville:
 Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
+
+Route118_Text_DrakeHello:
+	.string "So, you've defeated your father.\p"
+	.string "That fire in your eyes continues to\n"
+	.string "grow. What say we put your resolve\l"
+	.string "to the test? Face me in battle, lad.\p"
+	.string "If you win, I'll give you something\n"
+	.string "very special. What do you say?$"
+
+Route118_Text_DrakeStrong:
+	.string "You've got guts kid, I'll give you\n"
+	.string "that. I daresay you have the stuff to\l"
+	.string "take on CHAMPION TREVOR.$"
+
+Route118_Text_DrakeDefeated:
+	.string "Hah! I'll be damned. I haven't\n"
+	.string "faced defeat like that in a long\l"
+	.string "time. Go make a space in your\l"
+	.string "party and come straight back.$"
+
+Route118_Text_Received_Pokemon:
+	.string "{PLAYER} received a {STR_VAR_2}!$"
+
+Route118_Text_DrakeEnjoy:
+	.string "Someday that {STR_VAR_2} will be\n"
+	.string "a valuable asset to you. Raise it\l"
+	.string "well. I'll see you again, kid. I\l"
+	.string "suspect my final test will really\l"
+	.string "put you through the ringer.$"
+
+Route118_Text_DrakeBummer:
+	.string "A shame. I'll hang here for a bit\n"
+	.string "if you change your mind, but once\l"
+	.string "you get past the INSTITUTE up the\l"
+	.string "road, don't expect to find me here.$"
+
+Route118_Text_DrakePartyFull:
+	.string "What're you doing? Go make a space\n"
+	.string "in your roster. I'm getting impatient.$"
+
+Route118_Text_DrakeCheck:
+	.string "Alright, let's take a look here...$"
+
+Route118_Text_DrakeGive:
+	.string "Perfect, I have just the lil' guy\n"
+	.string "for you.$"
+
+Route118_Text_DrakeIntro::
+	.string "You're strong lad, I'll give you\n"
+	.string "that. You've made it this far.\p"
+	.string "But I am beyond strength.$"
 

@@ -1665,10 +1665,6 @@ static void Task_WaitStopSurfing(u8 taskId)
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         DestroySprite(&gSprites[playerObjEvent->fieldEffectSpriteId]);
-#ifdef BUGFIX
-        // If this is not defined but the player steps into grass from surfing, they will appear over the grass instead of in the grass.
-        playerObjEvent->triggerGroundEffectsOnMove = TRUE;
-#endif
         DestroyTask(taskId);
     }
 }
@@ -1742,12 +1738,12 @@ static bool8 Fishing_GetRodOut(struct Task *task)
     };
     const s16 minRounds2[] = {
         [OLD_ROD]   = 1,
-        [GOOD_ROD]  = 3,
-        [SUPER_ROD] = 6
+        [GOOD_ROD]  = 1,
+        [SUPER_ROD] = 1
     };
 
     task->tRoundsPlayed = 0;
-    task->tMinRoundsRequired = minRounds1[task->tFishingRod] + (Random() % minRounds2[task->tFishingRod]);
+    task->tMinRoundsRequired = 1;
     task->tPlayerGfxId = gObjectEvents[gPlayerAvatar.objectEventId].graphicsId;
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     ObjectEventClearHeldMovementIfActive(playerObjEvent);
@@ -1794,10 +1790,8 @@ static bool8 Fishing_ShowDots(struct Task *task)
     task->tFrameCounter++;
     if (JOY_NEW(A_BUTTON))
     {
-        task->tStep = FISHING_NO_BITE;
-        if (task->tRoundsPlayed != 0)
-            task->tStep = FISHING_GOT_AWAY;
-        return TRUE;
+        task->tStep = FISHING_GOT_BITE;
+        return FALSE;
     }
     else
     {
@@ -1806,7 +1800,7 @@ static bool8 Fishing_ShowDots(struct Task *task)
             task->tFrameCounter = 0;
             if (task->tNumDots >= task->tDotsRequired)
             {
-                task->tStep++;
+                task->tStep = FISHING_GOT_BITE;
                 if (task->tRoundsPlayed != 0)
                     task->tStep++;
                 task->tRoundsPlayed++;
@@ -1879,9 +1873,7 @@ static bool8 Fishing_WaitForA(struct Task *task)
 
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
-    if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
-        task->tStep = FISHING_GOT_AWAY;
-    else if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(A_BUTTON))
         task->tStep++;
     return FALSE;
 }
@@ -1898,18 +1890,6 @@ static bool8 Fishing_CheckMoreDots(struct Task *task)
 
     AlignFishingAnimationFrames();
     task->tStep++;
-    if (task->tRoundsPlayed < task->tMinRoundsRequired)
-    {
-        task->tStep = FISHING_START_ROUND;
-    }
-    else if (task->tRoundsPlayed < 2)
-    {
-        // probability of having to play another round
-        s16 probability = Random() % 100;
-
-        if (moreDotsChance[task->tFishingRod][task->tRoundsPlayed] > probability)
-            task->tStep = FISHING_START_ROUND;
-    }
     return FALSE;
 }
 
@@ -2099,7 +2079,7 @@ static void Task_DoPlayerSpinExit(u8 taskId)
             tSpeed = 1;
             tCurY = (u16)(sprite->y + sprite->y2) << 4;
             sprite->y2 = 0;
-            CameraObjectFreeze();
+            CameraObjectReset2();
             object->fixedPriority = TRUE;
             sprite->oam.priority = 0;
             sprite->subpriority = 0;
@@ -2168,7 +2148,7 @@ static void Task_DoPlayerSpinEntrance(u8 taskId)
             tSubpriority = sprite->subpriority;
             tCurY = -((u16)sprite->y2 + 32) * 16;
             sprite->y2 = 0;
-            CameraObjectFreeze();
+            CameraObjectReset2();
             object->fixedPriority = TRUE;
             sprite->oam.priority = 1;
             sprite->subpriority = 0;
@@ -2203,7 +2183,7 @@ static void Task_DoPlayerSpinEntrance(u8 taskId)
                 object->fixedPriority = 0;
                 sprite->oam.priority = tPriority;
                 sprite->subpriority = tSubpriority;
-                CameraObjectReset();
+                CameraObjectReset1();
                 DestroyTask(taskId);
             }
             break;

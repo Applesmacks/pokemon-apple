@@ -4,6 +4,11 @@
 .set LOCALID_GRUNT, 10
 .set LOCALID_RIVAL, 14
 .set LOCALID_SCIENTIST, 15
+.set LOCALID_BLOCKMAN1, 17
+.set LOCALID_BLOCKMAN2, 18
+.set LOCALID_BLOCKMAN3, 19
+.set LOCALID_BLOCKMAN4, 20
+.set LOCALID_BLOCKMAN5, 21  
 
 RustboroCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
@@ -16,6 +21,7 @@ RustboroCity_OnTransition:
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
+	call_if_unset FLAG_BADGE01_GET, RustboroCity_EventScript_Blockpath
 	end
 
 RustboroCity_EventScript_PositionScientistForExit::
@@ -146,6 +152,54 @@ RustboroCity_EventScript_FatMan::
 
 RustboroCity_EventScript_FatManSawGrunt::
 	msgbox RustboroCity_Text_SneakyLookingManWentAroundCorner, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_Noland::
+	lock
+	faceplayer
+	msgbox RustboroCity_Text_NolandHeyKid, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_NolandWannaBuy, MSGBOX_YESNO
+	switch VAR_RESULT
+	case YES, RustboroCity_EventScript_NolandShop
+	case NO, RustboroCity_EventScript_NolandGetOut
+	release
+	end
+
+RustboroCity_EventScript_NolandShop::
+	message RustboroCity_Text_NolandTakeALook
+	waitmessage
+	pokemart RustboroCity_Mart_Noland
+	msgbox RustboroCity_Text_NolandDone, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+RustboroCity_Mart_Noland:
+	.2byte ITEM_NORMAL_GEM
+	.2byte ITEM_FIRE_GEM
+	.2byte ITEM_WATER_GEM
+	.2byte ITEM_ELECTRIC_GEM
+	.2byte ITEM_GRASS_GEM
+	.2byte ITEM_ICE_GEM
+	.2byte ITEM_FIGHTING_GEM
+	.2byte ITEM_POISON_GEM
+	.2byte ITEM_GROUND_GEM
+	.2byte ITEM_FLYING_GEM
+	.2byte ITEM_PSYCHIC_GEM
+	.2byte ITEM_BUG_GEM
+	.2byte ITEM_ROCK_GEM
+	.2byte ITEM_GHOST_GEM
+	.2byte ITEM_DRAGON_GEM
+	.2byte ITEM_DARK_GEM
+	.2byte ITEM_STEEL_GEM
+	.2byte ITEM_FAIRY_GEM
+	.2byte ITEM_NONE
+	release
+	end
+
+RustboroCity_EventScript_NolandGetOut::
+	msgbox RustboroCity_Text_NolandGetOut, MSGBOX_DEFAULT
 	release
 	end
 
@@ -318,6 +372,58 @@ RustboroCity_EventScript_StolenGoodsScene::
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 	releaseall
 	end
+
+RustboroCity_EventScript_Blockpath::
+	setobjectxyperm LOCALID_BLOCKMAN1, 24, 8
+	setobjectxyperm LOCALID_BLOCKMAN2, 24, 9
+	setobjectxyperm LOCALID_BLOCKMAN3, 24, 10
+	setobjectxyperm LOCALID_BLOCKMAN4, 24, 11
+	setobjectxyperm LOCALID_BLOCKMAN5, 24, 12
+	setobjectmovementtype LOCALID_BLOCKMAN1, MOVEMENT_TYPE_FACE_LEFT
+	setobjectmovementtype LOCALID_BLOCKMAN2, MOVEMENT_TYPE_FACE_LEFT
+	setobjectmovementtype LOCALID_BLOCKMAN3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectmovementtype LOCALID_BLOCKMAN4, MOVEMENT_TYPE_FACE_LEFT
+	setobjectmovementtype LOCALID_BLOCKMAN5, MOVEMENT_TYPE_FACE_LEFT
+	return
+
+RustboroCity_EventScript_Blockman1::
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_UnblockedText
+	goto RustboroCity_EventScript_PathBlockedText
+end
+
+RustboroCity_EventScript_Blockman2::
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_UnblockedText
+	goto RustboroCity_EventScript_PathBlockedText
+end
+
+RustboroCity_EventScript_Blockman3::
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_UnblockedText
+	goto RustboroCity_EventScript_PathBlockedText
+end
+
+RustboroCity_EventScript_Blockman4::
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_UnblockedText
+	goto RustboroCity_EventScript_PathBlockedText
+end
+
+RustboroCity_EventScript_Blockman5::
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_EventScript_UnblockedText
+	goto RustboroCity_EventScript_PathBlockedText
+end
+
+RustboroCity_EventScript_PathBlockedText::
+	lock
+	faceplayer
+	msgbox RustboroCity_Text_BlockedPath, MSGBOX_DEFAULT
+	release
+end
+
+RustboroCity_EventScript_UnblockedText::
+	lock
+	faceplayer
+	msgbox RustboroCity_Text_Unblocked, MSGBOX_DEFAULT
+	release
+end
 
 @ Unused
 RustboroCity_EventScript_ShadyCharacterTookOff::
@@ -848,9 +954,8 @@ RustboroCity_EventScript_MayEncounter::
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
 	setvar VAR_0x8008, 0
-	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_DEFAULT
+	goto RustboroCity_EventScript_BattleMay
 	call RustboroCity_EventScript_RestoreBgm
 	releaseall
 	end
@@ -885,18 +990,21 @@ RustboroCity_EventScript_RestoreBgm::
 RustboroCity_EventScript_BattleMayTreecko::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setvar VAR_LEVEL_CAP 25
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setvar VAR_LEVEL_CAP 25
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayMudkip::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setvar VAR_LEVEL_CAP 25
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
@@ -1135,7 +1243,7 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "KATI: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "You had a MATCH CALL feature put\n"
 	.string "on your POKéNAV!\p"
 	.string "Let's register each other so we can\n"
@@ -1143,11 +1251,11 @@ RustboroCity_Text_MayHiLetsRegister:
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "Registered MAY\n"
+	.string "Registered KATI\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "MAY: Oh, by the way, I passed\n"
+	.string "KATI: Oh, by the way, I passed\n"
 	.string "MR. BRINEY in PETALBURG WOODS.\p"
 	.string "I guess he's on his way home to his\n"
 	.string "cottage by the sea.\p"
@@ -1157,17 +1265,17 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "How about a little battle?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "MAY: Oh, what's the matter?\p"
+	.string "KATI: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "POKéMON very much?\p"
 	.string "That's not very good for a TRAINER!$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "MAY: So, what do you think?\n"
+	.string "KATI: So, what do you think?\n"
 	.string "How about a little battle here?$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "MAY: You just became a TRAINER,\n"
+	.string "KATI: You just became a TRAINER,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 RustboroCity_Text_MayDefeat:
@@ -1175,7 +1283,7 @@ RustboroCity_Text_MayDefeat:
 	.string "You're better than I expected!$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "MAY: Oh, by the way, MR. BRINEY, who\n"
+	.string "KATI: Oh, by the way, MR. BRINEY, who\n"
 	.string "I just passed…\p"
 	.string "{PLAYER}{KUN}, you just moved here so you\n"
 	.string "might not know this, but MR. BRINEY\l"
@@ -1241,7 +1349,7 @@ RustboroCity_Text_DevonCorpSign:
 
 RustboroCity_Text_GymSign:
 	.string "RUSTBORO CITY POKéMON GYM\n"
-	.string "LEADER: ROXANNE\p"
+	.string "LEADER: AUTUMN\p"
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
@@ -1297,3 +1405,29 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_Text_BlockedPath:
+	.string "We are protesting against\n"
+	.string "trainers who don't have a BADGE.$"
+
+RustboroCity_Text_Unblocked:
+	.string "Congratulations on your win against\n"
+	.string "LEADER AUTUMN!$"
+
+RustboroCity_Text_NolandHeyKid:
+	.string "Hey... Kid...\p"
+	.string "...$"
+
+RustboroCity_Text_NolandWannaBuy:
+	.string "Wanna buy a mineral?$"
+
+RustboroCity_Text_NolandTakeALook:
+	.string "Take a look, try not to gawk\n"
+	.string "too much.$"
+
+RustboroCity_Text_NolandDone:
+	.string "Good now get out of here.$"
+
+RustboroCity_Text_NolandGetOut:
+	.string "What are you, a cop? Get out\n"
+	.string "of here.$"

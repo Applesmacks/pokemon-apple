@@ -444,7 +444,8 @@ Route116_Text_NotWhatImLookingFor:
 
 Route116_Text_RouteSignRustboro:
 	.string "ROUTE 116\n"
-	.string "{LEFT_ARROW} RUSTBORO CITY$"
+	.string "{DOWN_ARROW} GAUNTLET FOR CHOICE\p"
+	.string "SCARF AND BRICK BREAK.$"
 
 Route116_Text_RusturfTunnelSign:
 	.string "RUSTURF TUNNEL\n"

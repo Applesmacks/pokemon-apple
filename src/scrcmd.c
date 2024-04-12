@@ -1813,6 +1813,10 @@ bool8 ScrCmd_checkpartymove(struct ScriptContext *ctx)
             break;
         }
     }
+    if (gSpecialVar_Result == PARTY_SIZE && PlayerHasMove(moveId)){  // If no mon have the move, but the player has the HM in bag, use the first mon
+            gSpecialVar_Result = 0;
+            gSpecialVar_0x8004 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES, NULL);
+    }
     return FALSE;
 }
 
@@ -2311,7 +2315,7 @@ bool8 ScrCmd_lockfortrainer(struct ScriptContext *ctx)
 }
 
 // This command will set a Pokémon's modernFatefulEncounter bit; there is no similar command to clear it.
-bool8 ScrCmd_setmodernfatefulencounter(struct ScriptContext *ctx)
+bool8 ScrCmd_setmonmodernfatefulencounter(struct ScriptContext *ctx)
 {
     bool8 isModernFatefulEncounter = TRUE;
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
@@ -2320,7 +2324,7 @@ bool8 ScrCmd_setmodernfatefulencounter(struct ScriptContext *ctx)
     return FALSE;
 }
 
-bool8 ScrCmd_checkmodernfatefulencounter(struct ScriptContext *ctx)
+bool8 ScrCmd_checkmonmodernfatefulencounter(struct ScriptContext *ctx)
 {
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
 

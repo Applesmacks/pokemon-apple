@@ -200,7 +200,7 @@ NewMauville_Inside_EventScript_DefeatedVoltorb1::
 NewMauville_Inside_EventScript_Voltorb2::
 	lock
 	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25
+	setwildbattle SPECIES_VOLTORB_HISUIAN, 25
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
 	delay 40

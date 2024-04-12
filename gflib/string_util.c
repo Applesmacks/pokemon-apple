@@ -823,7 +823,7 @@ void ConvertInternationalString(u8 *s, u8 language)
 
         i--;
 
-        while (i != -1)
+        while (i != (u8)-1)
         {
             s[i + 2] = s[i];
             i--;

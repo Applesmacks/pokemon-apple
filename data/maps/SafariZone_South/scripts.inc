@@ -1,9 +1,14 @@
 .set LOCALID_ATTENDANT, 1
 
 SafariZone_South_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, SafariZone_South_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, SafariZone_South_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SafariZone_South_OnFrame
 	.byte 0
+
+SafariZone_South_OnLoad:
+	call_if_set FLAG_SAFARI_SHINY_PAID, SafariZone_South_EventScript_EnableShiny
+	end
 
 SafariZone_South_OnFrame:
 	map_script_2 VAR_SAFARI_ZONE_STATE, 2, SafariZone_South_EventScript_EnterSafariZone
@@ -27,6 +32,10 @@ SafariZone_South_OnTransition:
 SafariZone_South_EventScript_SetExitAttendantAside::
 	setobjectxyperm LOCALID_ATTENDANT, 31, 34
 	return
+
+SafariZone_South_EventScript_EnableShiny::
+	setflag FLAG_FORCE_SHINY
+	end
 
 SafariZone_South_Movement_PlayerEnter:
 	walk_down

@@ -331,7 +331,7 @@ Route104_EventScript_Boy2::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route104_EventScript_ReceivedBulletSeed
 	msgbox Route104_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_BULLET_SEED
+	giveitem ITEM_TM_NATURE_POWER
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_BULLET_SEED
 	release
@@ -1082,18 +1082,18 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "KATI: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "DEVON upgraded your POKéNAV with\n"
 	.string "the MATCH CALL system, huh?\p"
 	.string "We should register each other so we\n"
 	.string "can get in contact anytime.$"
 
 Route104_Text_RegisteredMay:
-	.string "{PLAYER} registered MAY\n"
+	.string "{PLAYER} registered KATI\n"
 	.string "in the POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
-	.string "MAY: Oh, by the way, {PLAYER}{KUN},\n"
+	.string "KATI: Oh, by the way, {PLAYER}{KUN},\n"
 	.string "how's your POKéDEX coming along?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
@@ -1102,17 +1102,17 @@ Route104_Text_MayMinesDecentLetsBattle:
 	.string "How about a little battle?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "MAY: Oh, what's the matter?\p"
+	.string "KATI: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "POKéMON very much?\p"
 	.string "That's not very good for a TRAINER!$"
 
 Route104_Text_MayLetsBattle:
-	.string "MAY: So, what do you think?\n"
+	.string "KATI: So, what do you think?\n"
 	.string "How about a little battle here?$"
 
 Route104_Text_MayIntro:
-	.string "MAY: You just became a TRAINER,\n"
+	.string "KATI: You just became a TRAINER,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 Route104_Text_MayDefeat:
@@ -1120,7 +1120,7 @@ Route104_Text_MayDefeat:
 	.string "You're better than I expected!$"
 
 Route104_Text_MayPostBattle:
-	.string "MAY: I can tell you've gotten pretty\n"
+	.string "KATI: I can tell you've gotten pretty\n"
 	.string "good with the way you handle POKéMON.\p"
 	.string "But instead of only making them\n"
 	.string "battle, you should be like MR. BRINEY.\p"

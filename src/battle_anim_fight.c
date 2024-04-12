@@ -565,7 +565,7 @@ static void AnimFistOrFootRandomPos(struct Sprite *sprite)
         y *= -1;
 
     if (GetBattlerSide(battler) == B_SIDE_PLAYER)
-        y -= 16;
+        y += 0xFFF0;
 
     sprite->x += x;
     sprite->y += y;

@@ -11,13 +11,12 @@ DesertUnderpass_OnTransition:
 DesertUnderpass_EventScript_Fossil::
 	lock
 	faceplayer
-	goto_if_set FLAG_CHOSE_ROOT_FOSSIL, DesertUnderpass_EventScript_GiveClawFossil
-	goto_if_set FLAG_CHOSE_CLAW_FOSSIL, DesertUnderpass_EventScript_GiveRootFossil
+	goto DesertUnderpass_EventScript_GiveClawFossil
 	release
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil::
-	giveitem ITEM_CLAW_FOSSIL
+	giveitem ITEM_TM_BULLDOZE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeobject LOCALID_FOSSIL
 	release

@@ -578,6 +578,7 @@ gStdScripts_End::
 	.include "data/scripts/trainer_battle.inc"
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
+	.include "data/scripts/center_relearner.inc"
 
 	.include "data/scripts/debug.inc"
 
@@ -1071,3 +1072,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/VictoryRoad_DrakeChamber/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends_1/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends_2/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends_3/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends4/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends_5/scripts.inc"
+
+	.include "data/maps/ArchiveOfLegends_6/scripts.inc"

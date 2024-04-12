@@ -902,11 +902,14 @@ static void CreateLearnableMovesList(void)
 
     sMoveRelearnerStruct->numMenuChoices = GetMoveRelearnerMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
 
+
     for (i = 0; i < sMoveRelearnerStruct->numMenuChoices; i++)
     {
         sMoveRelearnerStruct->menuItems[i].name = GetMoveName(sMoveRelearnerStruct->movesToLearn[i]);
         sMoveRelearnerStruct->menuItems[i].id = sMoveRelearnerStruct->movesToLearn[i];
     }
+
+    
 
     GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_NICKNAME, nickname);
     StringCopy_Nickname(gStringVar1, nickname);

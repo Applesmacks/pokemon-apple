@@ -17,6 +17,12 @@ MossdeepCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+MossdeepCity_PokemonCenter_1F_EventScript_Relearner::
+	setvar VAR_0x800B, LOCALID_RELEARNER
+	call Common_EventScript_CenterRelearner
+	release
+	end
+
 MossdeepCity_PokemonCenter_1F_EventScript_Woman::
 	msgbox MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable, MSGBOX_NPC
 	end

@@ -14,7 +14,13 @@ LavaridgeTown_OnTransition:
 	call Common_EventScript_SetupRivalOnBikeGfxId
 	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_CheckSetRivalPos
 	call_if_eq VAR_LAVARIDGE_TOWN_STATE, 1, LavaridgeTown_EventScript_HideMapNamePopup
+	call LavaridgeTown_EventScript_Weather
 	end
+
+LavaridgeTown_EventScript_Weather::
+	setweather WEATHER_NONE
+	doweather
+	return
 
 LavaridgeTown_EventScript_ClearLavaridgeWhiteOut::
 	clearflag FLAG_WHITEOUT_TO_LAVARIDGE
@@ -277,7 +283,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
+	.string "KATI: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"
 	.string "you got the LAVARIDGE GYM BADGE.\p"
 	.string "You must have collected\n"
@@ -287,7 +293,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "have this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "MAY: With those GO-GOGGLES, you'll\n"
+	.string "KATI: With those GO-GOGGLES, you'll\n"
 	.string "have no trouble getting through the\l"
 	.string "desert near ROUTE 111.\p"
 	.string "But, wow, {PLAYER}{KUN}…\n"
@@ -314,7 +320,7 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "are exclusively desert-dwellers.\l"
 	.string "You might look around for those.\p"
 	.string "As for me…\n"
-	.string "I'm considering challenging NORMAN,\l"
+	.string "I'm considering challenging KEVIN,\l"
 	.string "the GYM LEADER of PETALBURG.\p"
 	.string "Unlike you, {PLAYER}, your dad looks like\n"
 	.string "he really is tough.\p"
@@ -378,7 +384,7 @@ LavaridgeTown_Text_OhYouLikeHotSprings:
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
 	.string "I bathe in the hot springs every day.\p"
 	.string "I want to become a beautiful and strong\n"
-	.string "GYM LEADER like FLANNERY.$"
+	.string "GYM LEADER like ABBY.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings:
 	.string "If people put POKéMON in hot springs,\n"
@@ -400,7 +406,7 @@ LavaridgeTown_Text_TownSign:
 
 LavaridgeTown_Text_GymSign:
 	.string "LAVARIDGE TOWN POKéMON GYM\n"
-	.string "LEADER: FLANNERY\l"
+	.string "LEADER: ABBY\l"
 	.string "“One with a fiery passion that burns!”$"
 
 LavaridgeTown_Text_HerbShopSign:

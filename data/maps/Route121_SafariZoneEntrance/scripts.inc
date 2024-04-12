@@ -8,6 +8,7 @@ Route121_SafariZoneEntrance_OnFrame:
 
 Route121_SafariZoneEntrance_EventScript_ExitSafariZone::
 	lockall
+	call_if_set FLAG_SAFARI_SHINY_PAID, Route121_SafariZoneEntrance_EventScript_ExitShinyClear
 	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_ExitSafariZone
 	waitmovement 0
 	setvar VAR_SAFARI_ZONE_STATE, 0
@@ -24,6 +25,11 @@ Route121_SafariZoneEntrance_Movement_ExitSafariZone:
 	walk_right
 	walk_right
 	step_end
+
+Route121_SafariZoneEntrance_EventScript_ExitShinyClear::
+	clearflag FLAG_SAFARI_SHINY_PAID
+	clearflag FLAG_FORCE_SHINY
+	return
 
 Route121_SafariZoneEntrance_EventScript_WelcomeAttendant::
 	msgbox Route121_SafariZoneEntrance_Text_WelcomeToSafariZone, MSGBOX_NPC
@@ -43,8 +49,54 @@ Route121_SafariZoneEntrance_EventScript_FirstTimeInfo::
 	release
 	end
 
+Route121_SafariZoneEntrance_EventScript_ShinyGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_SAFARI_SHINY_PAID, Route121_SafariZoneEntrance_EventScript_ShinyGuyPaid
+	msgbox Route121_SafariZoneEntrance_Text_ShinyGuyHi, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, Route121_SafariZoneEntrance_EventScript_ShinyGuyBye
+	case YES, Route121_SafariZoneEntrance_EventScript_ShinyGuyCheckMoney
+	release
+	end
+
+Route121_SafariZoneEntrance_EventScript_ShinyGuyPaid::
+	msgbox Route121_SafariZoneEntrance_Text_ShinyGuyPaid, MSGBOX_DEFAULT
+	release
+	end
+
+Route121_SafariZoneEntrance_EventScript_ShinyGuyBye::
+	msgbox Route121_SafariZoneEntrance_Text_ShinyGuyBye, MSGBOX_DEFAULT
+	release
+	end
+
+Route121_SafariZoneEntrance_EventScript_ShinyGuyCheckMoney::
+	checkmoney 50000
+	switch VAR_RESULT
+	case FALSE, Route121_SafariZoneEntrance_EventScript_ShinyGuyNotEnoughMoney
+	case TRUE, Route121_SafariZoneEntrance_EventScript_ShinyGuyDoTask
+	release
+	end
+
+Route121_SafariZoneEntrance_EventScript_ShinyGuyNotEnoughMoney::
+	msgbox Route121_SafariZoneEntrance_Text_ShinyGuyNotEnoughMoney, MSGBOX_DEFAULT
+	release
+	end
+
+Route121_SafariZoneEntrance_EventScript_ShinyGuyDoTask::
+	setflag FLAG_SAFARI_SHINY_PAID
+	removemoney 50000
+	fadescreen 3
+	fadescreen 2
+	fadescreen 3
+	fadescreen 2
+	msgbox Route121_SafariZoneEntrance_Text_ShinyGuyThankYou, MSGBOX_DEFAULT
+	release
+	end
+
 Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	lockall
+	setflag FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	showmoneybox 0, 0
@@ -129,3 +181,29 @@ Route121_SafariZoneEntrance_EventScript_TrainerTipSign::
 	msgbox Route121_SafariZoneEntrance_Text_TrainerTip, MSGBOX_SIGN
 	end
 
+Route121_SafariZoneEntrance_Text_ShinyGuyHi:
+	.string "Hi, I'm the SHINY GUY!\p"
+	.string "Using my magical psychic powers,\n"
+	.string "I can make it so that everything\l"
+	.string "in the SAFARI ZONE is SHINY!\p"
+	.string "I'll do this for the low\n"
+	.string "price of 50000 money units.\l"
+	.string "What do you say?$"
+
+Route121_SafariZoneEntrance_Text_ShinyGuyBye:
+	.string "See you next time!$"
+
+Route121_SafariZoneEntrance_Text_ShinyGuyNotEnoughMoney:
+	.string "Looks like you don't have enough\n"
+	.string "money. Come back when you aren't\l"
+	.string "poor!$"
+
+Route121_SafariZoneEntrance_Text_ShinyGuyThankYou:
+	.string "Thank you! The next time you enter\n"
+	.string "the SAFARI ZONE, you will find that\l"
+	.string "everything has a little bit more\l"
+	.string "sparkle.$"
+
+Route121_SafariZoneEntrance_Text_ShinyGuyPaid:
+	.string "Enjoy my services! Refer me to\n"
+	.string "your friends! Catch a good one!$"

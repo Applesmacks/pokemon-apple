@@ -1,4 +1,5 @@
 .set LOCALID_NURSE, 1
+.set LOCALID_RELEARNER, 5
 
 SootopolisCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SootopolisCity_PokemonCenter_1F_OnTransition
@@ -14,6 +15,12 @@ SootopolisCity_PokemonCenter_1F_EventScript_Nurse::
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
+	release
+	end
+
+SootopolisCity_PokemonCenter_1F_EventScript_Relearner::
+	setvar VAR_0x800B, LOCALID_RELEARNER
+	call Common_EventScript_CenterRelearner
 	release
 	end
 
@@ -46,12 +53,12 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
-	.string "WALLACE is rumored to be the toughest\n"
+	.string "TREVOR is rumored to be the toughest\n"
 	.string "TRAINER in the whole HOENN region.\p"
 	.string "This town's GYM is led by the TRAINER\n"
-	.string "who taught WALLACE.\p"
+	.string "who taught TREVOR.\p"
 	.string "But the ELITE FOUR… They're said to be\n"
-	.string "even stronger than WALLACE's mentor.\p"
+	.string "even stronger than TREVOR's mentor.\p"
 	.string "How strong could they be?$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:

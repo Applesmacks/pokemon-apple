@@ -4410,6 +4410,76 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_DRAKE_CHAMBER",
+      "name": "VictoryRoad_DrakeChamber_Layout",
+      "width": 25,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_DrakeChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_DrakeChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS_1",
+      "name": "ArchiveOfLegends_1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends_1/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS_2",
+      "name": "ArchiveOfLegends_2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends_2/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS_3",
+      "name": "ArchiveOfLegends_3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends_3/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS4",
+      "name": "ArchiveOfLegends4_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends4/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS_5",
+      "name": "ArchiveOfLegends_5_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends_5/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARCHIVE_OF_LEGENDS_6",
+      "name": "ArchiveOfLegends_6_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ArchiveOfLegends_6/border.bin",
+      "blockdata_filepath": "data/layouts/ArchiveOfLegends_6/map.bin"
     }
   ]
 }

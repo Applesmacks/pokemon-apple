@@ -4435,11 +4435,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Powder Snow"),
         .description = COMPOUND_STRING(
             "Blasts the foe with a snowy\n"
-        #if B_USE_FROSTBITE == TRUE
-            "gust. May cause frostbite."),
-        #else
             "gust. May cause freezing."),
-        #endif
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_ICE,
@@ -8237,9 +8233,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Bounce"),
         .description = COMPOUND_STRING(
-            "Bounces up, then down the\n"
-            "next turn. May paralyze."),
-        .effect = EFFECT_SEMI_INVULNERABLE,
+            "Bounces up, then onto the\n"
+            "opponent. May paralyze."),
         .power = 85,
         .type = TYPE_FLYING,
         .accuracy = 85,
@@ -8252,7 +8247,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNSPRANGUP, COMPRESS_BITS(STATUS3_ON_AIR)),
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,
@@ -10170,11 +10164,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Ice Fang"),
         .description = COMPOUND_STRING(
             "May cause flinching or\n"
-        #if B_USE_FROSTBITE == TRUE
             "leave the foe frozen."),
-        #else
-            "leave the foe with frostbite."),
-        #endif
         .effect = EFFECT_HIT,
         .power = 65,
         .type = TYPE_ICE,
@@ -11176,7 +11166,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_2,
             .chance = 40,
@@ -13311,7 +13301,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .zMove = { .powerOverride = 220 },
         .makesContact = TRUE,
         .metronomeBanned = TRUE,
@@ -13687,11 +13677,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Freeze-Dry"),
         .description = COMPOUND_STRING(
             "Super effective on Water-\n"
-        #if B_USE_FROSTBITE == TRUE
-            "types. May cause frostbite."),
-        #else
             "types. May cause freezing."),
-        #endif
         .effect = EFFECT_FREEZE_DRY,
         .power = 70,
         .type = TYPE_ICE,
@@ -20243,7 +20229,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ignoresTargetAbility = TRUE,
     },
     [MOVE_MENACING_MOONRAZE_MAELSTROM] =
     {
@@ -20257,7 +20242,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresTargetAbility = TRUE,
     },
     [MOVE_LIGHT_THAT_BURNS_THE_SKY] =
     {
@@ -20271,7 +20255,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresTargetAbility = TRUE,
     },
     [MOVE_SOUL_STEALING_7_STAR_STRIKE] =
     {

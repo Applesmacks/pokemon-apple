@@ -1,6 +1,7 @@
 .set LOCALID_NURSE, 1
 .set LOCALID_GUARD_1, 3
 .set LOCALID_GUARD_2, 4
+.set LOCALID_RELEARNER, 5
 
 EverGrandeCity_PokemonLeague_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_PokemonLeague_1F_OnTransition
@@ -26,6 +27,12 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Nurse::
 	release
 	end
 
+EverGrandeCity_PokemonLeague_1F_EventScript_Relearner::
+	setvar VAR_0x800B, LOCALID_RELEARNER
+	call Common_EventScript_CenterRelearner
+	release
+	end
+
 EverGrandeCity_PokemonLeague_1F_EventScript_Clerk::
 	lock
 	faceplayer
@@ -38,12 +45,12 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Clerk::
 
 	.align 2
 EverGrandeCity_PokemonLeague_1F_Pokemart:
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
 	.2byte ITEM_FULL_RESTORE
 	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
+	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release

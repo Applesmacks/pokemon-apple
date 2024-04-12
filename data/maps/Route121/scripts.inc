@@ -3,7 +3,16 @@
 .set LOCALID_GRUNT_3, 14
 
 Route121_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route121_OnLoad
 	.byte 0
+
+Route121_OnLoad:
+	call_if_set FLAG_FORCE_SHINY, Route121_EventScripts_ClearShiny
+	end
+
+Route121_EventScripts_ClearShiny::
+	clearflag FLAG_FORCE_SHINY
+	end
 
 Route121_EventScript_Woman::
 	msgbox Route121_Text_AheadLoomsMtPyre, MSGBOX_NPC

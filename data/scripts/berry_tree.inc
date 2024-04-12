@@ -150,7 +150,7 @@ BerryTree_EventScript_SetAdverbPoor::
 
 @ VAR_0x8006 here is the number of berries
 BerryTree_EventScript_CheckBerryFullyGrown::
-	buffernumberstring STR_VAR_2, VAR_0x8006
+	buffernumberstring STR_VAR_2, 100
 	lock
 	faceplayer
 	special ObjectEventInteractionGetBerryCountString

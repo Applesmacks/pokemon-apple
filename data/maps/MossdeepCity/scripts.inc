@@ -30,6 +30,45 @@ MossdeepCity_EventScript_PokefanFMagmaGone::
 	release
 	end
 
+MossdeepCity_EventScript_Anabel::
+	lock
+	faceplayer
+	goto_if_set FLAG_FLOETTE_ETERNAL_RECEIVED, MossdeepCity_EventScript_AnabelTakeCare
+	msgbox MossdeepCity_Text_AnabelHi, MSGBOX_YESNO
+	switch VAR_RESULT
+	case YES, MossdeepCity_EventScript_AnabelAttemptGive
+	case NO, MossdeepCity_EventScript_AnabelRegrettable
+	release
+	end
+
+MossdeepCity_EventScript_AnabelAttemptGive::
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq MossdeepCity_EventScript_AnabelPartyFull
+	givemon SPECIES_FLOETTE_ETERNAL_FLOWER, 50, ITEM_NONE
+	setflag FLAG_FLOETTE_ETERNAL_RECEIVED
+	msgbox MossdeepCity_Text_ReceivedFloette, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	release
+	end
+
+MossdeepCity_EventScript_AnabelRegrettable::
+	msgbox MossdeepCity_Text_AnabelRegrettable, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_EventScript_AnabelTakeCare::
+	msgbox MossdeepCity_Text_AnabelTakeCare, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_EventScript_AnabelPartyFull::
+	msgbox MossdeepCity_Text_AnabelPartyFull, MSGBOX_DEFAULT
+	release
+	end
+
+
 MossdeepCity_EventScript_Sailor::
 	lock
 	faceplayer
@@ -399,7 +438,7 @@ MossdeepCity_Text_ItsAWhiteRock:
 
 MossdeepCity_Text_GymSign:
 	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
+	.string "LEADERS: MICHAEL & TATE\p"
 	.string "“The mystic combination!”$"
 
 MossdeepCity_Text_CitySign:
@@ -431,5 +470,26 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "I think the GYM there had a new\n"
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"
-	.string "mentored WALLACE.$"
+	.string "mentored TREVOR.$"
 
+MossdeepCity_Text_AnabelHi:
+	.string "Hi, you look like a strong trainer,\n"
+	.string "perhaps you can help me?\p"
+	.string "A very good friend of mine wants\n"
+	.string "to see the world, but I can't leave\l"
+	.string "MOSSDEEP. Can they travel with  you?$"
+
+MossdeepCity_Text_AnabelPartyFull:
+	.string "Looks like your party is full. Can you\n"
+	.string "make a spot and come back?$"
+
+MossdeepCity_Text_ReceivedFloette:
+	.string "Received FLOETTE ETERNAL FLOWER!$"
+
+MossdeepCity_Text_AnabelTakeCare:
+	.string "Please take good care of my FLOETTE.$"
+
+MossdeepCity_Text_AnabelRegrettable:
+	.string "Ah, alright. I guess I'll be here\n"
+	.string "if you change your mind...$"
+	

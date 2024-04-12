@@ -3,6 +3,62 @@
 FallarborTown_MoveRelearnersHouse_MapScripts::
 	.byte 0
 
+FallarborTown_StoneGuyHouse_EventScript_StoneGuy::
+	lockall
+	faceplayer
+	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyHello, MSGBOX_DEFAULT
+	goto_if_set FLAG_BADGE04_GET, FallarborTown_StoneGuyHouse_EventScript_SellStones
+	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyNotSetUp, MSGBOX_DEFAULT
+	releaseall
+	end
+
+FallarborTown_StoneGuyHouse_EventScript_SellStones::
+	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyLookAtWares, MSGBOX_DEFAULT
+	waitmessage
+	pokemart FallarborTown_StoneGuy_Mart
+	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyComeAgain, MSGBOX_DEFAULT
+	releaseall
+	end
+
+	.align 2
+FallarborTown_StoneGuy_Mart:
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_NONE
+	release
+	end
+
+FallarborTown_StoneGuyHouse_Text_StoneGuyHello:
+	.string "Hello! I'm the Stone Guy! I am\n"
+	.string "obsessed with evolution, so I\l"
+	.string "collected a ton of evolutionary\l"
+	.string "stones!$"
+
+FallarborTown_StoneGuyHouse_Text_StoneGuyNotSetUp:
+	.string "I need to sort through my collection,\n"
+	.string "but once I'm done I'd be happy to\l"
+	.string "sell you some of my excess.\p"
+	.string "I bet I'll be done by the time you\n"
+	.string "earn your 4th GYM BADGE.$"
+
+FallarborTown_StoneGuyHouse_Text_StoneGuyLookAtWares:
+	.string "Take a look at my collection! If you\n"
+	.string "see one you want, I'll sell it to you!$"
+
+FallarborTown_StoneGuyHouse_Text_StoneGuyComeAgain:
+	.string "Come back again!$"
+
+
+
+
 FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 	lockall
 	applymovement LOCALID_MOVE_RELEARNER, Common_Movement_FacePlayer
@@ -96,4 +152,5 @@ FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale:
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
 	.string "Hunh? There isn't a single move that\n"
 	.string "I can teach an EGG.$"
+
 

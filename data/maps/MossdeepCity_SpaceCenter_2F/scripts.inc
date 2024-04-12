@@ -265,6 +265,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DoStevenMultiBattle::
 	waitstate
 
 MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
+	setvar VAR_LEVEL_CAP, 88
 	msgbox MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -432,7 +433,7 @@ MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 	.string "we'll take care of you at the same time!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "MAXIE: Clear out of the way!\n"
+	.string "GAVIN: Clear out of the way!\n"
 	.string "Don't you dare interfere!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
@@ -441,7 +442,7 @@ MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
 	.string "fuel?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "MAXIE: Fufufu… Since you're so\n"
+	.string "GAVIN: Fufufu… Since you're so\n"
 	.string "curious, you deserve an explanation.\p"
 	.string "We're going to jettison the entire\n"
 	.string "load into MT. CHIMNEY!\p"
@@ -469,7 +470,7 @@ MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "MAXIE: We failed to make the volcano\n"
+	.string "GAVIN: We failed to make the volcano\n"
 	.string "erupt…\p"
 	.string "We failed to control GROUDON after\n"
 	.string "we had awoken it…\p"
@@ -484,7 +485,7 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
 	.string "the sea also be equally misguided?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "MAXIE: All right…\n"
+	.string "GAVIN: All right…\n"
 	.string "We will give up on the fuel…\p"
 	.string "There appear to be more important\n"
 	.string "matters that I must examine…$"

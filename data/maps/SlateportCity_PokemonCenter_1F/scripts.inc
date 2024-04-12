@@ -1,4 +1,5 @@
 .set LOCALID_NURSE, 1
+.set LOCALID_RELEARNER, 4
 
 SlateportCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_PokemonCenter_1F_OnTransition
@@ -15,6 +16,12 @@ SlateportCity_PokemonCenter_1F_EventScript_Nurse::
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
+	release
+	end
+
+SlateportCity_PokemonCenter_1F_EventScript_Relearner::
+	setvar VAR_0x800B, LOCALID_RELEARNER
+	call Common_EventScript_CenterRelearner
 	release
 	end
 

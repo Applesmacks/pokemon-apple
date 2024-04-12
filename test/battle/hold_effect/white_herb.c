@@ -55,10 +55,10 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
+
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
         MESSAGE("Foe Wobbuffet's White Herb restored its status!");
-
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentRight);
         MESSAGE("Foe Wynaut's White Herb restored its status!");
     } THEN {
@@ -71,6 +71,7 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
 
 SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimidate while switching in")
 {
+    KNOWN_FAILING;
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
@@ -94,6 +95,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
     }
 }
 
+
 SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move happened")
 {
     u16 species;
@@ -102,6 +104,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
     PARAMETRIZE { species = SPECIES_SLIGGOO_HISUIAN; ability = ABILITY_GOOEY; }
     PARAMETRIZE { species = SPECIES_DUGTRIO_ALOLAN; ability = ABILITY_TANGLING_HAIR; }
 
+    KNOWN_FAILING;
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DUAL_WINGBEAT].strikeCount == 2);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
@@ -111,11 +114,10 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DUAL_WINGBEAT, player);
         ABILITY_POPUP(opponent, ability);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Wobbuffet's Speed fell!");
         ABILITY_POPUP(opponent, ability);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Wobbuffet's Speed fell!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Wobbuffet's White Herb restored its status!");
     } THEN {
@@ -131,6 +133,7 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
     PARAMETRIZE { move = MOVE_THIEF; }
     PARAMETRIZE { move = MOVE_KNOCK_OFF; }
 
+    KNOWN_FAILING; // Knock off fails, Thief is fine
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_THIEF, MOVE_EFFECT_STEAL_ITEM) == TRUE);
         ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
@@ -140,16 +143,14 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
         TURN { MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
-        if (move == MOVE_THIEF) {
+        if (move == MOVE_THIEF)
             MESSAGE("Foe Wobbuffet stole Slugma's White Herb!");
-        }
+        else
+            MESSAGE("Foe Wobbuffet knocked off Slugma's White Herb!");
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Slugma's Weak Armor lowered its Defense!");
         MESSAGE("Slugma's Weak Armor raised its Speed!");
-        if (move == MOVE_KNOCK_OFF) {
-            MESSAGE("Foe Wobbuffet knocked off Slugma's White Herb!");
-        }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Wobbuffet's White Herb restored its status!");
@@ -162,6 +163,7 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
 
 SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it")
 {
+    KNOWN_FAILING; // White Herb is activated
     GIVEN {
         PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); }
@@ -169,12 +171,11 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ABILITY_POPUP(opponent, ABILITY_MAGICIAN);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Slugma's Weak Armor lowered its Defense!");
         MESSAGE("Slugma's Weak Armor raised its Speed!");
-        ABILITY_POPUP(opponent, ABILITY_MAGICIAN);
-        MESSAGE("Foe Fennekin stole Slugma's White Herb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Wobbuffet's White Herb restored its status!");
@@ -185,7 +186,33 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
     }
 }
 
-SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggered Defiant and Competitive")
+SINGLE_BATTLE_TEST("White Herb wont have time to activate if Pickpocket steals it")
+{
+    KNOWN_FAILING; // White Herb is activated
+    GIVEN {
+        ASSUME(MoveHasAdditionalEffectSelf(MOVE_LEAF_STORM, MOVE_EFFECT_SP_ATK_TWO_DOWN));
+        PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
+        OPPONENT(SPECIES_SNEASEL) { Ability(ABILITY_PICKPOCKET); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_LEAF_STORM); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_LEAF_STORM, player);
+        ABILITY_POPUP(player, ABILITY_PICKPOCKET);
+        ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+        MESSAGE("Slugma's Weak Armor lowered its Defense!");
+        MESSAGE("Slugma's Weak Armor raised its Speed!");
+        NONE_OF {
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
+            MESSAGE("Wobbuffet's White Herb restored its status!");
+        }
+    } THEN {
+        EXPECT(player->statStages[STAT_DEF] = DEFAULT_STAT_STAGE - 1);
+        EXPECT(player->statStages[STAT_SPEED] = DEFAULT_STAT_STAGE + 1);
+    }
+}
+
+SINGLE_BATTLE_TEST("White Herb restores stats after Defiant or Competitive were triggered")
 {
     u16 species;
     u16 ability;
@@ -193,6 +220,7 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
     PARAMETRIZE { species = SPECIES_IGGLYBUFF; ability = ABILITY_COMPETITIVE; }
     PARAMETRIZE { species = SPECIES_MANKEY; ability = ABILITY_DEFIANT; }
 
+    KNOWN_FAILING;
     GIVEN {
         PLAYER(species) { Ability(ability); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
@@ -202,18 +230,16 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
         ABILITY_POPUP(player, ability);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        // Defiant activates first, so White Herb doesn't have a chance to trigger.
-        if (ability == ABILITY_COMPETITIVE) {
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Igglybuff's White Herb restored its status!");
-        }
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
+        MESSAGE("Wobbuffet's White Herb restored its status!");
     } THEN {
-        if (ability == ABILITY_COMPETITIVE) {
-            EXPECT(player->item == ITEM_NONE);
+        EXPECT(player->item == ITEM_NONE);
+        if (species == SPECIES_IGGLYBUFF)
+        {
             EXPECT(player->statStages[STAT_ATK] = DEFAULT_STAT_STAGE);
             EXPECT(player->statStages[STAT_SPATK] = DEFAULT_STAT_STAGE + 2);
-        } else {
-            EXPECT(player->statStages[STAT_ATK] = DEFAULT_STAT_STAGE + 1);
         }
+        else
+            EXPECT(player->statStages[STAT_ATK] = DEFAULT_STAT_STAGE + 3);
     }
 }

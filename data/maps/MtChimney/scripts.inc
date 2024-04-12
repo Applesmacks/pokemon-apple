@@ -51,6 +51,7 @@ MtChimney_EventScript_Maxie::
 	waitmovement 0
 	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	setvar VAR_LEVEL_CAP, 50
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -544,11 +545,11 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 	.string "Fufufu…$"
 
 MtChimney_Text_MaxieIntro:
-	.string "MAXIE: Hm?\n"
+	.string "GAVIN: Hm?\n"
 	.string "Who are you?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "I'd heard ARCHIE bemoaning a child\n"
+	.string "I'd heard HUNTER bemoaning a child\n"
 	.string "who's been meddling in TEAM AQUA's\l"
 	.string "affairs.\p"
 	.string "It must be you he meant.\p"
@@ -572,11 +573,11 @@ MtChimney_Text_MaxieIntro:
 	.string "meddling in our grand design!$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "What?!\p"
-	.string "I, MAXIE, was caught off guard?!$"
+	.string "...\p"
+	.string "Trash.$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "MAXIE: But, enough.\n"
+	.string "GAVIN: But, enough.\n"
 	.string "I will back off this time.\p"
 	.string "But don't think that this is the last\n"
 	.string "you've seen of TEAM MAGMA.\p"
@@ -659,7 +660,7 @@ MtChimney_Text_Bufoh:
 	.string "Bufoh!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "ARCHIE: Grr, {PLAYER}!\n"
+	.string "HUNTER: Grr, {PLAYER}!\n"
 	.string "I should've guessed you'd show up!\p"
 	.string "See for yourself what the fanatics\n"
 	.string "of TEAM MAGMA are up to!\p"
@@ -669,14 +670,14 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "the volcano's eruption!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "ARCHIE: Grrr…\p"
-	.string "I want to stop that MAXIE,\n"
+	.string "HUNTER: Grrr…\p"
+	.string "I want to stop that GAVIN,\n"
 	.string "but I can't!\p"
 	.string "Not when I have my hands full battling\n"
 	.string "three opponents at once!$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "ARCHIE: {PLAYER}!\n"
+	.string "HUNTER: {PLAYER}!\n"
 	.string "Thank you!\p"
 	.string "With your help, we thwarted TEAM\n"
 	.string "MAGMA's destructive plan!\p"

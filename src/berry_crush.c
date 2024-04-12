@@ -1373,6 +1373,7 @@ static void CreateBerrySprites(struct BerryCrushGame *game, struct BerryCrushGam
     u8 spriteId;
     s16 distance, var1;
     s16 *data;
+    s32 amplitude;
     s16 speed;
     u32 var2;
 
@@ -1394,7 +1395,11 @@ static void CreateBerrySprites(struct BerryCrushGame *game, struct BerryCrushGam
         sYAccel = 32;
         sBitfield = 112; // Setting bits in MASK_TARGET_Y
         distance = gfx->playerCoords[i]->berryXDest - gfx->playerCoords[i]->berryXOffset;
-        sAmplitude = distance / 4;
+        amplitude = distance;
+        if (distance < 0)
+            amplitude += 3;
+
+        sAmplitude = amplitude >> 2;
         distance *= 128;
         var2 = speed + 32;
         var2 = var2 / 2;

@@ -421,6 +421,7 @@ MtPyre_Summit_EventScript_Grunt2::
 
 MtPyre_Summit_EventScript_Grunt3::
 	trainerbattle_single TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
+	setvar VAR_LEVEL_CAP, 73
 	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -482,18 +483,18 @@ MtPyre_Summit_Text_Grunt4Intro:
 	.string "join our TEAM AQUA!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+	.string "I'm still not letting you join\n"
+	.string "TEAM AQUA…$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "We have a great combination going\n"
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
+	.string "HUNTER: TEAM MAGMA's GAVIN got ahead\n"
 	.string "of us, but we also got what we wanted.\p"
 	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "I, HUNTER, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
@@ -592,7 +593,7 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
+	.string "GAVIN: {PLAYER}…\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 
