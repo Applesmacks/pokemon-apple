@@ -225,12 +225,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_LITTEN
     [SPECIES_LITTEN] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 65,
+        .baseHP        = 55,
+        .baseAttack    = 75,
         .baseDefense   = 40,
         .baseSpeed     = 70,
         .baseSpAttack  = 60,
-        .baseSpDefense = 40,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 255,
         .expYield = 64,
@@ -278,12 +278,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_TORRACAT] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 85,
+        .baseHP        = 75,
+        .baseAttack    = 95,
         .baseDefense   = 50,
         .baseSpeed     = 90,
         .baseSpAttack  = 80,
-        .baseSpDefense = 50,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 255,
         .expYield = 147,
@@ -385,12 +385,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_POPPLIO
     [SPECIES_POPPLIO] =
     {
-        .baseHP        = 50,
+        .baseHP        = 60,
         .baseAttack    = 54,
         .baseDefense   = 54,
         .baseSpeed     = 40,
-        .baseSpAttack  = 66,
-        .baseSpDefense = 56,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 66,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 64,
@@ -438,12 +438,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_BRIONNE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 69,
         .baseDefense   = 69,
         .baseSpeed     = 50,
-        .baseSpAttack  = 91,
-        .baseSpDefense = 81,
+        .baseSpAttack  = 101,
+        .baseSpDefense = 91,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 147,
@@ -2160,12 +2160,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_DEWPIDER
     [SPECIES_DEWPIDER] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 40,
-        .baseDefense   = 52,
+        .baseHP        = 48,
+        .baseAttack    = 60,
+        .baseDefense   = 62,
         .baseSpeed     = 27,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 72,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 82,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 255,
         .expYield = 54,
@@ -2215,12 +2215,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ARAQUANID] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 70,
-        .baseDefense   = 92,
+        .baseHP        = 78,
+        .baseAttack    = 90,
+        .baseDefense   = 102,
         .baseSpeed     = 42,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 132,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 142,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 255,
         .expYield = 159,

@@ -40677,7 +40677,8 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURING_VOICE"
+      "MOVE_ALLURING_VOICE",
+      "MOVE_MOONBLAST"
     ],
     "EggMoves": [
       "MOVE_AGILITY",

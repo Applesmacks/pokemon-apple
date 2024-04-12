@@ -327,10 +327,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_FROAKIE] =
     {
         .baseHP        = 41,
-        .baseAttack    = 56,
+        .baseAttack    = 66,
         .baseDefense   = 40,
-        .baseSpeed     = 71,
-        .baseSpAttack  = 62,
+        .baseSpeed     = 81,
+        .baseSpAttack  = 72,
         .baseSpDefense = 44,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
@@ -380,10 +380,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_FROGADIER] =
     {
         .baseHP        = 54,
-        .baseAttack    = 63,
+        .baseAttack    = 73,
         .baseDefense   = 52,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 83,
+        .baseSpeed     = 107,
+        .baseSpAttack  = 93,
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
@@ -590,12 +590,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_BUNNELBY
     [SPECIES_BUNNELBY] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 36,
-        .baseDefense   = 38,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 32,
-        .baseSpDefense = 36,
+        .baseHP        = 65,
+        .baseAttack    = 46,
+        .baseDefense   = 48,
+        .baseSpeed     = 67,
+        .baseSpAttack  = 42,
+        .baseSpDefense = 46,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 47,
@@ -643,11 +643,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_DIGGERSBY] =
     {
-        .baseHP        = 105,
+        .baseHP        = 107,
         .baseAttack    = 66,
         .baseDefense   = 87,
         .baseSpeed     = 88,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 87,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
         .catchRate = 255,
@@ -697,8 +697,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_FLETCHLING
     [SPECIES_FLETCHLING] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
+        .baseHP        = 55,
+        .baseAttack    = 70,
         .baseDefense   = 43,
         .baseSpeed     = 62,
         .baseSpAttack  = 40,
@@ -712,7 +712,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_GALE_WINGS, ABILITY_GALE_WINGS },
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_GALE_WINGS, ABILITY_GALE_WINGS },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Fletchling"),
         .cryId = CRY_FLETCHLING,
@@ -750,8 +750,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_FLETCHINDER] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 73,
+        .baseHP        = 72,
+        .baseAttack    = 93,
         .baseDefense   = 55,
         .baseSpeed     = 84,
         .baseSpAttack  = 56,
@@ -1235,11 +1235,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_LITLEO
     [SPECIES_LITLEO] =
     {
-        .baseHP        = 62,
+        .baseHP        = 72,
         .baseAttack    = 50,
         .baseDefense   = 58,
         .baseSpeed     = 72,
-        .baseSpAttack  = 73,
+        .baseSpAttack  = 83,
         .baseSpDefense = 54,
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .catchRate = 255,
@@ -1288,11 +1288,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_PYROAR] =
     {
-        .baseHP        = 86,
+        .baseHP        = 96,
         .baseAttack    = 68,
         .baseDefense   = 72,
         .baseSpeed     = 106,
-        .baseSpAttack  = 109,
+        .baseSpAttack  = 119,
         .baseSpDefense = 66,
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .catchRate = 255,

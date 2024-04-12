@@ -8,15 +8,16 @@
           "type": "land_mons",
           "encounter_rates": [
             10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
           ]
         },
         {
@@ -45,15 +46,16 @@
           "type": "fishing_mons",
           "encounter_rates": [
             10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10,
-            10
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
           ],
           "groups": {
             "super_rod": [
@@ -66,7 +68,8 @@
               6,
               7,
               8,
-              9
+              9,
+              10
             ]
           }
         }
@@ -116,7 +119,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_MINCCINO"
+                "species": "SPECIES_LECHONK"
               },
               {
                 "min_level": 2,
@@ -131,7 +134,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_LECHONK"
+                "species": "SPECIES_SKWOVET"
               }
             ]
           }
@@ -188,14 +191,14 @@
                 "species": "SPECIES_FIDOUGH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SEEDOT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SPINARAK"
               }
             ]
           },
@@ -250,12 +253,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DITTO"
               }
             ]
           }
@@ -312,14 +315,14 @@
                 "species": "SPECIES_MEOWTH_ALOLAN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_MINCCINO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_HOPPIP"
               }
             ]
           },
@@ -374,12 +377,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_DITTO"
               }
             ]
           }
@@ -436,9 +439,9 @@
                 "species": "SPECIES_TEDDIURSA"
               },
               {
-                "min_level": 5,
+                "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_RATTATA_ALOLAN"
               },
               {
                 "min_level": 5,
@@ -1504,9 +1507,9 @@
                 "species": "SPECIES_WOOBAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 11,
+                "max_level": 13,
+                "species": "SPECIES_ROLYCOLY"
               },
               {
                 "min_level": 5,
@@ -2090,9 +2093,9 @@
                 "species": "SPECIES_BRONZOR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 31,
+                "max_level": 33,
+                "species": "SPECIES_GROWLITHE_HISUIAN"
               },
               {
                 "min_level": 5,
@@ -10360,14 +10363,14 @@
                 "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_CAPSAKID"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_LITLEO"
               }
             ]
           }
@@ -10424,14 +10427,14 @@
                 "species": "SPECIES_DEWPIDER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_CHEWTLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_PSYDUCK"
               }
             ]
           }
@@ -10488,9 +10491,9 @@
                 "species": "SPECIES_SINISTEA"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 5,
