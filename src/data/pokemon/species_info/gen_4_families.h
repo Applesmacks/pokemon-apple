@@ -2662,10 +2662,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_GLAMEOW
     [SPECIES_GLAMEOW] =
     {
-        .baseHP        = 49,
-        .baseAttack    = 55,
-        .baseDefense   = 42,
-        .baseSpeed     = 85,
+        .baseHP        = 59,
+        .baseAttack    = 75,
+        .baseDefense   = 62,
+        .baseSpeed     = 95,
         .baseSpAttack  = 42,
         .baseSpDefense = 37,
         .types = MON_TYPES(TYPE_NORMAL),
@@ -2677,7 +2677,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIMBER, ABILITY_OWN_TEMPO, ABILITY_KEEN_EYE },
+        .abilities = { ABILITY_THICK_FAT, ABILITY_DEFIANT, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Glameow"),
         .cryId = CRY_GLAMEOW,

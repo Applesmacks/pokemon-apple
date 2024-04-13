@@ -873,11 +873,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_PURRLOIN
     [SPECIES_PURRLOIN] =
     {
-        .baseHP        = 41,
-        .baseAttack    = 50,
+        .baseHP        = 51,
+        .baseAttack    = 70,
         .baseDefense   = 37,
-        .baseSpeed     = 66,
-        .baseSpAttack  = 50,
+        .baseSpeed     = 76,
+        .baseSpAttack  = 70,
         .baseSpDefense = 37,
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 255,
@@ -927,10 +927,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_LIEPARD] =
     {
         .baseHP        = 74,
-        .baseAttack    = 98,
+        .baseAttack    = 108,
         .baseDefense   = 50,
         .baseSpeed     = 116,
-        .baseSpAttack  = 98,
+        .baseSpAttack  = 108,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 255,

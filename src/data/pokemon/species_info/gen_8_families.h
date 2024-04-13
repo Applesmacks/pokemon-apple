@@ -1696,10 +1696,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_YAMPER] =
     {
         .baseHP        = 59,
-        .baseAttack    = 45,
+        .baseAttack    = 55,
         .baseDefense   = 50,
-        .baseSpeed     = 26,
-        .baseSpAttack  = 40,
+        .baseSpeed     = 36,
+        .baseSpAttack  = 50,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
