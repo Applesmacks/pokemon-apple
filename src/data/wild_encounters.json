@@ -444,9 +444,9 @@
                 "species": "SPECIES_RATTATA_ALOLAN"
               },
               {
-                "min_level": 5,
+                "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_ODDISH"
               }
             ]
           },
@@ -1415,7 +1415,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_DEERLING"
+                "species": "SPECIES_DEERLING_AUTUMN"
               },
               {
                 "min_level": 4,
@@ -1443,14 +1443,14 @@
                 "species": "SPECIES_SLAKOTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_CATERPIE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 7,
+                "species": "SPECIES_SCATTERBUG"
               }
             ]
           }
@@ -10496,9 +10496,9 @@
                 "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_SNUBBULL"
               }
             ]
           }
