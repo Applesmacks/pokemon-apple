@@ -1086,3 +1086,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ArchiveOfLegends_5/scripts.inc"
 
 	.include "data/maps/ArchiveOfLegends_6/scripts.inc"
+
+	.include "data/maps/LegendChallengeLobby/scripts.inc"

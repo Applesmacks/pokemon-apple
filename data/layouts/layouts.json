@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ArchiveOfLegends_6/border.bin",
       "blockdata_filepath": "data/layouts/ArchiveOfLegends_6/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGEND_CHALLENGE_LOBBY",
+      "name": "LegendChallengeLobby_Layout",
+      "width": 33,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/LegendChallengeLobby/border.bin",
+      "blockdata_filepath": "data/layouts/LegendChallengeLobby/map.bin"
     }
   ]
 }

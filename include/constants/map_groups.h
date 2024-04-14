@@ -407,6 +407,7 @@
 #define MAP_ARCHIVE_OF_LEGENDS4                      (112 | (24 << 8))
 #define MAP_ARCHIVE_OF_LEGENDS_5                     (113 | (24 << 8))
 #define MAP_ARCHIVE_OF_LEGENDS_6                     (114 | (24 << 8))
+#define MAP_LEGEND_CHALLENGE_LOBBY                   (115 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
