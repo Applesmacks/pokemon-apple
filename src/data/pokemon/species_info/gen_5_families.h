@@ -3558,11 +3558,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SANDILE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 72,
-        .baseDefense   = 35,
+        .baseAttack    = 82,
+        .baseDefense   = 45,
         .baseSpeed     = 65,
         .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
         .catchRate = 255,
         .expYield = 58,
@@ -3612,11 +3612,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_KROKOROK] =
     {
         .baseHP        = 60,
-        .baseAttack    = 82,
-        .baseDefense   = 45,
+        .baseAttack    = 92,
+        .baseDefense   = 55,
         .baseSpeed     = 74,
         .baseSpAttack  = 45,
-        .baseSpDefense = 45,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
         .catchRate = 255,
         .expYield = 123,
@@ -4220,8 +4220,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_SCRAGGY
     [SPECIES_SCRAGGY] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 75,
+        .baseHP        = 70,
+        .baseAttack    = 85,
         .baseDefense   = 70,
         .baseSpeed     = 48,
         .baseSpAttack  = 35,
@@ -6621,12 +6621,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_FRILLISH
     [SPECIES_FRILLISH] =
     {
-        .baseHP        = 55,
+        .baseHP        = 65,
         .baseAttack    = 40,
         .baseDefense   = 50,
         .baseSpeed     = 40,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 85,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
         .catchRate = 255,
         .expYield = 67,
@@ -7345,12 +7345,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_ELGYEM
     [SPECIES_ELGYEM] =
     {
-        .baseHP        = 55,
+        .baseHP        = 75,
         .baseAttack    = 55,
         .baseDefense   = 55,
         .baseSpeed     = 30,
         .baseSpAttack  = 85,
-        .baseSpDefense = 55,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 67,

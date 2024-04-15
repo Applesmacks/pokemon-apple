@@ -1307,12 +1307,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_NATU
     [SPECIES_NATU] =
     {
-        .baseHP        = 40,
+        .baseHP        = 50,
         .baseAttack    = 50,
-        .baseDefense   = 45,
+        .baseDefense   = 55,
         .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 45,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 64 : 73,
@@ -1322,7 +1322,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_EARLY_BIRD, ABILITY_MAGIC_BOUNCE },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Natu"),
         .cryId = CRY_NATU,
@@ -1361,12 +1361,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_XATU] =
     {
-        .baseHP        = 65,
+        .baseHP        = 75,
         .baseAttack    = 75,
-        .baseDefense   = 70,
+        .baseDefense   = 80,
         .baseSpeed     = 95,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 165 : 171,
@@ -1377,7 +1377,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_EARLY_BIRD, ABILITY_MAGIC_BOUNCE },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Xatu"),
         .cryId = CRY_XATU,
@@ -2115,11 +2115,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_AIPOM
     [SPECIES_AIPOM] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 70,
+        .baseHP        = 75,
+        .baseAttack    = 80,
         .baseDefense   = 55,
         .baseSpeed     = 85,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 50,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
@@ -2173,11 +2173,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_AMBIPOM] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 100,
+        .baseHP        = 95,
+        .baseAttack    = 110,
         .baseDefense   = 66,
         .baseSpeed     = 115,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 70,
         .baseSpDefense = 66,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
@@ -4758,7 +4758,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Piloswine)
         .levelUpLearnset = sPiloswineLevelUpLearnset,
         .teachableLearnset = sPiloswineTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 51, SPECIES_MAMOSWINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_MAMOSWINE}),
     },
 
 #if P_GEN_4_CROSS_EVOS

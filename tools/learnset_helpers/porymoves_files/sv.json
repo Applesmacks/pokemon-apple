@@ -65768,7 +65768,9 @@
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_SCALD",
+      "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -65886,7 +65888,9 @@
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_SCALD",
+      "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",

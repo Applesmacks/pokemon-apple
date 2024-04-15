@@ -1353,7 +1353,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 42,                                                    \
         .baseSpAttack  = 61,                                                    \
         .baseSpDefense = 79,                                                    \
-        .types = MON_TYPES(TYPE_FAIRY),                                         \
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GRASS),                                         \
         .catchRate = 255,                                                       \
         .expYield = 61,                                                         \
         .evYield_SpDefense = 1,                                                 \
@@ -1441,7 +1441,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 
 #define FLOETTE_MISC_INFO(form, FORM, iconPal)                                  \
-        .types = MON_TYPES(TYPE_FAIRY),                                         \
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GRASS),                                         \
         .catchRate = 255,                                                       \
         .evYield_SpDefense = 2,                                                 \
         .genderRatio = MON_FEMALE,                                              \
@@ -1571,7 +1571,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 75,                                                    \
         .baseSpAttack  = 112,                                                   \
         .baseSpDefense = 154,                                                   \
-        .types = MON_TYPES(TYPE_FAIRY),                                         \
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GRASS),                                         \
         .catchRate = 255,                                                        \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 276 : 248,                \
         .evYield_SpDefense = 3,                                                 \
@@ -2654,8 +2654,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_BINACLE
     [SPECIES_BINACLE] =
     {
-        .baseHP        = 42,
-        .baseAttack    = 52,
+        .baseHP        = 52,
+        .baseAttack    = 62,
         .baseDefense   = 67,
         .baseSpeed     = 50,
         .baseSpAttack  = 39,
@@ -2707,8 +2707,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_BARBARACLE] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 105,
+        .baseHP        = 82,
+        .baseAttack    = 115,
         .baseDefense   = 115,
         .baseSpeed     = 68,
         .baseSpAttack  = 54,
@@ -2766,8 +2766,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseAttack    = 60,
         .baseDefense   = 60,
         .baseSpeed     = 30,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_POISON, TYPE_WATER),
         .catchRate = 255,
         .expYield = 64,
@@ -2871,9 +2871,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     {
         .baseHP        = 50,
         .baseAttack    = 53,
-        .baseDefense   = 62,
+        .baseDefense   = 82,
         .baseSpeed     = 44,
-        .baseSpAttack  = 58,
+        .baseSpAttack  = 68,
         .baseSpDefense = 63,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,

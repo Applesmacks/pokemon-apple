@@ -2542,7 +2542,7 @@
               {
                 "min_level": 20,
                 "max_level": 22,
-                "species": "SPECIES_KLEFKI"
+                "species": "SPECIES_SLOWPOKE_GALARIAN"
               }
             ]
           },
@@ -2715,7 +2715,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_TYNAMO"
+                "species": "SPECIES_KLEFKI"
               },
               {
                 "min_level": 45,
@@ -5966,7 +5966,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_TYNAMO"
+                "species": "SPECIES_KLEFKI"
               },
               {
                 "min_level": 45,
