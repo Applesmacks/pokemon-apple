@@ -1761,14 +1761,14 @@
                 "species": "SPECIES_WHIMSICOTT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_AVALUGG"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_WEEZING"
               }
             ]
           }

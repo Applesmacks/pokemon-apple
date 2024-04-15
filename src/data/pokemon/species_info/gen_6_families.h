@@ -1875,12 +1875,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_FURFROU
 #define FURFROU_MISC_INFO(_form, _noFlip, frontWidth, frontYOffset, backWidth, backYOffset, _iconIdx)   \
     {                                                                                                   \
-        .baseHP        = 75,                                                                            \
-        .baseAttack    = 80,                                                                            \
-        .baseDefense   = 60,                                                                            \
+        .baseHP        = 95,                                                                            \
+        .baseAttack    = 100,                                                                            \
+        .baseDefense   = 80,                                                                            \
         .baseSpeed     = 102,                                                                           \
         .baseSpAttack  = 65,                                                                            \
-        .baseSpDefense = 90,                                                                            \
+        .baseSpDefense = 110,                                                                            \
         .types = MON_TYPES(TYPE_NORMAL),                                                                \
         .catchRate = 255,                                                                               \
         .expYield = 165,                                                                                \
@@ -2546,10 +2546,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_INKAY
     [SPECIES_INKAY] =
     {
-        .baseHP        = 53,
-        .baseAttack    = 54,
+        .baseHP        = 63,
+        .baseAttack    = 74,
         .baseDefense   = 53,
-        .baseSpeed     = 45,
+        .baseSpeed     = 55,
         .baseSpAttack  = 37,
         .baseSpDefense = 46,
         .types = MON_TYPES(TYPE_DARK, TYPE_PSYCHIC),
@@ -2978,12 +2978,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_HELIOPTILE
     [SPECIES_HELIOPTILE] =
     {
-        .baseHP        = 44,
+        .baseHP        = 64,
         .baseAttack    = 38,
         .baseDefense   = 33,
         .baseSpeed     = 70,
-        .baseSpAttack  = 61,
-        .baseSpDefense = 43,
+        .baseSpAttack  = 81,
+        .baseSpDefense = 63,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 58,
@@ -2993,7 +2993,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_DRY_SKIN, ABILITY_SAND_VEIL, ABILITY_SOLAR_POWER },
+        .abilities = { ABILITY_DRY_SKIN, ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Helioptile"),
         .cryId = CRY_HELIOPTILE,
@@ -3026,17 +3026,17 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Helioptile)
         .levelUpLearnset = sHelioptileLevelUpLearnset,
         .teachableLearnset = sHelioptileTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_HELIOLISK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_HELIOLISK}),
     },
 
     [SPECIES_HELIOLISK] =
     {
-        .baseHP        = 62,
+        .baseHP        = 82,
         .baseAttack    = 55,
         .baseDefense   = 52,
         .baseSpeed     = 109,
-        .baseSpAttack  = 109,
-        .baseSpDefense = 94,
+        .baseSpAttack  = 129,
+        .baseSpDefense = 114,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 168,
@@ -3047,7 +3047,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_DRY_SKIN, ABILITY_SAND_VEIL, ABILITY_SOLAR_POWER },
+        .abilities = { ABILITY_DRY_SKIN, ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Heliolisk"),
         .cryId = CRY_HELIOLISK,
@@ -4352,7 +4352,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_BERGMITE] =
     {
         .baseHP        = 55,
-        .baseAttack    = 69,
+        .baseAttack    = 79,
         .baseDefense   = 85,
         .baseSpeed     = 28,
         .baseSpAttack  = 32,
@@ -4399,14 +4399,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Bergmite)
         .levelUpLearnset = sBergmiteLevelUpLearnset,
         .teachableLearnset = sBergmiteTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AVALUGG},
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AVALUGG_HISUIAN},
                                 {EVO_NONE, 0, SPECIES_AVALUGG_HISUIAN}),
     },
 
     [SPECIES_AVALUGG] =
     {
         .baseHP        = 95,
-        .baseAttack    = 117,
+        .baseAttack    = 127,
         .baseDefense   = 184,
         .baseSpeed     = 28,
         .baseSpAttack  = 44,
@@ -4460,7 +4460,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_AVALUGG_HISUIAN] =
     {
         .baseHP        = 95,
-        .baseAttack    = 127,
+        .baseAttack    = 137,
         .baseDefense   = 184,
         .baseSpeed     = 38,
         .baseSpAttack  = 34,

@@ -546,9 +546,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_PIKIPEK] =
     {
         .baseHP        = 35,
-        .baseAttack    = 75,
-        .baseDefense   = 30,
-        .baseSpeed     = 65,
+        .baseAttack    = 90,
+        .baseDefense   = 45,
+        .baseSpeed     = 80,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
@@ -600,9 +600,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_TRUMBEAK] =
     {
         .baseHP        = 55,
-        .baseAttack    = 85,
-        .baseDefense   = 50,
-        .baseSpeed     = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 65,
+        .baseSpeed     = 90,
         .baseSpAttack  = 40,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
@@ -654,8 +654,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_TOUCANNON] =
     {
         .baseHP        = 80,
-        .baseAttack    = 120,
-        .baseDefense   = 75,
+        .baseAttack    = 135,
+        .baseDefense   = 90,
         .baseSpeed     = 75,
         .baseSpAttack  = 75,
         .baseSpDefense = 75,
@@ -1076,12 +1076,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_CRABRAWLER
     [SPECIES_CRABRAWLER] =
     {
-        .baseHP        = 47,
-        .baseAttack    = 82,
-        .baseDefense   = 57,
+        .baseHP        = 67,
+        .baseAttack    = 92,
+        .baseDefense   = 67,
         .baseSpeed     = 63,
         .baseSpAttack  = 42,
-        .baseSpDefense = 47,
+        .baseSpDefense = 57,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = 68,
@@ -1125,18 +1125,17 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Crabrawler)
         .levelUpLearnset = sCrabrawlerLevelUpLearnset,
         .teachableLearnset = sCrabrawlerTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_CRABOMINABLE},
-                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_CRABOMINABLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CRABOMINABLE}),
     },
 
     [SPECIES_CRABOMINABLE] =
     {
-        .baseHP        = 97,
-        .baseAttack    = 132,
-        .baseDefense   = 77,
+        .baseHP        = 117,
+        .baseAttack    = 142,
+        .baseDefense   = 87,
         .baseSpeed     = 43,
         .baseSpAttack  = 62,
-        .baseSpDefense = 67,
+        .baseSpDefense = 77,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ICE),
         .catchRate = 255,
         .expYield = 167,
@@ -1944,10 +1943,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {
         .baseHP        = 50,
         .baseAttack    = 53,
-        .baseDefense   = 62,
+        .baseDefense   = 72,
         .baseSpeed     = 45,
         .baseSpAttack  = 43,
-        .baseSpDefense = 52,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_POISON, TYPE_WATER),
         .catchRate = 255,
         .expYield = 61,
@@ -2319,12 +2318,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_FOMANTIS] =
     {
         .baseHP        = 40,
-        .baseAttack    = 55,
-        .baseDefense   = 35,
+        .baseAttack    = 75,
+        .baseDefense   = 45,
         .baseSpeed     = 35,
         .baseSpAttack  = 50,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_GRASS),
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_BUG),
         .catchRate = 255,
         .expYield = 50,
         .evYield_Attack = 1,
@@ -2379,7 +2378,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 80,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_GRASS),
+        .types = MON_TYPES(TYPE_GRASS, TYPE_BUG),
         .catchRate = 255,
         .expYield = 168,
         .evYield_Attack = 2,

@@ -755,9 +755,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_NYMBLE] =
     {
         .baseHP        = 33,
-        .baseAttack    = 46,
-        .baseDefense   = 40,
-        .baseSpeed     = 45,
+        .baseAttack    = 66,
+        .baseDefense   = 60,
+        .baseSpeed     = 65,
         .baseSpAttack  = 21,
         .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_BUG),
@@ -1663,9 +1663,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_NACLI
     [SPECIES_NACLI] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 55,
-        .baseDefense   = 75,
+        .baseHP        = 65,
+        .baseAttack    = 65,
+        .baseDefense   = 85,
         .baseSpeed     = 25,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
@@ -1716,9 +1716,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_NACLSTACK] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 100,
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 110,
         .baseSpeed     = 35,
         .baseSpAttack  = 35,
         .baseSpDefense = 65,
@@ -1769,9 +1769,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_GARGANACL] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 100,
-        .baseDefense   = 130,
+        .baseHP        = 110,
+        .baseAttack    = 110,
+        .baseDefense   = 140,
         .baseSpeed     = 35,
         .baseSpAttack  = 45,
         .baseSpDefense = 90,
@@ -2631,7 +2631,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseDefense   = 135,
         .baseSpeed     = 75,
         .baseSpAttack  = 35,
-        .baseSpDefense = 55,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 255,
         .expYield = 158,
@@ -3161,12 +3161,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_WIGLETT
     [SPECIES_WIGLETT] =
     {
-        .baseHP        = 10,
-        .baseAttack    = 55,
-        .baseDefense   = 25,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 25,
+        .baseHP        = 20,
+        .baseAttack    = 85,
+        .baseDefense   = 35,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 49,
@@ -3176,7 +3176,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_GOOEY, ABILITY_RATTLED, ABILITY_SAND_VEIL },
+        .abilities = { ABILITY_GOOEY, ABILITY_SAND_VEIL, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Wiglett"),
         .cryId = CRY_WIGLETT,
@@ -3213,12 +3213,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_WUGTRIO] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 100,
-        .baseDefense   = 50,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 70,
+        .baseHP        = 45,
+        .baseAttack    = 130,
+        .baseDefense   = 60,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 149,
@@ -3228,7 +3228,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_GOOEY, ABILITY_RATTLED, ABILITY_SAND_VEIL },
+        .abilities = { ABILITY_GOOEY, ABILITY_SAND_VEIL, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Wugtrio"),
         .cryId = CRY_WUGTRIO,
@@ -3321,12 +3321,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FINIZEN
     [SPECIES_FINIZEN] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 40,
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 72,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 53,
+        .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 63,
@@ -3368,7 +3368,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Finizen)
         .levelUpLearnset = sFinizenLevelUpLearnset,
         .teachableLearnset = sFinizenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PALAFIN_ZERO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_PALAFIN_ZERO}),
     },
 
     [SPECIES_PALAFIN_ZERO] =
@@ -3484,9 +3484,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_VAROOM] =
     {
         .baseHP        = 45,
-        .baseAttack    = 70,
-        .baseDefense   = 63,
-        .baseSpeed     = 47,
+        .baseAttack    = 80,
+        .baseDefense   = 73,
+        .baseSpeed     = 57,
         .baseSpAttack  = 30,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_STEEL, TYPE_POISON),
@@ -3968,8 +3968,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_CETODDLE
     [SPECIES_CETODDLE] =
     {
-        .baseHP        = 108,
-        .baseAttack    = 68,
+        .baseHP        = 118,
+        .baseAttack    = 78,
         .baseDefense   = 45,
         .baseSpeed     = 43,
         .baseSpAttack  = 30,
@@ -5217,7 +5217,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sGimmighoulLevelUpLearnset,
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_GHOLDENGO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GHOLDENGO}),
     },
 
     [SPECIES_GIMMIGHOUL_ROAMING] =
@@ -5271,7 +5271,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sGimmighoulLevelUpLearnset,
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_GHOLDENGO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GHOLDENGO}),
     },
 
     [SPECIES_GHOLDENGO] =
@@ -5883,9 +5883,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
-        .baseDefense   = 45,
+        .baseDefense   = 65,
         .baseSpeed     = 50,
-        .baseSpAttack  = 74,
+        .baseSpAttack  = 94,
         .baseSpDefense = 54,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 255,
@@ -5936,9 +5936,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
-        .baseDefense   = 45,
+        .baseDefense   = 65,
         .baseSpeed     = 50,
-        .baseSpAttack  = 74,
+        .baseSpAttack  = 94,
         .baseSpDefense = 54,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 255,

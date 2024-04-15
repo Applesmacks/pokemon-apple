@@ -9034,6 +9034,7 @@ static const u16 sGrimerTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_INFESTATION,
     MOVE_METRONOME,
+    MOVE_MUDDY_WATER,
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_PAIN_SPLIT,
@@ -9054,6 +9055,7 @@ static const u16 sGrimerTeachableLearnset[] = {
     MOVE_SLUDGE_WAVE,
     MOVE_STRENGTH,
     MOVE_SUNNY_DAY,
+    MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
@@ -9064,6 +9066,7 @@ static const u16 sGrimerTeachableLearnset[] = {
     MOVE_TORMENT,
     MOVE_TOXIC,
     MOVE_VENOSHOCK,
+    MOVE_WATERFALL,
     MOVE_ZEN_HEADBUTT,
     MOVE_BODY_SLAM,
     MOVE_DYNAMIC_PUNCH,
@@ -9116,6 +9119,7 @@ static const u16 sMukTeachableLearnset[] = {
     MOVE_LASH_OUT,
     MOVE_LUNGE,
     MOVE_METRONOME,
+    MOVE_MUDDY_WATER,
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_PAIN_SPLIT,
@@ -9138,6 +9142,7 @@ static const u16 sMukTeachableLearnset[] = {
     MOVE_SPITE,
     MOVE_STRENGTH,
     MOVE_SUNNY_DAY,
+    MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
@@ -9150,6 +9155,7 @@ static const u16 sMukTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_TOXIC_SPIKES,
     MOVE_VENOSHOCK,
+    MOVE_WATERFALL,
     MOVE_ZEN_HEADBUTT,
     MOVE_BODY_SLAM,
     MOVE_DYNAMIC_PUNCH,
@@ -12542,6 +12548,7 @@ static const u16 sKingdraTeachableLearnset[] = {
 
 #if P_FAMILY_GOLDEEN
 static const u16 sGoldeenTeachableLearnset[] = {
+    MOVE_AERIAL_ACE,
     MOVE_AGILITY,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -12599,6 +12606,7 @@ static const u16 sGoldeenTeachableLearnset[] = {
 };
 
 static const u16 sSeakingTeachableLearnset[] = {
+    MOVE_AERIAL_ACE,
     MOVE_AGILITY,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -32452,6 +32460,7 @@ static const u16 sShuppetTeachableLearnset[] = {
 };
 
 static const u16 sBanetteTeachableLearnset[] = {
+    MOVE_ACID_SPRAY,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BURNING_JEALOUSY,
@@ -32505,6 +32514,8 @@ static const u16 sBanetteTeachableLearnset[] = {
     MOVE_SKILL_SWAP,
     MOVE_SKITTER_SMACK,
     MOVE_SLEEP_TALK,
+    MOVE_SLUDGE_BOMB,
+    MOVE_SLUDGE_WAVE,
     MOVE_SNATCH,
     MOVE_SPITE,
     MOVE_SUNNY_DAY,

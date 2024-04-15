@@ -683,13 +683,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_HOOTHOOT
     [SPECIES_HOOTHOOT] =
     {
-        .baseHP        = 60,
+        .baseHP        = 80,
         .baseAttack    = 30,
         .baseDefense   = 30,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 36,
-        .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .baseSpeed     = 70,
+        .baseSpAttack  = 56,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 52 : 58,
         .evYield_HP = 1,
@@ -736,13 +736,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_NOCTOWL] =
     {
-        .baseHP        = 100,
+        .baseHP        = 120,
         .baseAttack    = 50,
         .baseDefense   = 50,
-        .baseSpeed     = 70,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 86 : 76,
-        .baseSpDefense = 96,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .baseSpeed     = 90,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 106 : 106,
+        .baseSpDefense = 116,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
         .expYield = 158,
@@ -3328,8 +3328,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_DUNSPARCE
     [SPECIES_DUNSPARCE] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 70,
+        .baseHP        = 110,
+        .baseAttack    = 80,
         .baseDefense   = 70,
         .baseSpeed     = 45,
         .baseSpAttack  = 65,
@@ -3349,7 +3349,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_DRY_SKIN, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Dunsparce"),
         .cryId = CRY_DUNSPARCE,
@@ -3383,15 +3383,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Dunsparce)
         .levelUpLearnset = sDunsparceLevelUpLearnset,
         .teachableLearnset = sDunsparceTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE_TWO_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DUDUNSPARCE_TWO_SEGMENT},
-                                {EVO_MOVE_THREE_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DUDUNSPARCE_THREE_SEGMENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DUDUNSPARCE_TWO_SEGMENT},
+                                {EVO_LEVEL, 35, SPECIES_DUDUNSPARCE_THREE_SEGMENT}),
     },
 
 #if P_GEN_9_CROSS_EVOS
     [SPECIES_DUDUNSPARCE_TWO_SEGMENT] =
     {
-        .baseHP        = 125,
-        .baseAttack    = 100,
+        .baseHP        = 135,
+        .baseAttack    = 110,
         .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 85,
@@ -3405,7 +3405,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_DRY_SKIN, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Dudunsprce"),
         .cryId = CRY_DUDUNSPARCE,
@@ -3443,8 +3443,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_DUDUNSPARCE_THREE_SEGMENT] =
     {
-        .baseHP        = 125,
-        .baseAttack    = 100,
+        .baseHP        = 135,
+        .baseAttack    = 110,
         .baseDefense   = 80,
         .baseSpeed     = 55,
         .baseSpAttack  = 85,
@@ -3458,7 +3458,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_DRY_SKIN, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Dudunsprce"),
         .cryId = CRY_DUDUNSPARCE,
@@ -4080,10 +4080,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SNEASEL
     [SPECIES_SNEASEL] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 95,
+        .baseHP        = 65,
+        .baseAttack    = 105,
         .baseDefense   = 55,
-        .baseSpeed     = 115,
+        .baseSpeed     = 125,
         .baseSpAttack  = 35,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_DARK, TYPE_ICE),
@@ -4201,10 +4201,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_HISUIAN_FORMS
     [SPECIES_SNEASEL_HISUIAN] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 95,
+        .baseHP        = 65,
+        .baseAttack    = 105,
         .baseDefense   = 55,
-        .baseSpeed     = 115,
+        .baseSpeed     = 125,
         .baseSpAttack  = 35,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_POISON),
@@ -4837,12 +4837,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_CORSOLA] =
     {
-        .baseHP        = CORSOLA_HP,
-        .baseAttack    = 55,
-        .baseDefense   = CORSOLA_DEFENSES,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 65,
-        .baseSpDefense = CORSOLA_DEFENSES,
+        .baseHP        = 85,
+        .baseAttack    = 75,
+        .baseDefense   = 115,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 255,
         .expYield = CORSOLA_EXP_YIELD,
@@ -4894,10 +4894,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CORSOLA_GALARIAN] =
     {
         .baseHP        = CORSOLA_HP - 5,
-        .baseAttack    = 55,
+        .baseAttack    = 65,
         .baseDefense   = CORSOLA_DEFENSES + 5,
         .baseSpeed     = 30,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 75,
         .baseSpDefense = CORSOLA_DEFENSES + 5,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 255,
@@ -4949,10 +4949,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CURSOLA] =
     {
         .baseHP        = 60,
-        .baseAttack    = 95,
+        .baseAttack    = 105,
         .baseDefense   = 50,
         .baseSpeed     = 30,
-        .baseSpAttack  = 145,
+        .baseSpAttack  = 155,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 255,
@@ -5004,10 +5004,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_REMORAID] =
     {
         .baseHP        = 35,
-        .baseAttack    = 65,
+        .baseAttack    = 85,
         .baseDefense   = 35,
         .baseSpeed     = 65,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
@@ -5051,7 +5051,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Remoraid)
         .levelUpLearnset = sRemoraidLevelUpLearnset,
         .teachableLearnset = sRemoraidTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_OCTILLERY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_OCTILLERY}),
     },
 
     [SPECIES_OCTILLERY] =

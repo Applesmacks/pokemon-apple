@@ -2171,12 +2171,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_SHELLOS
     [SPECIES_SHELLOS_WEST_SEA] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 48,
+        .baseHP        = 96,
+        .baseAttack    = 58,
         .baseDefense   = 48,
         .baseSpeed     = 34,
-        .baseSpAttack  = 57,
-        .baseSpDefense = 62,
+        .baseSpAttack  = 67,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 73,
@@ -2225,12 +2225,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_SHELLOS_EAST_SEA] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 48,
+        .baseHP        = 96,
+        .baseAttack    = 58,
         .baseDefense   = 48,
         .baseSpeed     = 34,
-        .baseSpAttack  = 57,
-        .baseSpDefense = 62,
+        .baseSpAttack  = 67,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 73,
@@ -2279,7 +2279,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_GASTRODON_WEST_SEA] =
     {
-        .baseHP        = 111,
+        .baseHP        = 131,
         .baseAttack    = 93,
         .baseDefense   = 68,
         .baseSpeed     = 39,
@@ -2332,7 +2332,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_GASTRODON_EAST_SEA] =
     {
-        .baseHP        = 111,
+        .baseHP        = 131,
         .baseAttack    = 93,
         .baseDefense   = 68,
         .baseSpeed     = 39,
@@ -4016,11 +4016,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_SNOVER
     [SPECIES_SNOVER] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 62,
+        .baseHP        = 70,
+        .baseAttack    = 72,
         .baseDefense   = 50,
         .baseSpeed     = 40,
-        .baseSpAttack  = 62,
+        .baseSpAttack  = 72,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
         .catchRate = 255,
@@ -4074,11 +4074,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ABOMASNOW] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 92,
+        .baseHP        = 100,
+        .baseAttack    = 102,
         .baseDefense   = 75,
         .baseSpeed     = 60,
-        .baseSpAttack  = 92,
+        .baseSpAttack  = 102,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
         .catchRate = 255,
@@ -4133,11 +4133,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_ABOMASNOW_MEGA] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 132,
+        .baseHP        = 100,
+        .baseAttack    = 142,
         .baseDefense   = 105,
         .baseSpeed     = 30,
-        .baseSpAttack  = 132,
+        .baseSpAttack  = 142,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
         .catchRate = 255,

@@ -10140,7 +10140,8 @@
       "MOVE_POISON_JAB",
       "MOVE_SCALD",
       "MOVE_DRILL_RUN",
-      "MOVE_THROAT_CHOP"
+      "MOVE_THROAT_CHOP",
+      "MOVE_AERIAL_ACE"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -10240,7 +10241,8 @@
       "MOVE_POISON_JAB",
       "MOVE_SCALD",
       "MOVE_DRILL_RUN",
-      "MOVE_THROAT_CHOP"
+      "MOVE_THROAT_CHOP",
+      "MOVE_AERIAL_ACE"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",

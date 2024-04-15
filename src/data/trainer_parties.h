@@ -240,12 +240,12 @@ static const struct TrainerMon sParty_GruntWeatherInst3[] = {
 static const struct TrainerMon sParty_GruntMuseum1[] = {
     {
     .iv = IV_SPREAD_MEDIUM,
-    .heldItem = ITEM_RINDO_BERRY,
+    .heldItem = ITEM_QUICK_CLAW,
     .lvl = 27,
-    .species = SPECIES_TIRTOUGA,
-    .ability = ABILITY_SOLID_ROCK,
-    .moves = {MOVE_ANCIENT_POWER, MOVE_BRINE, MOVE_AQUA_JET, MOVE_MUD_SHOT},
-    .nature = NATURE_SASSY,
+    .species = SPECIES_SHUPPET,
+    .ability = ABILITY_POISON_PUPPETEER,
+    .moves = {MOVE_HEX, MOVE_POISON_JAB, MOVE_CURSE, MOVE_TOXIC},
+    .nature = NATURE_JOLLY,
     },
     {
     .iv = IV_SPREAD_MEDIUM,

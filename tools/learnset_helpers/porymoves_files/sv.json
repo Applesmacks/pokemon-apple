@@ -7212,7 +7212,10 @@
       "MOVE_TOXIC",
       "MOVE_PAIN_SPLIT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_MUDDY_WATER",
+      "MOVE_SURF",
+      "MOVE_WATERFALL"
     ],
     "EggMoves": [
       "MOVE_ACID_SPRAY",
@@ -7354,7 +7357,10 @@
       "MOVE_LASH_OUT",
       "MOVE_PAIN_SPLIT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_MUDDY_WATER",
+      "MOVE_SURF",
+      "MOVE_WATERFALL"
     ],
     "EggMoves": [
       "MOVE_ACID_SPRAY",
@@ -31637,7 +31643,10 @@
       "MOVE_PSYCH_UP",
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_SLUDGE_BOMB",
+      "MOVE_SLUDGE_WAVE",
+      "MOVE_ACID_SPRAY"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
