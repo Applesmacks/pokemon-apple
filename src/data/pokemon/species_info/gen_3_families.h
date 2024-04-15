@@ -4211,10 +4211,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_PLUSLE
     [SPECIES_PLUSLE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 80,
         .baseAttack    = 50,
         .baseDefense   = 40,
-        .baseSpeed     = 95,
+        .baseSpeed     = 105,
         .baseSpAttack  = 115,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -4266,10 +4266,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_MINUN
     [SPECIES_MINUN] =
     {
-        .baseHP        = 60,
+        .baseHP        = 80,
         .baseAttack    = 40,
         .baseDefense   = 50,
-        .baseSpeed     = 95,
+        .baseSpeed     = 105,
         .baseSpAttack  = 105,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -4323,10 +4323,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 65,
         .baseAttack    = 37,
-        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 95 : 95,
+        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 105 : 95,
         .baseSpeed     = 85,
-        .baseSpAttack  = 83,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 105 : 105,
+        .baseSpAttack  = 103,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 115 : 105,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -4384,7 +4384,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 67,
         .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 65 : 65,
         .baseSpeed     = 85,
-        .baseSpAttack  = 113,
+        .baseSpAttack  = 133,
         .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 75 : 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 255,

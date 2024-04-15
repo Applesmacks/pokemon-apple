@@ -16801,7 +16801,11 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_FIRE_BLAST",
+      "MOVE_FLAMETHROWER",
+      "MOVE_FLAME_CHARGE",
+      "MOVE_FLARE_BLITZ"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -16920,7 +16924,11 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_FIRE_BLAST",
+      "MOVE_FLAMETHROWER",
+      "MOVE_FLAME_CHARGE",
+      "MOVE_FLARE_BLITZ"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -28313,7 +28321,10 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SKITTER_SMACK"
+      "MOVE_SKITTER_SMACK",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_CHARGE_BEAM"
     ],
     "EggMoves": [
       "MOVE_COUNTER",
@@ -28442,7 +28453,8 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SKITTER_SMACK"
+      "MOVE_SKITTER_SMACK",
+      "MOVE_CHARGE_BEAM"
     ],
     "EggMoves": [
       "MOVE_ATTRACT",
@@ -80830,7 +80842,11 @@
       "MOVE_PSYCHIC_TERRAIN",
       "MOVE_TRICK_ROOM",
       "MOVE_TERA_BLAST",
-      "MOVE_UPROAR"
+      "MOVE_UPROAR",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_THUNDER_WAVE"
     ],
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
@@ -80960,7 +80976,11 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEATHER_DANCE",
-      "MOVE_EXPANDING_FORCE"
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_THUNDER_WAVE"
     ],
     "EggMoves": [
       "MOVE_ALLY_SWITCH",

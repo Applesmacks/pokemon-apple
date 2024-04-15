@@ -4745,10 +4745,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_MORPEKO_FULL_BELLY] =
     {
         .baseHP        = 58,
-        .baseAttack    = 115,
+        .baseAttack    = 125,
         .baseDefense   = 58,
-        .baseSpeed     = 107,
-        .baseSpAttack  = 70,
+        .baseSpeed     = 117,
+        .baseSpAttack  = 90,
         .baseSpDefense = 58,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
         .catchRate = 255,
@@ -4799,10 +4799,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_MORPEKO_HANGRY] =
     {
         .baseHP        = 58,
-        .baseAttack    = 115,
+        .baseAttack    = 125,
         .baseDefense   = 58,
-        .baseSpeed     = 107,
-        .baseSpAttack  = 70,
+        .baseSpeed     = 117,
+        .baseSpAttack  = 90,
         .baseSpDefense = 58,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
         .catchRate = 255,
@@ -5022,9 +5022,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_DRACOZOLT
     [SPECIES_DRACOZOLT] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 110,
         .baseSpeed     = 75,
         .baseSpAttack  = 80,
         .baseSpDefense = 70,
@@ -5076,9 +5076,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOZOLT
     [SPECIES_ARCTOZOLT] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 110,
         .baseSpeed     = 55,
         .baseSpAttack  = 90,
         .baseSpDefense = 80,
@@ -5129,9 +5129,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_DRACOVISH
     [SPECIES_DRACOVISH] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 100,
+        .baseHP        = 100,
+        .baseAttack    = 110,
+        .baseDefense   = 120,
         .baseSpeed     = 75,
         .baseSpAttack  = 70,
         .baseSpDefense = 80,
@@ -5183,9 +5183,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOVISH
     [SPECIES_ARCTOVISH] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 100,
+        .baseHP        = 100,
+        .baseAttack    = 110,
+        .baseDefense   = 120,
         .baseSpeed     = 55,
         .baseSpAttack  = 80,
         .baseSpDefense = 90,

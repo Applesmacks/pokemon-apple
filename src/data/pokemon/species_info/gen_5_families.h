@@ -4995,10 +4995,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ZORUA] =
     {
         .baseHP        = 40,
-        .baseAttack    = 65,
+        .baseAttack    = 85,
         .baseDefense   = 40,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 80,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 100,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 255,
@@ -5103,10 +5103,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ZORUA_HISUIAN] =
     {
         .baseHP        = 35,
-        .baseAttack    = 60,
+        .baseAttack    = 80,
         .baseDefense   = 40,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 85,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 105,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_GHOST),
         .catchRate = 255,
@@ -6347,11 +6347,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_EMOLGA
     [SPECIES_EMOLGA] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 85,
+        .baseHP        = 75,
+        .baseAttack    = 95,
         .baseDefense   = 60,
         .baseSpeed     = 123,
-        .baseSpAttack  = 85,
+        .baseSpAttack  = 95,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 255,
@@ -6799,10 +6799,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_JOLTIK] =
     {
         .baseHP        = 50,
-        .baseAttack    = 47,
+        .baseAttack    = 67,
         .baseDefense   = 50,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 57,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 67,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 255,
@@ -6852,9 +6852,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_GALVANTULA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 77,
+        .baseAttack    = 97,
         .baseDefense   = 60,
-        .baseSpeed     = 138,
+        .baseSpeed     = 128,
         .baseSpAttack  = 117,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
@@ -8331,12 +8331,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_GOLETT
     [SPECIES_GOLETT] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 74,
-        .baseDefense   = 50,
+        .baseHP        = 79,
+        .baseAttack    = 94,
+        .baseDefense   = 70,
         .baseSpeed     = 35,
         .baseSpAttack  = 35,
-        .baseSpDefense = 50,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
         .catchRate = 255,
         .expYield = 61,
@@ -8387,7 +8387,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_GOLURK] =
     {
         .baseHP        = 109,
-        .baseAttack    = 124,
+        .baseAttack    = 144,
         .baseDefense   = 100,
         .baseSpeed     = 55,
         .baseSpAttack  = 55,

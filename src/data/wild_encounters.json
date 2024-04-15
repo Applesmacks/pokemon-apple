@@ -1101,7 +1101,7 @@
               {
                 "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_SLAKOTH"
+                "species": "SPECIES_FLITTLE"
               },
               {
                 "min_level": 25,
@@ -1758,7 +1758,7 @@
               {
                 "min_level": 80,
                 "max_level": 90,
-                "species": "SPECIES_WHIMSICOTT"
+                "species": "SPECIES_EXEGGUTOR"
               },
               {
                 "min_level": 80,
@@ -2725,7 +2725,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_FLITTLE"
+                "species": "SPECIES_ESPATHRA"
               },
               {
                 "min_level": 45,
@@ -2794,7 +2794,7 @@
               {
                 "min_level": 50,
                 "max_level": 52,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_EXCADRILL"
               }
             ]
           },
@@ -5976,7 +5976,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_FLITTLE"
+                "species": "SPECIES_ESPATHRA"
               },
               {
                 "min_level": 45,
@@ -9688,7 +9688,7 @@
               {
                 "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_DRILBUR"
+                "species": "SPECIES_TANDEMAUS"
               },
               {
                 "min_level": 24,

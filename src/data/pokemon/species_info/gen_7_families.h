@@ -865,11 +865,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_GRUBBIN
     [SPECIES_GRUBBIN] =
     {
-        .baseHP        = 47,
+        .baseHP        = 57,
         .baseAttack    = 62,
-        .baseDefense   = 45,
+        .baseDefense   = 55,
         .baseSpeed     = 46,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 255,
@@ -918,11 +918,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_CHARJABUG] =
     {
-        .baseHP        = 57,
+        .baseHP        = 67,
         .baseAttack    = 82,
-        .baseDefense   = 95,
+        .baseDefense   = 105,
         .baseSpeed     = 36,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 255,
@@ -1185,11 +1185,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_ORICORIO
     [SPECIES_ORICORIO_BAILE] =
     {
-        .baseHP        = 75,
+        .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpeed     = 113,
+        .baseSpAttack  = 118,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 255,
@@ -1240,11 +1240,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ORICORIO_POM_POM] =
     {
-        .baseHP        = 75,
+        .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpeed     = 113,
+        .baseSpAttack  = 118,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 255,
@@ -1295,11 +1295,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ORICORIO_PAU] =
     {
-        .baseHP        = 75,
+        .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpeed     = 113,
+        .baseSpAttack  = 118,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 255,
@@ -1350,11 +1350,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ORICORIO_SENSU] =
     {
-        .baseHP        = 75,
+        .baseHP        = 95,
         .baseAttack    = 70,
         .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpeed     = 113,
+        .baseSpAttack  = 118,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 255,
@@ -3789,12 +3789,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_TOGEDEMARU
     [SPECIES_TOGEDEMARU] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 108,
-        .baseDefense   = 73,
+        .baseHP        = 75,
+        .baseAttack    = 118,
+        .baseDefense   = 83,
         .baseSpeed     = 96,
         .baseSpAttack  = 40,
-        .baseSpDefense = 83,
+        .baseSpDefense = 93,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 152,

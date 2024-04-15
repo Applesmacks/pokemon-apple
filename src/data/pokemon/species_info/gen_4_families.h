@@ -1838,11 +1838,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_PACHIRISU
     [SPECIES_PACHIRISU] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 55,
+        .baseHP        = 80,
+        .baseAttack    = 65,
         .baseDefense   = 90,
         .baseSpeed     = 95,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
@@ -2769,10 +2769,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_STUNKY
     [SPECIES_STUNKY] =
     {
-        .baseHP        = 63,
-        .baseAttack    = 63,
+        .baseHP        = 83,
+        .baseAttack    = 83,
         .baseDefense   = 47,
-        .baseSpeed     = 74,
+        .baseSpeed     = 84,
         .baseSpAttack  = 41,
         .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
@@ -2822,8 +2822,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_SKUNTANK] =
     {
-        .baseHP        = 113,
-        .baseAttack    = 103,
+        .baseHP        = 123,
+        .baseAttack    = 113,
         .baseDefense   = 67,
         .baseSpeed     = 94,
         .baseSpAttack  = 71,

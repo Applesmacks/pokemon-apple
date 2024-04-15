@@ -861,10 +861,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_PAWMI
     [SPECIES_PAWMI] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
+        .baseHP        = 55,
+        .baseAttack    = 60,
         .baseDefense   = 20,
-        .baseSpeed     = 60,
+        .baseSpeed     = 70,
         .baseSpAttack  = 40,
         .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -914,10 +914,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_PAWMO] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 75,
+        .baseHP        = 70,
+        .baseAttack    = 85,
         .baseDefense   = 40,
-        .baseSpeed     = 85,
+        .baseSpeed     = 95,
         .baseSpAttack  = 50,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
@@ -967,10 +967,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_PAWMOT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 125,
+        .baseHP        = 80,
+        .baseAttack    = 135,
         .baseDefense   = 70,
-        .baseSpeed     = 115,
+        .baseSpeed     = 125,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
@@ -1021,12 +1021,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_TANDEMAUS
     [SPECIES_TANDEMAUS] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 45,
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 55,
         .baseSpeed     = 75,
         .baseSpAttack  = 40,
-        .baseSpDefense = 45,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 61,
@@ -1036,7 +1036,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_PICKUP, ABILITY_OWN_TEMPO },
+        .abilities = { ABILITY_FRIEND_GUARD, ABILITY_TECHNICIAN, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Tandemaus"),
         .cryId = CRY_TANDEMAUS,
@@ -1075,12 +1075,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_MAUSHOLD_FAMILY_OF_THREE] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 75,
-        .baseDefense   = 70,
+        .baseHP        = 94,
+        .baseAttack    = 95,
+        .baseDefense   = 80,
         .baseSpeed     = 111,
         .baseSpAttack  = 65,
-        .baseSpDefense = 75,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 165,
@@ -1090,7 +1090,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_FRIEND_GUARD, ABILITY_CHEEK_POUCH, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_FRIEND_GUARD, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Maushold"),
         .cryId = CRY_MAUSHOLD_FAMILY_OF_THREE,
@@ -2306,11 +2306,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_SHROODLE] =
     {
         .baseHP        = 40,
-        .baseAttack    = 65,
+        .baseAttack    = 75,
         .baseDefense   = 35,
-        .baseSpeed     = 75,
+        .baseSpeed     = 85,
         .baseSpAttack  = 40,
-        .baseSpDefense = 35,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_POISON, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 58,
@@ -2894,11 +2894,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FLITTLE
     [SPECIES_FLITTLE] =
     {
-        .baseHP        = 30,
+        .baseHP        = 50,
         .baseAttack    = 35,
         .baseDefense   = 30,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 75,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
         .catchRate = 255,
@@ -2909,7 +2909,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_ANTICIPATION, ABILITY_FRISK, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_OPPORTUNIST, ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Flittle"),
         .cryId = CRY_FLITTLE,
@@ -2947,11 +2947,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_ESPATHRA] =
     {
-        .baseHP        = 95,
+        .baseHP        = 115,
         .baseAttack    = 60,
         .baseDefense   = 60,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 101,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 121,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ELECTRIC),
         .catchRate = 255,
@@ -2962,7 +2962,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_OPPORTUNIST, ABILITY_FRISK, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_OPPORTUNIST, ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Espathra"),
         .cryId = CRY_ESPATHRA,
