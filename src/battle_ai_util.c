@@ -2685,7 +2685,8 @@ bool32 AI_CanBeConfused(u32 battlerAtk, u32 battlerDef, u32 move, u32 ability)
      || (ability == ABILITY_OWN_TEMPO && !DoesBattlerIgnoreAbilityChecks(AI_DATA->abilities[battlerAtk], move))
      || (IsBattlerGrounded(battlerDef) && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
      || gSideStatuses[GetBattlerSide(battlerDef)] & SIDE_STATUS_SAFEGUARD
-     || DoesSubstituteBlockMove(battlerAtk, battlerDef, move))
+     || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
+     || IS_BATTLER_OF_TYPE(battlerDef, TYPE_BUG))
         return FALSE;
     return TRUE;
 }
