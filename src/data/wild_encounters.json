@@ -998,7 +998,7 @@
               {
                 "min_level": 34,
                 "max_level": 36,
-                "species": "SPECIES_WIMPOD"
+                "species": "SPECIES_SHELLOS_WEST_SEA"
               },
               {
                 "min_level": 34,
@@ -1126,7 +1126,7 @@
               {
                 "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 25,
@@ -2364,7 +2364,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_SHELLOS"
+                "species": "SPECIES_SHELLOS_EAST_SEA"
               },
               {
                 "min_level": 13,
@@ -9511,7 +9511,7 @@
               {
                 "min_level": 34,
                 "max_level": 36,
-                "species": "SPECIES_DARUMAKA"
+                "species": "SPECIES_DARUMAKA_GALARIAN"
               },
               {
                 "min_level": 34,

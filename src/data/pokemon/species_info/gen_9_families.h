@@ -2413,11 +2413,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_BRAMBLIN] =
     {
         .baseHP        = 40,
-        .baseAttack    = 65,
-        .baseDefense   = 30,
-        .baseSpeed     = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 40,
+        .baseSpeed     = 70,
         .baseSpAttack  = 45,
-        .baseSpDefense = 35,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 255,
         .expYield = 55,
@@ -2787,12 +2787,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_RELLOR
     [SPECIES_RELLOR] =
     {
-        .baseHP        = 41,
+        .baseHP        = 51,
         .baseAttack    = 50,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 30,
-        .baseSpAttack  = 31,
-        .baseSpDefense = 58,
+        .baseSpAttack  = 51,
+        .baseSpDefense = 78,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 255,
         .expYield = 54,
@@ -2802,7 +2802,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_SHED_SKIN },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TELEPATHY, ABILITY_SHED_SKIN },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Rellor"),
         .cryId = CRY_RELLOR,
@@ -2835,17 +2835,17 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Rellor)
         .levelUpLearnset = sRellorLevelUpLearnset,
         .teachableLearnset = sRellorTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_NONE, 0, SPECIES_RABSCA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RABSCA}),
     },
 
     [SPECIES_RABSCA] =
     {
-        .baseHP        = 75,
+        .baseHP        = 85,
         .baseAttack    = 50,
-        .baseDefense   = 85,
+        .baseDefense   = 95,
         .baseSpeed     = 45,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 100,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_BUG, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 165,
@@ -2855,7 +2855,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_NONE, ABILITY_TELEPATHY },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TELEPATHY, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Rabsca"),
         .cryId = CRY_RABSCA,
@@ -3590,11 +3590,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_CYCLIZAR
     [SPECIES_CYCLIZAR] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 95,
+        .baseHP        = 80,
+        .baseAttack    = 105,
         .baseDefense   = 65,
-        .baseSpeed     = 121,
-        .baseSpAttack  = 85,
+        .baseSpeed     = 131,
+        .baseSpAttack  = 95,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_NORMAL),
         .catchRate = 255,
@@ -3644,13 +3644,13 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_ORTHWORM
     [SPECIES_ORTHWORM] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 145,
+        .baseHP        = 80,
+        .baseAttack    = 105,
+        .baseDefense   = 155,
         .baseSpeed     = 65,
         .baseSpAttack  = 60,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_STEEL),
+        .types = MON_TYPES(TYPE_STEEL, TYPE_GROUND),
         .catchRate = 255,
         .expYield = 240,
         .evYield_Defense = 2,

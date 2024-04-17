@@ -1210,13 +1210,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_NICKIT
     [SPECIES_NICKIT] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 28,
+        .baseHP        = 60,
+        .baseAttack    = 88,
         .baseDefense   = 28,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 47,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 17,
         .baseSpDefense = 52,
-        .types = MON_TYPES(TYPE_DARK),
+        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 49,
         .evYield_SpDefense = 1,
@@ -1225,7 +1225,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_UNBURDEN, ABILITY_STAKEOUT },
+        .abilities = { ABILITY_STAKEOUT, ABILITY_UNBURDEN, ABILITY_STAKEOUT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Nickit"),
         .cryId = CRY_NICKIT,
@@ -1258,18 +1258,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Nickit)
         .levelUpLearnset = sNickitLevelUpLearnset,
         .teachableLearnset = sNickitTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_THIEVUL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_THIEVUL}),
     },
 
     [SPECIES_THIEVUL] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 58,
+        .baseHP        = 90,
+        .baseAttack    = 118,
         .baseDefense   = 58,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 87,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 57,
         .baseSpDefense = 92,
-        .types = MON_TYPES(TYPE_DARK),
+        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 159,
         .evYield_SpDefense = 2,
@@ -1278,7 +1278,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_UNBURDEN, ABILITY_STAKEOUT },
+        .abilities = { ABILITY_STAKEOUT, ABILITY_UNBURDEN, ABILITY_STAKEOUT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Thievul"),
         .cryId = CRY_THIEVUL,
@@ -1317,12 +1317,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_GOSSIFLEUR
     [SPECIES_GOSSIFLEUR] =
     {
-        .baseHP        = 40,
+        .baseHP        = 70,
         .baseAttack    = 40,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 10,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 255,
         .expYield = 50,
@@ -1370,12 +1370,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_ELDEGOSS] =
     {
-        .baseHP        = 60,
+        .baseHP        = 90,
         .baseAttack    = 50,
-        .baseDefense   = 90,
+        .baseDefense   = 100,
         .baseSpeed     = 60,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 120,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 255,
         .expYield = 161,
@@ -3818,11 +3818,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_IMPIDIMP
     [SPECIES_IMPIDIMP] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 45,
+        .baseHP        = 55,
+        .baseAttack    = 55,
         .baseDefense   = 30,
         .baseSpeed     = 50,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
         .catchRate = 255,
@@ -3833,7 +3833,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_FRISK, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_PRANKSTER, ABILITY_CURIOUS_MEDICINE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Impidimp"),
         .cryId = CRY_IMPIDIMP,
@@ -3871,11 +3871,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_MORGREM] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 60,
+        .baseHP        = 75,
+        .baseAttack    = 70,
         .baseDefense   = 45,
         .baseSpeed     = 70,
-        .baseSpAttack  = 75,
+        .baseSpAttack  = 85,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
         .catchRate = 255,
@@ -3886,7 +3886,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_FRISK, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_PRANKSTER, ABILITY_CURIOUS_MEDICINE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Morgrem"),
         .cryId = CRY_MORGREM,
@@ -3925,11 +3925,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_GRIMMSNARL] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 120,
+        .baseHP        = 105,
+        .baseAttack    = 130,
         .baseDefense   = 65,
         .baseSpeed     = 60,
-        .baseSpAttack  = 95,
+        .baseSpAttack  = 105,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
         .catchRate = 255,
@@ -3940,7 +3940,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_FRISK, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_PRANKSTER, ABILITY_CURIOUS_MEDICINE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Grimmsnarl"),
         .cryId = CRY_GRIMMSNARL,
@@ -4526,11 +4526,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_EISCUE
     [SPECIES_EISCUE_ICE_FACE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseHP        = 95,
+        .baseAttack    = 100,
         .baseDefense   = 110,
         .baseSpeed     = 50,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 255,
@@ -4580,11 +4580,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_EISCUE_NOICE_FACE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 80,
+        .baseHP        = 95,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 130,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 85,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 255,

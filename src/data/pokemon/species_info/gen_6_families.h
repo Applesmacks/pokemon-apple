@@ -1766,9 +1766,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_PANCHAM
     [SPECIES_PANCHAM] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 82,
-        .baseDefense   = 62,
+        .baseHP        = 77,
+        .baseAttack    = 92,
+        .baseDefense   = 72,
         .baseSpeed     = 43,
         .baseSpAttack  = 46,
         .baseSpDefense = 48,
@@ -3463,6 +3463,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Carbink)
         .levelUpLearnset = sCarbinkLevelUpLearnset,
         .teachableLearnset = sCarbinkTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 70, SPECIES_DIANCIE}),
     },
 #endif //P_FAMILY_CARBINK
 
@@ -4518,7 +4519,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseAttack    = 30,
         .baseDefense   = 35,
         .baseSpeed     = 55,
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 65,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FLYING, TYPE_DRAGON),
         .catchRate = 255,
