@@ -3557,6 +3557,7 @@ BattleScript_EffectConfuse::
 	attackstring
 	ppreduce
 	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_OwnTempoPrevents
+	jumpiftype BS_TARGET, TYPE_BUG, BattleScript_NotAffected
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	jumpifstatus2 BS_TARGET, STATUS2_CONFUSION, BattleScript_AlreadyConfused
 	jumpifterrainaffected BS_TARGET, STATUS_FIELD_MISTY_TERRAIN, BattleScript_MistyTerrainPrevents
@@ -4348,6 +4349,7 @@ BattleScript_EffectSwagger::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SwaggerTryConfuse:
 	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_OwnTempoPrevents
+	jumpiftype BS_TARGET, TYPE_BUG, BattleScript_NotAffected
 	jumpifsafeguard BattleScript_SafeguardProtected
 	seteffectprimary MOVE_EFFECT_CONFUSION
 	goto BattleScript_MoveEnd
@@ -4891,6 +4893,7 @@ BattleScript_EffectFlatter::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_FlatterTryConfuse::
 	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_OwnTempoPrevents
+	jumpiftype BS_TARGET, TYPE_BUG, BattleScript_NotAffected
 	jumpifsafeguard BattleScript_SafeguardProtected
 	seteffectprimary MOVE_EFFECT_CONFUSION
 	goto BattleScript_MoveEnd
@@ -9922,6 +9925,7 @@ BattleScript_BerserkGeneRet_Anim:
 	call BattleScript_StatUp
 BattleScript_BerserkGeneRet_TryConfuse:
 	jumpifability BS_SCRIPTING, ABILITY_OWN_TEMPO, BattleScript_BerserkGeneRet_OwnTempoPrevents
+	jumpiftype BS_TARGET, TYPE_BUG, BattleScript_NotAffected
 	jumpifsafeguard BattleScript_BerserkGeneRet_SafeguardProtected
 	seteffectprimary MOVE_EFFECT_CONFUSION
 	goto BattleScript_BerserkGeneRet_End
