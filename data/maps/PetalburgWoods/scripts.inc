@@ -83,7 +83,7 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 	return
 
 PetalburgWoods_EventScript_DevonResearcherPostBattle::
-	setvar VAR_LEVEL_CAP, 18
+	setvar VAR_LEVEL_CAP, 20
 	msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaRunAway

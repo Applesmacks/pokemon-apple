@@ -49691,7 +49691,9 @@
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
-      "MOVE_EXPANDING_FORCE"
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_SCALD",
+      "MOVE_CHILLING_WATER"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -49807,7 +49809,9 @@
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
-      "MOVE_EXPANDING_FORCE"
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_SCALD",
+      "MOVE_CHILLING_WATER"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -49936,7 +49940,9 @@
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_SCALD",
+      "MOVE_CHILLING_WATER"
     ],
     "EggMoves": [],
     "TutorMoves": []

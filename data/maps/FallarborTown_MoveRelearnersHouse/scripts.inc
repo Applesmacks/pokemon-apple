@@ -7,7 +7,7 @@ FallarborTown_StoneGuyHouse_EventScript_StoneGuy::
 	lockall
 	faceplayer
 	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyHello, MSGBOX_DEFAULT
-	goto_if_set FLAG_BADGE04_GET, FallarborTown_StoneGuyHouse_EventScript_SellStones
+	goto_if_set FLAG_BADGE05_GET, FallarborTown_StoneGuyHouse_EventScript_SellStones
 	msgbox FallarborTown_StoneGuyHouse_Text_StoneGuyNotSetUp, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -47,7 +47,7 @@ FallarborTown_StoneGuyHouse_Text_StoneGuyNotSetUp:
 	.string "but once I'm done I'd be happy to\l"
 	.string "sell you some of my excess.\p"
 	.string "I bet I'll be done by the time you\n"
-	.string "earn your 4th GYM BADGE.$"
+	.string "earn your 5th GYM BADGE.$"
 
 FallarborTown_StoneGuyHouse_Text_StoneGuyLookAtWares:
 	.string "Take a look at my collection! If you\n"

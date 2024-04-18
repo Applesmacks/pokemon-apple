@@ -97,7 +97,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_BUNEARY"
+                "species": "SPECIES_YUNGOOS"
               },
               {
                 "min_level": 2,
@@ -1126,7 +1126,7 @@
               {
                 "min_level": 25,
                 "max_level": 27,
-                "species": "SPECIES_DARUMAKA"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 25,
@@ -2266,7 +2266,7 @@
               {
                 "min_level": 38,
                 "max_level": 40,
-                "species": "SPECIES_ARCHEN"
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 38,
@@ -2281,7 +2281,7 @@
               {
                 "min_level": 38,
                 "max_level": 40,
-                "species": "SPECIES_YUNGOOS"
+                "species": "SPECIES_BUNEARY"
               },
               {
                 "min_level": 38,

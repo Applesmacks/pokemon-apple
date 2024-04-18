@@ -95,7 +95,7 @@ Route119_EventScript_BattleMayMudkip::
 	end
 
 Route119_EventScript_DefeatedMay::
-	setvar VAR_LEVEL_CAP 65
+	setvar VAR_LEVEL_CAP 60
 	setflag FLAG_ROUTE119_RIVAL_BEAT
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyHM

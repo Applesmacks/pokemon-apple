@@ -11,7 +11,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 	end
 
 RustboroCity_Gym_EventScript_RoxanneDefeated::
-	setvar VAR_LEVEL_CAP 21
+	setvar VAR_LEVEL_CAP 25
 	message RustboroCity_Gym_Text_ReceivedStoneBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
