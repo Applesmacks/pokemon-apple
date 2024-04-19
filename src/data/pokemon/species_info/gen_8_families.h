@@ -2573,11 +2573,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_CRAMORANT
     [SPECIES_CRAMORANT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
+        .baseHP        = 80,
+        .baseAttack    = 105,
         .baseDefense   = 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 105,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_FLYING, TYPE_WATER),
         .catchRate = 255,
@@ -4311,11 +4311,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_PINCURCHIN] =
     {
         .baseHP        = 48,
-        .baseAttack    = 101,
-        .baseDefense   = 95,
+        .baseAttack    = 121,
+        .baseDefense   = 115,
         .baseSpeed     = 15,
-        .baseSpAttack  = 91,
-        .baseSpDefense = 85,
+        .baseSpAttack  = 111,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
         .expYield = 152,
@@ -4325,7 +4325,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_NONE, ABILITY_ELECTRIC_SURGE },
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Pincurchin"),
         .cryId = CRY_PINCURCHIN,
@@ -4472,10 +4472,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_STONJOURNER
     [SPECIES_STONJOURNER] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 125,
-        .baseDefense   = 135,
-        .baseSpeed     = 70,
+        .baseHP        = 120,
+        .baseAttack    = 145,
+        .baseDefense   = 155,
+        .baseSpeed     = 80,
         .baseSpAttack  = 20,
         .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_ROCK),
@@ -5901,10 +5901,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_KUBFU
     [SPECIES_KUBFU] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
+        .baseHP        = 70,
+        .baseAttack    = 100,
         .baseDefense   = 60,
-        .baseSpeed     = 72,
+        .baseSpeed     = 82,
         .baseSpAttack  = 53,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIGHTING),
@@ -5949,16 +5949,16 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sKubfuLevelUpLearnset,
         .teachableLearnset = sKubfuTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 80, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
-                                {EVO_LEVEL_DAY, 80, SPECIES_URSHIFU_RAPID_STRIKE_STYLE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_URSHIFU_RAPID_STRIKE_STYLE}),
     },
 
     [SPECIES_URSHIFU_SINGLE_STRIKE_STYLE] =
     {
-        .baseHP        = 120,
+        .baseHP        = 110,
         .baseAttack    = 140,
-        .baseDefense   = 120,
-        .baseSpeed     = 117,
+        .baseDefense   = 100,
+        .baseSpeed     = 107,
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
@@ -6067,10 +6067,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_URSHIFU_RAPID_STRIKE_STYLE] =
     {
-        .baseHP        = 120,
+        .baseHP        = 110,
         .baseAttack    = 140,
-        .baseDefense   = 120,
-        .baseSpeed     = 117,
+        .baseDefense   = 100,
+        .baseSpeed     = 107,
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_WATER),

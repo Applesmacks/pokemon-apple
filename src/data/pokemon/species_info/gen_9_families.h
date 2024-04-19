@@ -647,12 +647,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_TAROUNTULA
     [SPECIES_TAROUNTULA] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 41,
-        .baseDefense   = 45,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 29,
-        .baseSpDefense = 40,
+        .baseHP        = 55,
+        .baseAttack    = 61,
+        .baseDefense   = 65,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 49,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 255,
         .expYield = 42,
@@ -662,7 +662,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_STAKEOUT },
+        .abilities = { ABILITY_INSOMNIA, ABILITY_STAKEOUT, ABILITY_STAKEOUT },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Tarountula"),
         .cryId = CRY_TAROUNTULA,
@@ -695,17 +695,17 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Tarountula)
         .levelUpLearnset = sTarountulaLevelUpLearnset,
         .teachableLearnset = sTarountulaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_SPIDOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_SPIDOPS}),
     },
 
     [SPECIES_SPIDOPS] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 79,
-        .baseDefense   = 92,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 52,
-        .baseSpDefense = 86,
+        .baseHP        = 80,
+        .baseAttack    = 99,
+        .baseDefense   = 112,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 106,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 255,
         .expYield = 141,
@@ -715,7 +715,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_STAKEOUT },
+        .abilities = { ABILITY_INSOMNIA, ABILITY_STAKEOUT, ABILITY_STAKEOUT },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Spidops"),
         .cryId = CRY_SPIDOPS,
@@ -1449,12 +1449,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_SQUAWKABILLY
     [SPECIES_SQUAWKABILLY_GREEN_PLUMAGE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
+        .baseHP        = 102,
+        .baseAttack    = 116,
+        .baseDefense   = 71,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
         .expYield = 146,
@@ -1464,7 +1464,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_GUTS },
+        .abilities = { ABILITY_GUTS, ABILITY_HUSTLE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Sqawkabily"),
         .cryId = CRY_SQUAWKABILLY,
@@ -1502,12 +1502,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SQUAWKABILLY_BLUE_PLUMAGE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
+        .baseHP        = 102,
+        .baseAttack    = 116,
+        .baseDefense   = 71,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
         .expYield = 146,
@@ -1517,7 +1517,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_GUTS },
+        .abilities = { ABILITY_GUTS, ABILITY_HUSTLE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Sqawkabily"),
         .cryId = CRY_SQUAWKABILLY,
@@ -1555,12 +1555,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
+        .baseHP        = 102,
+        .baseAttack    = 116,
+        .baseDefense   = 71,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
         .expYield = 146,
@@ -1570,7 +1570,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_GUTS, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Sqawkabily"),
         .cryId = CRY_SQUAWKABILLY,
@@ -1608,12 +1608,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SQUAWKABILLY_WHITE_PLUMAGE] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 96,
-        .baseDefense   = 51,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 51,
+        .baseHP        = 102,
+        .baseAttack    = 116,
+        .baseDefense   = 71,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
         .expYield = 146,
@@ -1623,7 +1623,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_GUTS, ABILITY_HUSTLE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Sqawkabily"),
         .cryId = CRY_SQUAWKABILLY,
@@ -2091,11 +2091,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_WATTREL
     [SPECIES_WATTREL] =
     {
-        .baseHP        = 40,
+        .baseHP        = 50,
         .baseAttack    = 40,
         .baseDefense   = 35,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 65,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 255,
@@ -2139,7 +2139,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Wattrel)
         .levelUpLearnset = sWattrelLevelUpLearnset,
         .teachableLearnset = sWattrelTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KILOWATTREL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_KILOWATTREL}),
     },
 
     [SPECIES_KILOWATTREL] =
@@ -2523,7 +2523,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseAttack    = 40,
         .baseDefense   = 35,
         .baseSpeed     = 70,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GROUND, TYPE_GRASS),
         .catchRate = 255,
@@ -2576,7 +2576,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseAttack    = 70,
         .baseDefense   = 65,
         .baseSpeed     = 100,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 90,
         .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_GROUND, TYPE_GRASS),
         .catchRate = 255,
@@ -3266,12 +3266,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_BOMBIRDIER
     [SPECIES_BOMBIRDIER] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 103,
-        .baseDefense   = 85,
+        .baseHP        = 80,
+        .baseAttack    = 123,
+        .baseDefense   = 95,
         .baseSpeed     = 82,
         .baseSpAttack  = 60,
-        .baseSpDefense = 85,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_FLYING, TYPE_DARK),
         .catchRate = 255,
         .expYield = 243,
@@ -3281,7 +3281,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_KEEN_EYE, ABILITY_ROCKY_PAYLOAD },
+        .abilities = { ABILITY_ROCKY_PAYLOAD, ABILITY_ROCKY_PAYLOAD, ABILITY_ROCKY_PAYLOAD },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Bombirdier"),
         .cryId = CRY_BOMBIRDIER,
@@ -3368,7 +3368,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Finizen)
         .levelUpLearnset = sFinizenLevelUpLearnset,
         .teachableLearnset = sFinizenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_PALAFIN_ZERO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_PALAFIN_ZERO}),
     },
 
     [SPECIES_PALAFIN_ZERO] =
@@ -4130,13 +4130,13 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_DONDOZO
     [SPECIES_DONDOZO] =
     {
-        .baseHP        = 150,
-        .baseAttack    = 100,
-        .baseDefense   = 115,
+        .baseHP        = 160,
+        .baseAttack    = 110,
+        .baseDefense   = 125,
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 265,
         .evYield_HP = 3,
@@ -4185,12 +4185,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_TATSUGIRI
     [SPECIES_TATSUGIRI_CURLY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
+        .baseHP        = 78,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = 255,
         .expYield = 166,
@@ -4238,12 +4238,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_DROOPY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
+        .baseHP        = 78,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = 255,
         .expYield = 166,
@@ -4290,12 +4290,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_TATSUGIRI_STRETCHY] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
+        .baseHP        = 78,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
         .catchRate = 255,
         .expYield = 166,

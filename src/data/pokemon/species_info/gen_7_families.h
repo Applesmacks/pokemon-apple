@@ -3072,12 +3072,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_ORANGURU
     [SPECIES_ORANGURU] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,
         .baseAttack    = 60,
         .baseDefense   = 80,
         .baseSpeed     = 60,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 172,
@@ -3126,9 +3126,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_PASSIMIAN
     [SPECIES_PASSIMIAN] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 120,
-        .baseDefense   = 90,
+        .baseHP        = 110,
+        .baseAttack    = 140,
+        .baseDefense   = 100,
         .baseSpeed     = 80,
         .baseSpAttack  = 40,
         .baseSpDefense = 60,
@@ -3396,12 +3396,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_PYUKUMUKU
     [SPECIES_PYUKUMUKU] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 60,
-        .baseDefense   = 130,
+        .baseHP        = 85,
+        .baseAttack    = 90,
+        .baseDefense   = 150,
         .baseSpeed     = 5,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 130,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 150,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,
         .expYield = 144,
@@ -3451,10 +3451,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_TYPE_NULL] =
     {
         .baseHP        = 95,
-        .baseAttack    = 95,
+        .baseAttack    = 115,
         .baseDefense   = 95,
-        .baseSpeed     = 59,
-        .baseSpAttack  = 95,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 115,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
@@ -3499,7 +3499,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sTypeNullLevelUpLearnset,
         .teachableLearnset = sTypeNullTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 80, SPECIES_SILVALLY_NORMAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_SILVALLY_NORMAL}),
     },
 
 #define SILVALLY_SPECIES_INFO(type, _palette)                               \
@@ -3507,7 +3507,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 95,                                                \
         .baseAttack    = 115,                                                \
         .baseDefense   = 95,                                                \
-        .baseSpeed     = 115,                                                \
+        .baseSpeed     = 105,                                                \
         .baseSpAttack  = 115,                                                \
         .baseSpDefense = 95,                                                \
         .types = MON_TYPES(type),                                           \
@@ -5719,12 +5719,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_POIPOLE
     [SPECIES_POIPOLE] =
     {
-        .baseHP        = 67,
+        .baseHP        = 87,
         .baseAttack    = 73,
-        .baseDefense   = 67,
-        .baseSpeed     = 73,
-        .baseSpAttack  = 73,
-        .baseSpDefense = 67,
+        .baseDefense   = 77,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 93,
+        .baseSpDefense = 77,
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 210 : 189,
@@ -5768,17 +5768,17 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isUltraBeast = TRUE,
         .levelUpLearnset = sPoipoleLevelUpLearnset,
         .teachableLearnset = sPoipoleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 80, SPECIES_NAGANADEL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_NAGANADEL}),
     },
 
     [SPECIES_NAGANADEL] =
     {
         .baseHP        = 93,
         .baseAttack    = 73,
-        .baseDefense   = 93,
+        .baseDefense   = 83,
         .baseSpeed     = 141,
         .baseSpAttack  = 147,
-        .baseSpDefense = 93,
+        .baseSpDefense = 83,
         .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 270 : 243,
@@ -5939,12 +5939,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ZERAORA] =
     {
         .baseHP        = 88,
-        .baseAttack    = 112,
+        .baseAttack    = 122,
         .baseDefense   = 75,
         .baseSpeed     = 143,
-        .baseSpAttack  = 102,
+        .baseSpAttack  = 112,
         .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Speed = 3,
@@ -5953,7 +5953,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_INFILTRATOR, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Zeraora"),
         .cryId = CRY_ZERAORA,
@@ -5992,12 +5992,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_MELTAN
     [SPECIES_MELTAN] =
     {
-        .baseHP        = 46,
-        .baseAttack    = 65,
-        .baseDefense   = 65,
-        .baseSpeed     = 34,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 35,
+        .baseHP        = 66,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 54,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 150 : 135,
@@ -6040,12 +6040,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .isMythical = TRUE,
         .levelUpLearnset = sMeltanLevelUpLearnset,
         .teachableLearnset = sMeltanTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 80, SPECIES_MELMETAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_MELMETAL}),
     },
 
     [SPECIES_MELMETAL] =
     {
-        .baseHP        = 155,
+        .baseHP        = 145,
         .baseAttack    = 153,
         .baseDefense   = 143,
         .baseSpeed     = 34,

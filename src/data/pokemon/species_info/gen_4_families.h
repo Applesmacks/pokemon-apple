@@ -1111,11 +1111,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CRANIDOS
     [SPECIES_CRANIDOS] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 125,
+        .baseHP        = 87,
+        .baseAttack    = 145,
         .baseDefense   = 40,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 30,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 50,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 255,
@@ -1159,16 +1159,16 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Cranidos)
         .levelUpLearnset = sCranidosLevelUpLearnset,
         .teachableLearnset = sCranidosTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAMPARDOS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_RAMPARDOS}),
     },
 
     [SPECIES_RAMPARDOS] =
     {
-        .baseHP        = 107,
-        .baseAttack    = 165,
+        .baseHP        = 117,
+        .baseAttack    = 185,
         .baseDefense   = 60,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 65,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 85,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 255,
@@ -1218,12 +1218,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_SHIELDON
     [SPECIES_SHIELDON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 42,
-        .baseDefense   = 118,
+        .baseHP        = 50,
+        .baseAttack    = 62,
+        .baseDefense   = 138,
         .baseSpeed     = 30,
         .baseSpAttack  = 42,
-        .baseSpDefense = 88,
+        .baseSpDefense = 108,
         .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 99,
@@ -1233,7 +1233,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_DAUNTLESS_SHIELD, ABILITY_NONE, ABILITY_SOUNDPROOF },
+        .abilities = { ABILITY_SOLID_ROCK, ABILITY_BATTLE_ARMOR, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Shieldon"),
         .cryId = CRY_SHIELDON,
@@ -1266,17 +1266,17 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Shieldon)
         .levelUpLearnset = sShieldonLevelUpLearnset,
         .teachableLearnset = sShieldonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BASTIODON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BASTIODON}),
     },
 
     [SPECIES_BASTIODON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 52,
-        .baseDefense   = 178,
+        .baseHP        = 80,
+        .baseAttack    = 72,
+        .baseDefense   = 188,
         .baseSpeed     = 30,
         .baseSpAttack  = 47,
-        .baseSpDefense = 148,
+        .baseSpDefense = 158,
         .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 199,
@@ -1286,7 +1286,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_DAUNTLESS_SHIELD, ABILITY_NONE, ABILITY_SOUNDPROOF },
+        .abilities = { ABILITY_SOLID_ROCK, ABILITY_BATTLE_ARMOR, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Bastiodon"),
         .cryId = CRY_BASTIODON,
@@ -2988,11 +2988,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CHATOT
     [SPECIES_CHATOT] =
     {
-        .baseHP        = 96,
-        .baseAttack    = 85,
+        .baseHP        = 106,
+        .baseAttack    = 95,
         .baseDefense   = 45,
         .baseSpeed     = 111,
-        .baseSpAttack  = 112,
+        .baseSpAttack  = 122,
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
@@ -3333,12 +3333,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_RIOLU
     [SPECIES_RIOLU] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 110,
-        .baseDefense   = 70,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
         .baseSpeed     = 90,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 57 : 72,
@@ -3381,17 +3381,17 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Riolu)
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 80, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_LUCARIO}),
     },
 
     [SPECIES_LUCARIO] =
     {
         .baseHP        = 90,
-        .baseAttack    = 140,
-        .baseDefense   = 90,
-        .baseSpeed     = 125,
-        .baseSpAttack  = 145,
-        .baseSpDefense = 90,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 204,
@@ -3443,11 +3443,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_LUCARIO_MEGA] =
     {
         .baseHP        = 90,
-        .baseAttack    = 175,
-        .baseDefense   = 108,
-        .baseSpeed     = 147,
-        .baseSpAttack  = 170,
-        .baseSpDefense = 90,
+        .baseAttack    = 165,
+        .baseDefense   = 98,
+        .baseSpeed     = 132,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 219,
@@ -3729,10 +3729,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CROAGUNK
     [SPECIES_CROAGUNK] =
     {
-        .baseHP        = 48,
-        .baseAttack    = 61,
+        .baseHP        = 58,
+        .baseAttack    = 81,
         .baseDefense   = 40,
-        .baseSpeed     = 50,
+        .baseSpeed     = 60,
         .baseSpAttack  = 61,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_POISON, TYPE_FIGHTING),
@@ -3846,8 +3846,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CARNIVINE
     [SPECIES_CARNIVINE] =
     {
-        .baseHP        = 84,
-        .baseAttack    = 120,
+        .baseHP        = 94,
+        .baseAttack    = 130,
         .baseDefense   = 82,
         .baseSpeed     = 46,
         .baseSpAttack  = 90,
@@ -5276,12 +5276,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_MANAPHY
     [SPECIES_PHIONE] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 90,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 90,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -5297,7 +5297,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HYDRATION, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Phione"),
         .cryId = CRY_PHIONE,
@@ -5332,15 +5332,16 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .isMythical = TRUE,
         .levelUpLearnset = sPhioneLevelUpLearnset,
         .teachableLearnset = sPhioneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_MANAPHY}),
     },
 
     [SPECIES_MANAPHY] =
     {
-        .baseHP        = 110,
+        .baseHP        = 100,
         .baseAttack    = 100,
         .baseDefense   = 100,
         .baseSpeed     = 100,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 255,

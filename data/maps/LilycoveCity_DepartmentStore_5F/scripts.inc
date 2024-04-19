@@ -36,19 +36,20 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Dolls:
 	.2byte ITEM_BEEDRILLITE
 	.2byte ITEM_PIDGEOTITE
 	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_SLOWBRONITE
 	.2byte ITEM_GENGARITE
+	.2byte ITEM_KANGASKHANITE
 	.2byte ITEM_PINSIRITE
 	.2byte ITEM_GYARADOSITE
 	.2byte ITEM_AERODACTYLITE
+	.2byte ITEM_MEWTWONITE_X
+	.2byte ITEM_MEWTWONITE_Y
 	.2byte ITEM_AMPHAROSITE
+	.2byte ITEM_STEELIXITE
 	.2byte ITEM_SCIZORITE
 	.2byte ITEM_HERACRONITE
 	.2byte ITEM_HOUNDOOMINITE
 	.2byte ITEM_TYRANITARITE
-	.2byte ITEM_SCEPTILITE
-	.2byte ITEM_BLAZIKENITE
-	.2byte ITEM_SWAMPERTITE
-	.2byte ITEM_GARDEVOIRITE
 	.2byte ITEM_NONE
 	release
 	end
@@ -65,6 +66,10 @@ LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Pokemart_Cushions:
+	.2byte ITEM_SCEPTILITE
+	.2byte ITEM_BLAZIKENITE
+	.2byte ITEM_SWAMPERTITE
+	.2byte ITEM_GARDEVOIRITE
 	.2byte ITEM_SABLENITE
 	.2byte ITEM_MAWILITE
 	.2byte ITEM_AGGRONITE
@@ -86,6 +91,7 @@ LilycoveCity_DepartmentStore_5F_Pokemart_Cushions:
 	.2byte ITEM_ABOMASITE
 	.2byte ITEM_GALLADITE
 	.2byte ITEM_AUDINITE
+	.2byte ITEM_DIANCITE
 	.2byte ITEM_NONE
 	release
 	end
@@ -95,23 +101,35 @@ LilycoveCity_DepartmentStore_5F_EventScript_ClerkMidRight::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration2 LilycoveCity_DepartmentStore_5F_Pokemart_Posters
+	pokemart LilycoveCity_DepartmentStore_5F_Pokemart_Posters
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Pokemart_Posters:
-	.2byte DECOR_BALL_POSTER
-	.2byte DECOR_GREEN_POSTER
-	.2byte DECOR_RED_POSTER
-	.2byte DECOR_BLUE_POSTER
-	.2byte DECOR_CUTE_POSTER
-	.2byte DECOR_PIKA_POSTER
-	.2byte DECOR_LONG_POSTER
-	.2byte DECOR_SEA_POSTER
-	.2byte DECOR_SKY_POSTER
-	.2byte DECOR_NONE
+	.2byte ITEM_FIRE_MEMORY
+	.2byte ITEM_WATER_MEMORY
+	.2byte ITEM_ELECTRIC_MEMORY
+	.2byte ITEM_GRASS_MEMORY
+	.2byte ITEM_ICE_MEMORY
+	.2byte ITEM_FIGHTING_MEMORY
+	.2byte ITEM_POISON_MEMORY
+	.2byte ITEM_GROUND_MEMORY
+	.2byte ITEM_FLYING_MEMORY
+	.2byte ITEM_PSYCHIC_MEMORY
+	.2byte ITEM_BUG_MEMORY
+	.2byte ITEM_ROCK_MEMORY
+	.2byte ITEM_GHOST_MEMORY
+	.2byte ITEM_DRAGON_MEMORY
+	.2byte ITEM_DARK_MEMORY
+	.2byte ITEM_STEEL_MEMORY
+	.2byte ITEM_FAIRY_MEMORY
+	.2byte ITEM_DOUSE_DRIVE
+	.2byte ITEM_SHOCK_DRIVE
+	.2byte ITEM_BURN_DRIVE
+	.2byte ITEM_CHILL_DRIVE
+	.2byte ITEM_NONE
 	release
 	end
 

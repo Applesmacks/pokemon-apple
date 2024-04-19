@@ -2206,7 +2206,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 78, SPECIES_AEGISLASH_SHIELD}),
     },
 
-#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 170 : 170)
+#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 160 : 160)
 
     [SPECIES_AEGISLASH_SHIELD] =
     {
@@ -3084,9 +3084,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_TYRUNT
     [SPECIES_TYRUNT] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 89,
-        .baseDefense   = 77,
+        .baseHP        = 78,
+        .baseAttack    = 109,
+        .baseDefense   = 87,
         .baseSpeed     = 48,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
@@ -3132,14 +3132,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Tyrunt)
         .levelUpLearnset = sTyruntLevelUpLearnset,
         .teachableLearnset = sTyruntTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_TYRANTRUM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_TYRANTRUM}),
     },
 
     [SPECIES_TYRANTRUM] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 121,
-        .baseDefense   = 119,
+        .baseHP        = 102,
+        .baseAttack    = 141,
+        .baseDefense   = 129,
         .baseSpeed     = 71,
         .baseSpAttack  = 69,
         .baseSpDefense = 59,
@@ -3191,12 +3191,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_AMAURA
     [SPECIES_AMAURA] =
     {
-        .baseHP        = 77,
+        .baseHP        = 97,
         .baseAttack    = 59,
         .baseDefense   = 50,
         .baseSpeed     = 46,
-        .baseSpAttack  = 67,
-        .baseSpDefense = 63,
+        .baseSpAttack  = 87,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ICE),
         .catchRate = 255,
         .expYield = 72,
@@ -3239,17 +3239,17 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Amaura)
         .levelUpLearnset = sAmauraLevelUpLearnset,
         .teachableLearnset = sAmauraTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_AURORUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_AURORUS}),
     },
 
     [SPECIES_AURORUS] =
     {
-        .baseHP        = 123,
+        .baseHP        = 143,
         .baseAttack    = 77,
         .baseDefense   = 72,
         .baseSpeed     = 58,
-        .baseSpAttack  = 99,
-        .baseSpDefense = 92,
+        .baseSpAttack  = 119,
+        .baseSpDefense = 102,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ICE),
         .catchRate = 255,
         .expYield = 104,
@@ -3461,7 +3461,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Carbink)
         .levelUpLearnset = sCarbinkLevelUpLearnset,
         .teachableLearnset = sCarbinkTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 78, SPECIES_DIANCIE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_DIANCIE}),
     },
 #endif //P_FAMILY_CARBINK
 
@@ -3746,11 +3746,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_KLEFKI] =
     {
         .baseHP        = 57,
-        .baseAttack    = 80,
-        .baseDefense   = 91,
+        .baseAttack    = 100,
+        .baseDefense   = 111,
         .baseSpeed     = 75,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 87,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
         .catchRate = 255,
         .expYield = 165,

@@ -113,13 +113,6 @@
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_1F",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 22,
-      "y": 3,
-      "elevation": 3,
-      "dest_map": "MAP_ARCHIVE_OF_LEGENDS_1",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

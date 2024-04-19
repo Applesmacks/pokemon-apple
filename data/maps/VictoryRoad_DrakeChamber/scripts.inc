@@ -81,9 +81,9 @@ DrakeChamber_EventScript_CompleteTrigger4::
 DrakeChamber_EventScript_ChamberComplete::
 	setvar VAR_DRAKE_CHAMBER_STATE, 1
 	msgbox DrakeChamber_Text_GoodJob, MSGBOX_DEFAULT
-	applymovement LOCALID_DRAKE_EXIT, Common_Movement_WalkInPlaceFasterRight
-	msgbox DrakeChamber_Text_ArchiveLegends, MSGBOX_DEFAULT
-	applymovement LOCALID_DRAKE_EXIT, Common_Movement_WalkInPlaceFasterLeft
+	giveitem ITEM_REVEAL_GLASS
+	giveitem ITEM_PRISON_BOTTLE
+	giveitem ITEM_REINS_OF_UNITY
 	msgbox DrakeChamber_Text_Goodbye, MSGBOX_DEFAULT
 	fadescreen 1
 	setflag FLAG_DRAKE_CHAMBER_COMPLETE

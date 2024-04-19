@@ -2084,12 +2084,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_AUDINO
     [SPECIES_AUDINO] =
     {
-        .baseHP        = 123,
+        .baseHP        = 133,
         .baseAttack    = 60,
-        .baseDefense   = 106,
+        .baseDefense   = 116,
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
-        .baseSpDefense = 106,
+        .baseSpDefense = 116,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 390,
@@ -2141,12 +2141,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_AUDINO_MEGA] =
     {
-        .baseHP        = 123,
+        .baseHP        = 133,
         .baseAttack    = 60,
-        .baseDefense   = 146,
+        .baseDefense   = 156,
         .baseSpeed     = 50,
         .baseSpAttack  = 80,
-        .baseSpDefense = 146,
+        .baseSpDefense = 156,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
         .catchRate = 255,
         .expYield = 425,
@@ -4056,8 +4056,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_MARACTUS
     [SPECIES_MARACTUS] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 86,
+        .baseHP        = 95,
+        .baseAttack    = 106,
         .baseDefense   = 77,
         .baseSpeed     = 60,
         .baseSpAttack  = 126,
@@ -4385,11 +4385,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_YAMASK
     [SPECIES_YAMASK] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 30,
-        .baseDefense   = 85,
+        .baseHP        = 48,
+        .baseAttack    = 40,
+        .baseDefense   = 95,
         .baseSpeed     = 30,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 255,
@@ -4436,14 +4436,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sYamaskLevelUpLearnset,
         .teachableLearnset = sYamaskTeachableLearnset,
         .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_COFAGRIGUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_COFAGRIGUS}),
     },
 
     [SPECIES_COFAGRIGUS] =
     {
         .baseHP        = 58,
-        .baseAttack    = 50,
-        .baseDefense   = 145,
+        .baseAttack    = 60,
+        .baseDefense   = 155,
         .baseSpeed     = 30,
         .baseSpAttack  = 105,
         .baseSpDefense = 115,
@@ -4495,13 +4495,13 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_GALARIAN_FORMS
     [SPECIES_YAMASK_GALARIAN] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 55,
-        .baseDefense   = 85,
+        .baseHP        = 48,
+        .baseAttack    = 65,
+        .baseDefense   = 95,
         .baseSpeed     = 30,
-        .baseSpAttack  = 30,
+        .baseSpAttack  = 40,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
         .catchRate = 255,
         .expYield = 61,
         .evYield_Defense = 1,
@@ -4546,7 +4546,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sYamaskGalarianLevelUpLearnset,
         .teachableLearnset = sYamaskGalarianTeachableLearnset,
         .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_RUNERIGUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_RUNERIGUS}),
     },
 
      [SPECIES_RUNERIGUS] =
@@ -4555,9 +4555,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
          .baseAttack    = 105,
          .baseDefense   = 155,
          .baseSpeed     = 30,
-         .baseSpAttack  = 50,
-         .baseSpDefense = 105,
-         .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
+         .baseSpAttack  = 60,
+         .baseSpDefense = 115,
+         .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
          .catchRate = 255,
          .expYield = 169,
          .evYield_Defense = 2,
@@ -4606,11 +4606,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_TIRTOUGA
     [SPECIES_TIRTOUGA] =
     {
-        .baseHP        = 54,
-        .baseAttack    = 78,
-        .baseDefense   = 103,
+        .baseHP        = 74,
+        .baseAttack    = 98,
+        .baseDefense   = 123,
         .baseSpeed     = 22,
-        .baseSpAttack  = 53,
+        .baseSpAttack  = 73,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 255,
@@ -4654,16 +4654,16 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Tirtouga)
         .levelUpLearnset = sTirtougaLevelUpLearnset,
         .teachableLearnset = sTirtougaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CARRACOSTA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_CARRACOSTA}),
     },
 
     [SPECIES_CARRACOSTA] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 118,
-        .baseDefense   = 143,
+        .baseHP        = 94,
+        .baseAttack    = 128,
+        .baseDefense   = 153,
         .baseSpeed     = 32,
-        .baseSpAttack  = 83,
+        .baseSpAttack  = 103,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 255,
@@ -4714,7 +4714,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ARCHEN] =
     {
         .baseHP        = 55,
-        .baseAttack    = 112,
+        .baseAttack    = 122,
         .baseDefense   = 45,
         .baseSpeed     = 70,
         .baseSpAttack  = 74,
@@ -4761,13 +4761,13 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Archen)
         .levelUpLearnset = sArchenLevelUpLearnset,
         .teachableLearnset = sArchenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_ARCHEOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_ARCHEOPS}),
     },
 
     [SPECIES_ARCHEOPS] =
     {
         .baseHP        = 75,
-        .baseAttack    = 140,
+        .baseAttack    = 150,
         .baseDefense   = 65,
         .baseSpeed     = 110,
         .baseSpAttack  = 112,
@@ -9200,12 +9200,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_LARVESTA
     [SPECIES_LARVESTA] =
     {
-        .baseHP        = 55,
+        .baseHP        = 65,
         .baseAttack    = 85,
         .baseDefense   = 55,
         .baseSpeed     = 60,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 55,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
         .catchRate = 255,
         .expYield = 72,
@@ -9248,7 +9248,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Larvesta)
         .levelUpLearnset = sLarvestaLevelUpLearnset,
         .teachableLearnset = sLarvestaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_VOLCARONA}),
     },
 
     [SPECIES_VOLCARONA] =
@@ -9257,7 +9257,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 60,
         .baseDefense   = 65,
         .baseSpeed     = 100,
-        .baseSpAttack  = 135,
+        .baseSpAttack  = 145,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
         .catchRate = 255,
