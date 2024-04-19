@@ -21098,7 +21098,8 @@
       "MOVE_GRASS_KNOT",
       "MOVE_ALLY_SWITCH",
       "MOVE_DAZZLING_GLEAM",
-      "MOVE_POLLEN_PUFF"
+      "MOVE_POLLEN_PUFF",
+      "MOVE_MOONBLAST"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -31559,7 +31560,8 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_MOONBLAST"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -39420,7 +39422,8 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_MOONBLAST"
     ],
     "EggMoves": [],
     "TutorMoves": [

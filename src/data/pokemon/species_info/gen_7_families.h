@@ -3679,12 +3679,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_KOMALA
     [SPECIES_KOMALA] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
+        .baseHP        = 85,
+        .baseAttack    = 135,
+        .baseDefense   = 75,
+        .baseSpeed     = 75,
         .baseSpAttack  = 75,
-        .baseSpDefense = 95,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 168,
@@ -4314,7 +4314,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(JangmoO)
         .levelUpLearnset = sJangmoOLevelUpLearnset,
         .teachableLearnset = sJangmoOTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_HAKAMO_O}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_HAKAMO_O}),
     },
 
     [SPECIES_HAKAMO_O] =
@@ -4368,7 +4368,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(HakamoO)
         .levelUpLearnset = sHakamoOLevelUpLearnset,
         .teachableLearnset = sHakamoOTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_KOMMO_O},
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_KOMMO_O},
                                 {EVO_NONE, 0, SPECIES_KOMMO_O_TOTEM}),
     },
 
@@ -4753,7 +4753,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCosmogLevelUpLearnset,
         .teachableLearnset = sCosmogTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_COSMOEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_COSMOEM}),
     },
 
     [SPECIES_COSMOEM] =
@@ -4810,18 +4810,18 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCosmoemLevelUpLearnset,
         .teachableLearnset = sCosmoemTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 53, SPECIES_SOLGALEO},
-                                {EVO_LEVEL_NIGHT, 53, SPECIES_LUNALA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SOLGALEO},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_LUNALA}),
     },
 
     [SPECIES_SOLGALEO] =
     {
-        .baseHP        = 137,
-        .baseAttack    = 137,
-        .baseDefense   = 107,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 113,
-        .baseSpDefense = 89,
+        .baseHP        = 127,
+        .baseAttack    = 127,
+        .baseDefense   = 97,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 103,
+        .baseSpDefense = 79,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
@@ -4869,12 +4869,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_LUNALA] =
     {
-        .baseHP        = 137,
-        .baseAttack    = 113,
-        .baseDefense   = 89,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 137,
-        .baseSpDefense = 107,
+        .baseHP        = 127,
+        .baseAttack    = 103,
+        .baseDefense   = 79,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 127,
+        .baseSpDefense = 97,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
@@ -5555,10 +5555,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {
         .baseHP        = 80,
         .baseAttack    = 95,
-        .baseDefense   = 115,
+        .baseDefense   = 125,
         .baseSpeed     = 65,
         .baseSpAttack  = 130,
-        .baseSpDefense = 115,
+        .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
@@ -5608,10 +5608,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {
         .baseHP        = 80,
         .baseAttack    = 95,
-        .baseDefense   = 115,
+        .baseDefense   = 125,
         .baseSpeed     = 65,
         .baseSpAttack  = 130,
-        .baseSpDefense = 115,
+        .baseSpDefense = 125,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,

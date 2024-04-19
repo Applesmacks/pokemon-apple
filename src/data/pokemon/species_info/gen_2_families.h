@@ -5866,7 +5866,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_NONE, ABILITY_INNER_FOCUS },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_VOLT_ABSORB },
     #endif
@@ -5932,7 +5932,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_INNER_FOCUS },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLASH_FIRE },
     #endif
@@ -5998,7 +5998,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_NONE, ABILITY_INNER_FOCUS },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_WATER_ABSORB },
     #endif
@@ -6041,12 +6041,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_LARVITAR
     [SPECIES_LARVITAR] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 64,
-        .baseDefense   = 50,
+        .baseHP        = 70,
+        .baseAttack    = 74,
+        .baseDefense   = 60,
         .baseSpeed     = 41,
         .baseSpAttack  = 45,
-        .baseSpDefense = 50,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 67,
@@ -6089,17 +6089,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Larvitar)
         .levelUpLearnset = sLarvitarLevelUpLearnset,
         .teachableLearnset = sLarvitarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PUPITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_PUPITAR}),
     },
 
     [SPECIES_PUPITAR] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 84,
-        .baseDefense   = 70,
+        .baseHP        = 90,
+        .baseAttack    = 94,
+        .baseDefense   = 80,
         .baseSpeed     = 51,
         .baseSpAttack  = 65,
-        .baseSpDefense = 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 255,
         .expYield = 144,
@@ -6142,7 +6142,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Pupitar)
         .levelUpLearnset = sPupitarLevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_TYRANITAR}),
     },
 
     [SPECIES_TYRANITAR] =
@@ -6400,7 +6400,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GRASS),
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GRASS),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,

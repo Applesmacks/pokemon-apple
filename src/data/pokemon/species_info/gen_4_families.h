@@ -3150,7 +3150,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Gible)
         .levelUpLearnset = sGibleLevelUpLearnset,
         .teachableLearnset = sGibleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GABITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GABITE}),
     },
 
     [SPECIES_GABITE] =
@@ -3207,7 +3207,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Gabite)
         .levelUpLearnset = sGabiteLevelUpLearnset,
         .teachableLearnset = sGabiteTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GARCHOMP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_GARCHOMP}),
     },
 
     [SPECIES_GARCHOMP] =
@@ -5472,10 +5472,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
-        .baseDefense   = 100,
+        .baseDefense   = 110,
         .baseSpeed     = 100,
         .baseSpAttack  = 100,
-        .baseSpDefense = 100,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 255,
         .expYield = SHAYMIN_EXP_YIELD,

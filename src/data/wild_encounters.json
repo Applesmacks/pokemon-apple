@@ -1384,7 +1384,7 @@
               {
                 "min_level": 65,
                 "max_level": 67,
-                "species": "SPECIES_CRAMORANT"
+                "species": "SPECIES_COSMOG"
               }
             ]
           }
@@ -1753,7 +1753,7 @@
               {
                 "min_level": 80,
                 "max_level": 90,
-                "species": "SPECIES_COSMOG"
+                "species": "SPECIES_ROTOM"
               },
               {
                 "min_level": 80,

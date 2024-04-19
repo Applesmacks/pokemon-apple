@@ -3001,12 +3001,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_TINKATINK
     [SPECIES_TINKATINK] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 45,
+        .baseHP        = 75,
+        .baseAttack    = 83,
         .baseDefense   = 45,
-        .baseSpeed     = 58,
+        .baseSpeed     = 65,
         .baseSpAttack  = 35,
-        .baseSpDefense = 64,
+        .baseSpDefense = 89,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 59,
@@ -3049,17 +3049,17 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Tinkatink)
         .levelUpLearnset = sTinkatinkLevelUpLearnset,
         .teachableLearnset = sTinkatinkTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TINKATUFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TINKATUFF}),
     },
 
     [SPECIES_TINKATUFF] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 55,
+        .baseHP        = 90,
+        .baseAttack    = 93,
         .baseDefense   = 55,
-        .baseSpeed     = 78,
+        .baseSpeed     = 85,
         .baseSpAttack  = 45,
-        .baseSpDefense = 82,
+        .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 133,
@@ -3102,14 +3102,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Tinkatuff)
         .levelUpLearnset = sTinkatuffLevelUpLearnset,
         .teachableLearnset = sTinkatuffTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 65, SPECIES_TINKATON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_TINKATON}),
     },
 
     [SPECIES_TINKATON] =
     {
         .baseHP        = 110,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
+        .baseAttack    = 113,
+        .baseDefense   = 77,
         .baseSpeed     = 100,
         .baseSpAttack  = 70,
         .baseSpDefense = 130,
@@ -3914,10 +3914,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FLAMIGO
     [SPECIES_FLAMIGO] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 115,
-        .baseDefense   = 74,
-        .baseSpeed     = 90,
+        .baseHP        = 92,
+        .baseAttack    = 125,
+        .baseDefense   = 84,
+        .baseSpeed     = 100,
         .baseSpAttack  = 75,
         .baseSpDefense = 64,
         .types = MON_TYPES(TYPE_FLYING, TYPE_FIGHTING),
@@ -3929,7 +3929,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_SCRAPPY, ABILITY_TANGLED_FEET, ABILITY_COSTAR },
+        .abilities = { ABILITY_SCRAPPY, ABILITY_COSTAR, ABILITY_COSTAR },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Flamigo"),
         .cryId = CRY_FLAMIGO,
@@ -5056,7 +5056,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Frigibax)
         .levelUpLearnset = sFrigibaxLevelUpLearnset,
         .teachableLearnset = sFrigibaxTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ARCTIBAX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ARCTIBAX}),
     },
 
     [SPECIES_ARCTIBAX] =
@@ -5109,7 +5109,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Arctibax)
         .levelUpLearnset = sArctibaxLevelUpLearnset,
         .teachableLearnset = sArctibaxTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BAXCALIBUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_BAXCALIBUR}),
     },
 
     [SPECIES_BAXCALIBUR] =
@@ -5334,7 +5334,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseAttack    = 85,
         .baseDefense   = 110,
         .baseSpeed     = 70,
-        .baseSpAttack  = 115,
+        .baseSpAttack  = 105,
         .baseSpDefense = 145,
         .types = MON_TYPES(TYPE_DARK, TYPE_GRASS),
         .catchRate = 6,
@@ -5386,7 +5386,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CHIEN_PAO] =
     {
         .baseHP        = 100,
-        .baseAttack    = 140,
+        .baseAttack    = 130,
         .baseDefense   = 90,
         .baseSpeed     = 145,
         .baseSpAttack  = 90,
@@ -5827,10 +5827,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_IRON_LEAVES
     [SPECIES_IRON_LEAVES] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 130,
+        .baseHP        = 100,
+        .baseAttack    = 140,
         .baseDefense   = 88,
-        .baseSpeed     = 104,
+        .baseSpeed     = 114,
         .baseSpAttack  = 70,
         .baseSpDefense = 108,
         .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
@@ -6095,12 +6095,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_OKIDOGI
     [SPECIES_OKIDOGI] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 128,
-        .baseDefense   = 115,
+        .baseHP        = 108,
+        .baseAttack    = 148,
+        .baseDefense   = 125,
         .baseSpeed     = 80,
         .baseSpAttack  = 58,
-        .baseSpDefense = 86,
+        .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_POISON, TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = 278,
@@ -6150,12 +6150,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_MUNKIDORI
     [SPECIES_MUNKIDORI] =
     {
-        .baseHP        = 88,
+        .baseHP        = 108,
         .baseAttack    = 75,
-        .baseDefense   = 66,
+        .baseDefense   = 81,
         .baseSpeed     = 106,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 90,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_POISON, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 278,
@@ -6205,12 +6205,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FEZANDIPITI
     [SPECIES_FEZANDIPITI] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 91,
-        .baseDefense   = 82,
+        .baseHP        = 108,
+        .baseAttack    = 111,
+        .baseDefense   = 97,
         .baseSpeed     = 99,
         .baseSpAttack  = 70,
-        .baseSpDefense = 125,
+        .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_POISON, TYPE_FAIRY),
         .catchRate = 255,
         .expYield = 278,
@@ -6435,10 +6435,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_IRON_BOULDER
     [SPECIES_IRON_BOULDER] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 120,
+        .baseHP        = 100,
+        .baseAttack    = 130,
         .baseDefense   = 80,
-        .baseSpeed     = 124,
+        .baseSpeed     = 134,
         .baseSpAttack  = 68,
         .baseSpDefense = 108,
         .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
@@ -6489,12 +6489,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_IRON_CROWN
     [SPECIES_IRON_CROWN] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,
         .baseAttack    = 72,
         .baseDefense   = 100,
         .baseSpeed     = 98,
-        .baseSpAttack  = 122,
-        .baseSpDefense = 108,
+        .baseSpAttack  = 132,
+        .baseSpDefense = 118,
         .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 295,
@@ -6714,7 +6714,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     {
         .baseHP        = 88,
         .baseAttack    = 88,
-        .baseDefense   = 160,
+        .baseDefense   = 180,
         .baseSpeed     = 88,
         .baseSpAttack  = 88,
         .baseSpDefense = 88,

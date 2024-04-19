@@ -1995,12 +1995,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_RALTS] =
     {
-        .baseHP        = 28,
+        .baseHP        = 60,
         .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_PSYCHIC, RALTS_FAMILY_TYPE2),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 40 : 70,
@@ -2043,17 +2043,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Ralts)
         .levelUpLearnset = sRaltsLevelUpLearnset,
         .teachableLearnset = sRaltsTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KIRLIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_KIRLIA}),
     },
 
     [SPECIES_KIRLIA] =
     {
-        .baseHP        = 38,
+        .baseHP        = 70,
         .baseAttack    = 35,
-        .baseDefense   = 35,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 55,
+        .baseDefense   = 45,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_PSYCHIC, RALTS_FAMILY_TYPE2),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 97 : 140,
@@ -2096,8 +2096,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Kirlia)
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 55, SPECIES_GARDEVOIR},
-                                {EVO_LEVEL_MALE, 55, SPECIES_GALLADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 62, SPECIES_GARDEVOIR},
+                                {EVO_LEVEL_MALE, 62, SPECIES_GALLADE}),
     },
 
     [SPECIES_GARDEVOIR] =
@@ -3642,12 +3642,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_ARON
     [SPECIES_ARON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 70,
+        .baseHP        = 70,
+        .baseAttack    = 90,
         .baseDefense   = 100,
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
-        .baseSpDefense = 40,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 96,
@@ -3691,17 +3691,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Aron)
         .levelUpLearnset = sAronLevelUpLearnset,
         .teachableLearnset = sAronTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_LAIRON}),
     },
 
     [SPECIES_LAIRON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
+        .baseHP        = 90,
+        .baseAttack    = 120,
         .baseDefense   = 140,
         .baseSpeed     = 40,
         .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 151 : 152,
@@ -3745,7 +3745,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Lairon)
         .levelUpLearnset = sLaironLevelUpLearnset,
         .teachableLearnset = sLaironTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_AGGRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_AGGRON}),
     },
 
     [SPECIES_AGGRON] =
@@ -4441,11 +4441,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_BUDEW] =
     {
-        .baseHP        = 40,
+        .baseHP        = 70,
         .baseAttack    = 30,
         .baseDefense   = 35,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 50,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 85,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 255,
@@ -4491,17 +4491,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Budew)
         .levelUpLearnset = sBudewLevelUpLearnset,
         .teachableLearnset = sBudewTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_ROSELIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ROSELIA}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
     [SPECIES_ROSELIA] =
     {
-        .baseHP        = 50,
+        .baseHP        = 80,
         .baseAttack    = 60,
         .baseDefense   = 45,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 135,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 255,
@@ -4551,7 +4551,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Roselia)
         .levelUpLearnset = sRoseliaLevelUpLearnset,
         .teachableLearnset = sRoseliaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ROSERADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_ROSERADE}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -5424,7 +5424,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 10,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND),
+        .types = MON_TYPES(TYPE_BUG, TYPE_GROUND),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 73,
         .evYield_Attack = 1,
@@ -5438,7 +5438,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ARENA_TRAP, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_ADAPTABILITY, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Trapinch"),
         .cryId = CRY_TRAPINCH,
@@ -5471,17 +5471,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Trapinch)
         .levelUpLearnset = sTrapinchLevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_VIBRAVA}),
     },
 
     [SPECIES_VIBRAVA] =
     {
         .baseHP        = 50,
         .baseAttack    = 50,
-        .baseDefense   = 60,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_BUG, TYPE_DRAGON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 126,
@@ -5496,7 +5496,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_SAND_RUSH, ABILITY_ADAPTABILITY, ABILITY_LEVITATE },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_ADAPTABILITY, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Vibrava"),
         .cryId = CRY_VIBRAVA,
@@ -5529,7 +5529,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Vibrava)
         .levelUpLearnset = sVibravaLevelUpLearnset,
         .teachableLearnset = sVibravaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_FLYGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_FLYGON}),
     },
 
     [SPECIES_FLYGON] =
@@ -5560,7 +5560,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_SAND_RUSH, ABILITY_ADAPTABILITY, ABILITY_LEVITATE },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_ADAPTABILITY, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Flygon"),
         .cryId = CRY_FLYGON,
@@ -5879,10 +5879,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_ZANGOOSE
     [SPECIES_ZANGOOSE] =
     {
-        .baseHP        = 83,
+        .baseHP        = 93,
         .baseAttack    = 135,
         .baseDefense   = 70,
-        .baseSpeed     = 90,
+        .baseSpeed     = 100,
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL),
@@ -5939,7 +5939,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 120,
         .baseDefense   = 70,
         .baseSpeed     = 65,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 120,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON, TYPE_DRAGON),
         .catchRate = 255,
@@ -8274,12 +8274,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_RELICANTH
     [SPECIES_RELICANTH] =
     {
-        .baseHP        = 100,
+        .baseHP        = 110,
         .baseAttack    = 110,
-        .baseDefense   = 130,
+        .baseDefense   = 140,
         .baseSpeed     = 55,
         .baseSpAttack  = 45,
-        .baseSpDefense = 65,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 198,
@@ -8439,7 +8439,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Bagon)
         .levelUpLearnset = sBagonLevelUpLearnset,
         .teachableLearnset = sBagonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SHELGON}),
     },
 
     [SPECIES_SHELGON] =
@@ -8493,7 +8493,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Shelgon)
         .levelUpLearnset = sShelgonLevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_SALAMENCE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_SALAMENCE}),
     },
 
     [SPECIES_SALAMENCE] =
@@ -8671,7 +8671,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sBeldumLevelUpLearnset,
         .teachableLearnset = sBeldumTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_METANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_METANG}),
     },
 
     [SPECIES_METANG] =
@@ -8725,7 +8725,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Metang)
         .levelUpLearnset = sMetangLevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_METAGROSS}),
     },
 
     [SPECIES_METAGROSS] =
@@ -9651,12 +9651,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_JIRACHI] =
     {
         .baseHP        = 100,
-        .baseAttack    = 120,
+        .baseAttack    = 110,
         .baseDefense   = 100,
         .baseSpeed     = 100,
-        .baseSpAttack  = 120,
+        .baseSpAttack  = 110,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,

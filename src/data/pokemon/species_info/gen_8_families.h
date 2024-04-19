@@ -2020,12 +2020,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_APPLIN
     [SPECIES_APPLIN] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 40,
+        .baseHP        = 60,
+        .baseAttack    = 60,
         .baseDefense   = 80,
         .baseSpeed     = 20,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 40,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 255,
         .expYield = 52,
@@ -2069,7 +2069,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sApplinLevelUpLearnset,
         .teachableLearnset = sApplinTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_DIPPLIN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIPPLIN}),
     },
 
     [SPECIES_FLAPPLE] =
@@ -5286,7 +5286,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .teachableLearnset = sDuraludonTeachableLearnset,
         .formSpeciesIdTable = sDuraludonFormSpeciesIdTable,
         .formChangeTable = sDuraludonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_ARCHALUDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_ARCHALUDON}),
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -5453,7 +5453,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Dreepy)
         .levelUpLearnset = sDreepyLevelUpLearnset,
         .teachableLearnset = sDreepyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAKLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DRAKLOAK}),
     },
 
     [SPECIES_DRAKLOAK] =
@@ -5506,7 +5506,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Drakloak)
         .levelUpLearnset = sDrakloakLevelUpLearnset,
         .teachableLearnset = sDrakloakTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_DRAGAPULT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_DRAGAPULT}),
     },
 
     [SPECIES_DRAGAPULT] =
@@ -5903,10 +5903,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     {
         .baseHP        = 70,
         .baseAttack    = 100,
-        .baseDefense   = 60,
+        .baseDefense   = 70,
         .baseSpeed     = 82,
         .baseSpAttack  = 53,
-        .baseSpDefense = 50,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = 77,
@@ -5957,10 +5957,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     {
         .baseHP        = 110,
         .baseAttack    = 140,
-        .baseDefense   = 100,
+        .baseDefense   = 110,
         .baseSpeed     = 107,
         .baseSpAttack  = 63,
-        .baseSpDefense = 60,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
         .catchRate = 255,
         .expYield = 275,
@@ -6069,10 +6069,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     {
         .baseHP        = 110,
         .baseAttack    = 140,
-        .baseDefense   = 100,
+        .baseDefense   = 110,
         .baseSpeed     = 107,
         .baseSpAttack  = 63,
-        .baseSpDefense = 60,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_WATER),
         .catchRate = 255,
         .expYield = 275,
@@ -6182,8 +6182,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ZARUDE
     [SPECIES_ZARUDE] =
     {
-        .baseHP        = 105,
-        .baseAttack    = 120,
+        .baseHP        = 115,
+        .baseAttack    = 130,
         .baseDefense   = 105,
         .baseSpeed     = 105,
         .baseSpAttack  = 70,
@@ -6292,10 +6292,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_REGIELEKI] =
     {
         .baseHP        = 100,
-        .baseAttack    = 110,
+        .baseAttack    = 100,
         .baseDefense   = 50,
-        .baseSpeed     = 200,
-        .baseSpAttack  = 110,
+        .baseSpeed     = 240,
+        .baseSpAttack  = 100,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
@@ -6347,11 +6347,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_REGIDRAGO
     [SPECIES_REGIDRAGO] =
     {
-        .baseHP        = 220,
-        .baseAttack    = 110,
+        .baseHP        = 240,
+        .baseAttack    = 100,
         .baseDefense   = 50,
         .baseSpeed     = 80,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 100,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 255,
@@ -6403,11 +6403,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_GLASTRIER
     [SPECIES_GLASTRIER] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 145,
+        .baseHP        = 110,
+        .baseAttack    = 155,
         .baseDefense   = 130,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 65,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 75,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 255,
@@ -6457,11 +6457,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_SPECTRIER
     [SPECIES_SPECTRIER] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 65,
+        .baseHP        = 110,
+        .baseAttack    = 75,
         .baseDefense   = 60,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 145,
+        .baseSpeed     = 140,
+        .baseSpAttack  = 155,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 255,
@@ -6512,12 +6512,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_CALYREX
     [SPECIES_CALYREX] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 80,
-        .baseDefense   = 80,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
+        .baseHP        = 120,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GRASS),
         .catchRate = 255,
         .expYield = 250,

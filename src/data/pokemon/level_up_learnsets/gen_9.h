@@ -7008,7 +7008,7 @@ static const struct LevelUpMove sHoOhLevelUpLearnset[] = {
 
 #if P_FAMILY_CELEBI
 static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_HEAL_BELL),
     LEVEL_UP_MOVE(10, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(20, MOVE_BATON_PASS),
@@ -7019,7 +7019,7 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE(80, MOVE_HEALING_WISH),
     LEVEL_UP_MOVE(90, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(100, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(100, MOVE_FLEUR_CANNON),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CELEBI
@@ -10017,7 +10017,7 @@ static const struct LevelUpMove sRayquazaLevelUpLearnset[] = {
 
 #if P_FAMILY_JIRACHI
 static const struct LevelUpMove sJirachiLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_WISH),
     LEVEL_UP_MOVE( 7, MOVE_SWIFT),
     LEVEL_UP_MOVE(14, MOVE_HELPING_HAND),
@@ -10029,9 +10029,9 @@ static const struct LevelUpMove sJirachiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_HEALING_WISH),
     LEVEL_UP_MOVE(63, MOVE_REST),
     LEVEL_UP_MOVE(70, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(77, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(77, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(84, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(91, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(91, MOVE_STEEL_BEAM),
     LEVEL_UP_MOVE(98, MOVE_DOOM_DESIRE),
     LEVEL_UP_END
 };
@@ -11743,7 +11743,7 @@ static const struct LevelUpMove sArceusLevelUpLearnset[] = {
 #if P_FAMILY_VICTINI
 static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_WORK_UP),
     LEVEL_UP_MOVE(18, MOVE_INCINERATE),
@@ -11752,7 +11752,7 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(56, MOVE_FIRE_SPIN),
+    LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(70, MOVE_V_CREATE),
     LEVEL_UP_MOVE(77, MOVE_SEARING_SHOT),
     LEVEL_UP_MOVE(84, MOVE_SUNNY_DAY),

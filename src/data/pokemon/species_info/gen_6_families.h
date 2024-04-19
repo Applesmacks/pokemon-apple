@@ -3412,10 +3412,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_CARBINK] =
     {
         .baseHP        = 50,
-        .baseAttack    = 50,
+        .baseAttack    = 60,
         .baseDefense   = 150,
         .baseSpeed     = 50,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 150,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
         .catchRate = 255,
@@ -3517,7 +3517,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Goomy)
         .levelUpLearnset = sGoomyLevelUpLearnset,
         .teachableLearnset = sGoomyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SLIGGOO},
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLIGGOO},
                                 {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}),
     },
 
@@ -3573,7 +3573,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSliggooLevelUpLearnset,
         .teachableLearnset = sSliggooTeachableLearnset,
         .formSpeciesIdTable = sSliggooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_GOODRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_GOODRA}),
     },
 
     [SPECIES_GOODRA] =
@@ -3683,7 +3683,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSliggooHisuianLevelUpLearnset,
         .teachableLearnset = sSliggooHisuianTeachableLearnset,
         .formSpeciesIdTable = sSliggooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_GOODRA_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_GOODRA_HISUIAN}),
     },
 
     [SPECIES_GOODRA_HISUIAN] =
@@ -5054,10 +5054,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_DIANCIE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 100,
+        .baseAttack    = 110,
         .baseDefense   = 150,
         .baseSpeed     = 50,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 110,
         .baseSpDefense = 150,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
         .catchRate = 255,
@@ -5111,10 +5111,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_DIANCIE_MEGA] =
     {
         .baseHP        = 50,
-        .baseAttack    = 160,
+        .baseAttack    = 170,
         .baseDefense   = 110,
         .baseSpeed     = 110,
-        .baseSpAttack  = 160,
+        .baseSpAttack  = 170,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
         .catchRate = 255,
@@ -5174,9 +5174,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseAttack    = 110,
         .baseDefense   = 60,
         .baseSpeed     = 70,
-        .baseSpAttack  = 150,
-        .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
+        .baseSpAttack  = 160,
+        .baseSpDefense = 140,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_GHOST),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
@@ -5230,9 +5230,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseAttack    = 160,
         .baseDefense   = 60,
         .baseSpeed     = 80,
-        .baseSpAttack  = 170,
-        .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DARK),
+        .baseSpAttack  = 180,
+        .baseSpDefense = 140,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
@@ -5285,10 +5285,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_VOLCANION] =
     {
         .baseHP        = 80,
-        .baseAttack    = 110,
+        .baseAttack    = 120,
         .baseDefense   = 120,
         .baseSpeed     = 70,
-        .baseSpAttack  = 130,
+        .baseSpAttack  = 140,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
         .catchRate = 255,
