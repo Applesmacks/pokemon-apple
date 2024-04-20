@@ -67,15 +67,16 @@ Route118_EventScript_DrakePartyFull::
 
 Route118_EventScript_DrakeGivePokemon::
 	msgbox Route118_Text_DrakeGive, MSGBOX_DEFAULT
-	random 7
+	random 8
 	switch VAR_RESULT
 	case 0, Route118_EventScript_DrakeKubfu
 	case 1, Route118_EventScript_DrakeMeltan
 	case 2, Route118_EventScript_DrakeTypeNull
 	case 3, Route118_EventScript_DrakePoipole
 	case 4, Route118_EventScript_DrakeRiolu
-	case 4, Route118_EventScript_DrakePhione
-	case 4, Route118_EventScript_DrakeCarbink
+	case 5, Route118_EventScript_DrakePhione
+	case 6, Route118_EventScript_DrakeCarbink
+	case 6, Route118_EventScript_DrakeCosmog
 	return
 
 Route118_EventScript_DrakeKubfu::
@@ -147,6 +148,17 @@ Route118_EventScript_DrakePhione::
 Route118_EventScript_DrakeCarbink::
 	bufferspeciesname 1, SPECIES_CARBINK
 	givemon SPECIES_CARBINK, 5, ITEM_NONE
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeCosmog::
+	bufferspeciesname 1, SPECIES_COSMOG
+	givemon SPECIES_COSMOG, 5, ITEM_NONE
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
