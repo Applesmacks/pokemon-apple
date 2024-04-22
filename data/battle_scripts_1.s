@@ -7026,6 +7026,10 @@ BattleScript_UltraBurst::
 	switchinabilities BS_ATTACKER
 	end3
 
+BattleScript_GulpMissileFormChange::
+	call BattleScript_AttackerFormChange
+	goto BattleScript_FromTwoTurnMovesSecondTurnRet
+
 BattleScript_AttackerFormChange::
 	pause 5
 	copybyte gBattlerAbility, gBattlerAttacker
