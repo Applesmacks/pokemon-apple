@@ -7602,12 +7602,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ABSOL] =
     {
         .baseHP        = 65,
-        .baseAttack    = 140,
+        .baseAttack    = 150,
         .baseDefense   = 70,
         .baseSpeed     = 115,
         .baseSpAttack  = 75,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DARK),
+        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 174,
         .evYield_Attack = 2,
@@ -7659,7 +7659,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ABSOL_MEGA] =
     {
         .baseHP        = 65,
-        .baseAttack    = 160,
+        .baseAttack    = 170,
         .baseDefense   = 70,
         .baseSpeed     = 155,
         .baseSpAttack  = 115,
@@ -7673,7 +7673,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .abilities = { ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Absol"),

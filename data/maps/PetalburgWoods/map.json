@@ -166,7 +166,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SILVER_POWDER",
+      "trainer_sight_or_berry_tree_id": "ITEM_EVERSTONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL"
     },
@@ -275,7 +275,7 @@
       "x": 39,
       "y": 35,
       "elevation": 3,
-      "item": "ITEM_POTION",
+      "item": "ITEM_BUG_GEM",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POTION"
     },
     {
@@ -283,7 +283,7 @@
       "x": 26,
       "y": 6,
       "elevation": 3,
-      "item": "ITEM_TINY_MUSHROOM",
+      "item": "ITEM_BEAST_BALL",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_1"
     },
     {
@@ -291,7 +291,7 @@
       "x": 40,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_TINY_MUSHROOM",
+      "item": "ITEM_BIG_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_2"
     },
     {
@@ -299,7 +299,7 @@
       "x": 4,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_STICKY_BARB",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POKE_BALL"
     },
     {

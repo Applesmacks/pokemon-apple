@@ -1022,11 +1022,8 @@ Route104_Text_OnlyThrowBallAtWildPokemon:
 	.string "wild POKéMON.$"
 
 Route104_Text_ImNotATrainer:
-	.string "Oh, no, I'm not a TRAINER.\p"
-	.string "But that's right, if TRAINERS lock eyes,\n"
-	.string "it's a challenge to battle.\p"
-	.string "If you don't want to battle, stay out\n"
-	.string "of their sight.$"
+	.string "I threw three items into the shallow\n"
+	.string "water here. Can you find them all?$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like filling my mouth with seeds,\n"

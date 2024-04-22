@@ -97,8 +97,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 28,
-      "y": 74,
+      "x": 21,
+      "y": 72,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -292,14 +292,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 46,
-      "y": 15,
+      "x": 37,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_BUG_BITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
     },
@@ -377,7 +377,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_WORK_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
     },
@@ -614,26 +614,26 @@
     },
     {
       "type": "hidden_item",
-      "x": 14,
-      "y": 55,
+      "x": 21,
+      "y": 70,
       "elevation": 3,
-      "item": "ITEM_POTION",
+      "item": "ITEM_SILK_SCARF",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
     },
     {
       "type": "hidden_item",
-      "x": 16,
-      "y": 72,
+      "x": 19,
+      "y": 69,
       "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
+      "item": "ITEM_SOFT_SAND",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
     },
     {
       "type": "hidden_item",
-      "x": 16,
-      "y": 64,
+      "x": 21,
+      "y": 68,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_SMOKE_BALL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
     }
   ]

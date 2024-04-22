@@ -28425,7 +28425,9 @@
       "MOVE_IRON_DEFENSE",
       "MOVE_X_SCISSOR",
       "MOVE_EARTH_POWER",
-      "MOVE_STEALTH_ROCK"
+      "MOVE_STEALTH_ROCK",
+      "MOVE_SKITTER_SMACK",
+      "MOVE_SMART_STRIKE"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -28535,7 +28537,8 @@
       "MOVE_FLASH_CANNON",
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_LIQUIDATION"
+      "MOVE_LIQUIDATION",
+      "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",

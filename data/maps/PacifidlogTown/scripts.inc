@@ -12,7 +12,21 @@ PacifidlogTown_OnResume:
 	end
 
 PacifidlogTown_EventScript_NinjaBoy::
-	msgbox PacifidlogTown_Text_NeatHousesOnWater, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_set FLAG_OGERPON_MASKS, PacifidlogTown_EventScript_MasksGiven
+	msgbox PacifidlogTown_Text_FoundMasks, MSGBOX_NPC
+	giveitem ITEM_CORNERSTONE_MASK
+	giveitem ITEM_WELLSPRING_MASK
+	giveitem ITEM_HEARTHFLAME_MASK
+	setflag FLAG_OGERPON_MASKS
+	msgbox PacifidlogTown_Text_MasksBye, MSGBOX_NPC
+	release
+	end
+
+PacifidlogTown_EventScript_MasksGiven::
+	msgbox PacifidlogTown_Text_MasksGiven, MSGBOX_NPC
+	release
 	end
 
 PacifidlogTown_EventScript_Girl::
@@ -33,10 +47,20 @@ PacifidlogTown_Text_FastRunningCurrent:
 	.string "If you decide to SURF, you could end\n"
 	.string "up swept away somewhere else.$"
 
-PacifidlogTown_Text_NeatHousesOnWater:
-	.string "See, isn't it neat?\n"
-	.string "These houses are on water!\p"
-	.string "I was born here!$"
+PacifidlogTown_Text_FoundMasks:
+	.string "Hello Mr. Strong-Looking-Trainer!\p"
+	.string "I found these masks floating by in\n"
+	.string "the water. They seem like they could\l"
+	.string "be important. Can you figure out what\l"
+	.string "they're for?$"
+
+PacifidlogTown_Text_MasksBye:
+	.string "Thanks! Hopefully you can find the\n"
+	.string "rightful owner!$"
+
+PacifidlogTown_Text_MasksGiven:
+	.string "Did you figure out anything with those\n"
+	.string "masks yet?$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
 	.string "The SKY PILLAR?\p"

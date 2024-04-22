@@ -14368,14 +14368,19 @@
   "LEDYBA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_SKITTER_SMACK"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LEDIAN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_SKITTER_SMACK",
+      "MOVE_POISON_JAB"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -29266,7 +29271,8 @@
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
-      "MOVE_EXPANDING_FORCE"
+      "MOVE_EXPANDING_FORCE",
+      "MOVE_SNARL"
     ],
     "EggMoves": [
       "MOVE_AMNESIA",
@@ -29419,7 +29425,8 @@
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_SNARL"
     ],
     "EggMoves": [
       "MOVE_AMNESIA",
