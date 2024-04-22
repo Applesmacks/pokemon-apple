@@ -269,6 +269,12 @@ Route111_EventScript_Victor::
 	lock
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
+	goto_if_set FLAG_BADGE03_GET, Route111_EventScript_VictorChallenge
+	msgbox Route111_Text_VictorGetBadge
+	release
+	end
+
+Route111_EventScript_VictorChallenge::
 	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT
@@ -728,3 +734,10 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Route111_Text_VictorGetBadge:
+	.string "Hi there, traveller! I take it you\n"
+	.string "want to battle our family?\p"
+	.string "Well, we only face challengers that\n"
+	.string "have defeated ZACH.\p"
+	.string "Come back after you've at least done\n"
+	.string "that!$"

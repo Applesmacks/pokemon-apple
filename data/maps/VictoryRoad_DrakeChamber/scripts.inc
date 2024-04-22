@@ -7,11 +7,11 @@ VictoryRoad_DrakeChamber_MapScripts::
 
 DrakeChamber_OnLoad:
 	removeobject LOCALID_DRAKE_EXIT
-	clearflag 0xD56
-	clearflag 0xD57
-	clearflag 0xD58
-	clearflag 0xD59
-	clearflag 0xD60
+	cleartrainerflag TRAINER_RAY_RIZZO
+	cleartrainerflag TRAINER_SEJUN_PARK
+	cleartrainerflag TRAINER_RYOTA_OTSUBO
+	cleartrainerflag TRAINER_EMILIO_FORBES
+	cleartrainerflag TRAINER_WOLFE_GLICK
 	end
 
 DrakeChamber_EventScript_CompleteTrigger1::

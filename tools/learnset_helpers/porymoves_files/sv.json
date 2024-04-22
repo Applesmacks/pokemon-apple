@@ -65109,7 +65109,13 @@
       "MOVE_SOLAR_BEAM",
       "MOVE_TERA_BLAST",
       "MOVE_GRASSY_GLIDE",
-      "MOVE_ENDEAVOR"
+      "MOVE_ENDEAVOR",
+      "MOVE_BULK_UP",
+      "MOVE_BRICK_BREAK",
+      "MOVE_LOW_SWEEP",
+      "MOVE_POISON_JAB",
+      "MOVE_CLOSE_COMBAT",
+      "MOVE_TRIPLE_AXEL"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -65200,6 +65206,11 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
+      "MOVE_BULK_UP",
+      "MOVE_BRICK_BREAK",
+      "MOVE_LOW_SWEEP",
+      "MOVE_POISON_JAB",
+      "MOVE_CLOSE_COMBAT",
       "MOVE_TRIPLE_AXEL"
     ],
     "EggMoves": [
@@ -65314,7 +65325,10 @@
       "MOVE_SOLAR_BLADE",
       "MOVE_GRASSY_GLIDE",
       "MOVE_ENDEAVOR",
-      "MOVE_PETAL_BLIZZARD",
+      "MOVE_BULK_UP",
+      "MOVE_BRICK_BREAK",
+      "MOVE_POISON_JAB",
+      "MOVE_CLOSE_COMBAT",
       "MOVE_TRIPLE_AXEL"
     ],
     "EggMoves": [
