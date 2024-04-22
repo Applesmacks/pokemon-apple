@@ -2459,7 +2459,7 @@ static const struct TrainerMon sParty_Kirk[] = {
     },
     {
     .iv = IV_SPREAD_MEDIUM,
-    .heldItem = ITEM_BATTERY,
+    .heldItem = ITEM_MAGNET,
     .lvl = 33,
     .species = SPECIES_EELEKTRIK,
     .ability = ABILITY_LEVITATE,

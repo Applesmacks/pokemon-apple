@@ -10313,7 +10313,7 @@
           "map": "MAP_OLDALE_TOWN",
           "base_label": "gOldaleTown0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 2,

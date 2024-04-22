@@ -194,14 +194,18 @@ Route103_EventScript_Boy::
 	end
 
 Route103_EventScript_Fisherman::
+	lock
+	faceplayer
 	goto_if_set FLAG_UNUSED_0x020 Route103_EventScript_FishermanFurtherSpeak
 	msgbox Route103_Text_HaveARod, MSGBOX_NPC
 	giveitem ITEM_SUPER_ROD, 1
 	setflag FLAG_UNUSED_0x020
+	release
 	end
 
 Route103_EventScript_FishermanFurtherSpeak::
 	msgbox Route103_Text_RodGiven, MSGBOX_NPC
+	release
 	end
 
 Route103_EventScript_Man::
@@ -370,6 +374,6 @@ Route103_Text_HaveARod:
 	.string "No need to thank me.$"
 
 Route103_Text_RodGiven:
-	.string "With your help all of the\n"
+	.string "With your help, all of the\n"
 	.string "WATER Pokemon will be eradicated!$"
 

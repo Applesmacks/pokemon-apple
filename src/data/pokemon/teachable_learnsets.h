@@ -49051,6 +49051,7 @@ static const u16 sCubchooTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
+    MOVE_BRICK_BREAK,
     MOVE_BULLDOZE,
     MOVE_CHARM,
     MOVE_CHILLING_WATER,
