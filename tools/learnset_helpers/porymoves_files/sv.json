@@ -52127,7 +52127,8 @@
       "MOVE_TERA_BLAST",
       "MOVE_ICICLE_SPEAR",
       "MOVE_FOCUS_PUNCH",
-      "MOVE_ENDEAVOR"
+      "MOVE_ENDEAVOR",
+      "MOVE_BRICK_BREAK"
     ],
     "EggMoves": [
       "MOVE_FOCUS_PUNCH",
