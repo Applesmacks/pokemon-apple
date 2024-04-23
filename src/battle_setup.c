@@ -549,7 +549,7 @@ static void DoBattlePyramidTrainerHillBattle(void)
 // Initiates battle where Wally catches Ralts
 void StartWallyTutorialBattle(void)
 {
-    CreateMaleMon(&gEnemyParty[0], SPECIES_RALTS, 5);
+    CreateMaleMon(&gEnemyParty[0], SPECIES_FENNEKIN, 5);
     LockPlayerFieldControls();
     FlagClear(FLAG_NO_BAG);
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;

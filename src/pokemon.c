@@ -1848,7 +1848,7 @@ void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
         otId = Random32();
         personality = Random32();
     }
-    while (GetGenderFromSpeciesAndPersonality(species, personality) != MON_MALE);
+    while (GetGenderFromSpeciesAndPersonality(species, personality) != MON_FEMALE);
     CreateMon(mon, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PRESET, otId);
 }
 
@@ -6309,11 +6309,11 @@ const u32 *GetMonSpritePalFromSpeciesAndPersonality(u16 species, bool32 isShiny,
 bool8 IsMoveHM(u16 move)
 {
     int i = 0;
-    while (sHMMoves[i] != HM_MOVES_END)
-    {
-        if (sHMMoves[i++] == move)
-            return TRUE;
-    }
+    // while (sHMMoves[i] != HM_MOVES_END)
+    // {
+    //     if (sHMMoves[i++] == move)
+    //         return TRUE;
+    // }
     return FALSE;
 }
 
