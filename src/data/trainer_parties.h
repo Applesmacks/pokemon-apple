@@ -95,7 +95,7 @@ static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
     .iv = IV_SPREAD_MEDIUM,
     .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 12,
+    .lvl = 11,
     .species = SPECIES_SCRAGGY,
     .ability = ABILITY_SHED_SKIN,
     .moves = {MOVE_LOW_KICK, MOVE_PAYBACK, MOVE_HEADBUTT, MOVE_FAKE_OUT},
@@ -104,7 +104,7 @@ static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
     .iv = IV_SPREAD_MEDIUM,
     .heldItem = ITEM_SALAC_BERRY,
-    .lvl = 12 ,
+    .lvl = 11 ,
     .species = SPECIES_CROAGUNK,
     .ability = ABILITY_POISON_TOUCH,
     .moves = {MOVE_BELCH, MOVE_ROCK_SMASH, MOVE_POISON_STING, MOVE_FAKE_OUT},
@@ -1577,7 +1577,7 @@ static const struct TrainerMon sParty_Cindy1[] = {
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_HAPPINY,
     .ability = ABILITY_SERENE_GRACE,
     .moves = {MOVE_STOMP, MOVE_ATTRACT, MOVE_NONE, MOVE_NONE},
@@ -1587,7 +1587,7 @@ static const struct TrainerMon sParty_Cindy1[] = {
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_AUDINO,
     .ability = ABILITY_REGENERATOR,
     .moves = {MOVE_POUND, MOVE_ATTRACT, MOVE_NONE, MOVE_NONE},
@@ -4637,24 +4637,21 @@ static const struct TrainerMon sParty_Shelby5[] = {
 static const struct TrainerMon sParty_Calvin1[] = {
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 6,
     .species = SPECIES_POOCHYENA,
     .moves = {MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK, MOVE_NONE},
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 6,
     .species = SPECIES_LILLIPUP,
     .moves = {MOVE_BITE, MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE},
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 7,
     .species = SPECIES_ZIGZAGOON,
     .moves = {MOVE_TACKLE, MOVE_SWAGGER, MOVE_SAND_ATTACK, MOVE_NONE},
     .nature = NATURE_BASHFUL,
@@ -4664,8 +4661,7 @@ static const struct TrainerMon sParty_Calvin1[] = {
 static const struct TrainerMon sParty_Billy[] = {
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_CORPHISH,
     .ability = ABILITY_SIMPLE,
     .moves = {MOVE_AQUA_JET, MOVE_HARDEN, MOVE_MUD_SHOT, MOVE_NONE},
@@ -4673,8 +4669,7 @@ static const struct TrainerMon sParty_Billy[] = {
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_MAKUHITA,
     .ability = ABILITY_THICK_FAT,
     .moves = {MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_TACKLE, MOVE_FOCUS_ENERGY},
@@ -4917,22 +4912,20 @@ static const struct TrainerMon sParty_Eddie[] = {
 static const struct TrainerMon sParty_Allen[] = {
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 7,
+    .species = SPECIES_DARUMAKA,
+    .nature = NATURE_BASHFUL,
+    },
+    {
+    .iv = IV_SPREAD_LOW,
+    .lvl = 8,
     .species = SPECIES_TREECKO,
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
-    .species = SPECIES_DARUMAKA,
-    .nature = NATURE_BASHFUL,
-    },
-    {
-    .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 7,
     .species = SPECIES_TYMPOLE,
     .ability = ABILITY_SWIFT_SWIM,
     .nature = NATURE_BASHFUL,
@@ -8960,17 +8953,15 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
 static const struct TrainerMon sParty_Tiana[] = {
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_BERRY_JUICE,
-    .lvl = 10,
+    .lvl = 8,
     .species = SPECIES_WOOBAT,
-    .ability = ABILITY_SIMPLE,
+    .ability = ABILITY_UNAWARE,
     .moves = {MOVE_WORK_UP, MOVE_GUST, MOVE_ATTRACT, MOVE_CONFUSION},
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_BERRY_JUICE,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_SHELLOS,
     .ability = ABILITY_STORM_DRAIN,
     .moves = {MOVE_MUD_SLAP, MOVE_HARDEN, MOVE_WATER_GUN, MOVE_ICY_WIND},
@@ -8978,8 +8969,8 @@ static const struct TrainerMon sParty_Tiana[] = {
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_BERRY_JUICE,
-    .lvl = 11,
+    .heldItem = ITEM_ORAN_BERRY,
+    .lvl = 9,
     .ability = ABILITY_CONTRARY,
     .species = SPECIES_SPINDA,
     .moves = {MOVE_FAKE_OUT, MOVE_METRONOME, MOVE_NONE, MOVE_NONE},
@@ -9162,22 +9153,19 @@ static const struct TrainerMon sParty_Crissy[] = {
 static const struct TrainerMon sParty_Rick[] = {
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 7,
     .species = SPECIES_SEWADDLE,
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 7,
     .species = SPECIES_WURMPLE,
     .nature = NATURE_BASHFUL,
     },
     {
     .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 8,
     .species = SPECIES_SURSKIT,
     .nature = NATURE_BASHFUL,
     }
@@ -9205,7 +9193,7 @@ static const struct TrainerMon sParty_Lyle[] = {
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 10,
+    .lvl = 11,
     .species = SPECIES_VENIPEDE,
     .ability = ABILITY_SPEED_BOOST,
     .moves = {MOVE_ROLLOUT, MOVE_POISON_TAIL, MOVE_PROTECT, MOVE_NONE},
@@ -10600,7 +10588,7 @@ static const struct TrainerMon sParty_Darian[] = {
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_NORMAL_GEM,
-    .lvl = 10,
+    .lvl = 12,
     .species = SPECIES_FEEBAS,
     .ability = ABILITY_STORM_DRAIN,
     .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
@@ -10609,7 +10597,7 @@ static const struct TrainerMon sParty_Darian[] = {
     {
     .iv = IV_SPREAD_LOW,
     .heldItem = ITEM_WATER_GEM,
-    .lvl = 10,
+    .lvl = 12,
     .species = SPECIES_FINNEON,
     .ability = ABILITY_OBLIVIOUS,
     .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_GUST, MOVE_NONE},
