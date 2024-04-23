@@ -707,7 +707,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Skwovet)
         .levelUpLearnset = sSkwovetLevelUpLearnset,
         .teachableLearnset = sSkwovetTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GREEDENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GREEDENT}),
     },
 
     [SPECIES_GREEDENT] =
@@ -1472,7 +1472,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         FOOTPRINT(Wooloo)
         .levelUpLearnset = sWoolooLevelUpLearnset,
         .teachableLearnset = sWoolooTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_DUBWOOL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DUBWOOL}),
     },
 
     [SPECIES_DUBWOOL] =

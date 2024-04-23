@@ -754,7 +754,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         FOOTPRINT(Bidoof)
         .levelUpLearnset = sBidoofLevelUpLearnset,
         .teachableLearnset = sBidoofTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_BIBAREL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BIBAREL}),
     },
 
     [SPECIES_BIBAREL] =

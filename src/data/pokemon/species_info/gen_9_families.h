@@ -534,8 +534,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Lechonk)
         .levelUpLearnset = sLechonkLevelUpLearnset,
         .teachableLearnset = sLechonkTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 42, SPECIES_OINKOLOGNE_MALE},
-                                {EVO_LEVEL_FEMALE, 42, SPECIES_OINKOLOGNE_FEMALE}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 32, SPECIES_OINKOLOGNE_MALE},
+                                {EVO_LEVEL_FEMALE, 32, SPECIES_OINKOLOGNE_FEMALE}),
     },
 
     [SPECIES_OINKOLOGNE_MALE] =

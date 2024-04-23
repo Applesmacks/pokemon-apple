@@ -757,7 +757,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Yungoos)
         .levelUpLearnset = sYungoosLevelUpLearnset,
         .teachableLearnset = sYungoosTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GUMSHOOS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GUMSHOOS}),
     },
 
     [SPECIES_GUMSHOOS] =

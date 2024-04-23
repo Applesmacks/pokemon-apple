@@ -648,7 +648,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Patrat)
         .levelUpLearnset = sPatratLevelUpLearnset,
         .teachableLearnset = sPatratTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_WATCHOG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_WATCHOG}),
     },
 
     [SPECIES_WATCHOG] =

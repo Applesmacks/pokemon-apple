@@ -638,7 +638,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Bunnelby)
         .levelUpLearnset = sBunnelbyLevelUpLearnset,
         .teachableLearnset = sBunnelbyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_DIGGERSBY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DIGGERSBY}),
     },
 
     [SPECIES_DIGGERSBY] =

@@ -624,7 +624,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Sentret)
         .levelUpLearnset = sSentretLevelUpLearnset,
         .teachableLearnset = sSentretTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_FURRET}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FURRET}),
     },
 
     [SPECIES_FURRET] =

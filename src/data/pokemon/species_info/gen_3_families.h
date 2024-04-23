@@ -864,7 +864,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sZigzagoonLevelUpLearnset,
         .teachableLearnset = sZigzagoonTeachableLearnset,
         .formSpeciesIdTable = sZigzagoonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_LINOONE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LINOONE}),
     },
 
     [SPECIES_LINOONE] =
