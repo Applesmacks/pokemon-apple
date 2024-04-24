@@ -421,7 +421,7 @@ MtPyre_Summit_EventScript_Grunt2::
 
 MtPyre_Summit_EventScript_Grunt3::
 	trainerbattle_single TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
-	setvar VAR_LEVEL_CAP, 70
+	setvar VAR_LEVEL_CAP, 71
 	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 

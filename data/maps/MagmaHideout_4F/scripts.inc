@@ -63,7 +63,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
-	setvar VAR_LEVEL_CAP, 75
+	setvar VAR_LEVEL_CAP, 76
 	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
@@ -131,7 +131,7 @@ MagmaHideout_4F_EventScript_Grunt13::
 
 MagmaHideout_4F_EventScript_Tabitha::
 	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
-	setvar VAR_LEVEL_CAP, 75
+	setvar VAR_LEVEL_CAP, 76
 	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

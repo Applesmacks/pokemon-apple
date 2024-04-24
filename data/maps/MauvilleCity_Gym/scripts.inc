@@ -84,7 +84,7 @@ MauvilleCity_Gym_EventScript_Wattson::
 	end
 
 MauvilleCity_Gym_EventScript_WattsonDefeated::
-	setvar VAR_LEVEL_CAP, 40
+	setvar VAR_LEVEL_CAP, 41
 	message MauvilleCity_Gym_Text_ReceivedDynamoBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare

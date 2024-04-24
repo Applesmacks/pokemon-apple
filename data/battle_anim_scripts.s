@@ -23880,7 +23880,8 @@ FlyUnleash:
 Move_BOUNCE:
 	loadspritegfx ANIM_TAG_ROUND_SHADOW
 	loadspritegfx ANIM_TAG_IMPACT
-	choosetwoturnanim BounceSetUp, BounceUnleash
+	call BounceSetUp
+	call BounceUnleash
 BounceEnd:
 	end
 

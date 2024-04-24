@@ -13584,6 +13584,7 @@ static const struct LevelUpMove sCinccinoLevelUpLearnset[] = {
 static const struct LevelUpMove sGothitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE( 4, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 8, MOVE_TICKLE),
     LEVEL_UP_MOVE(12, MOVE_PSYBEAM),
@@ -13604,6 +13605,7 @@ static const struct LevelUpMove sGothoritaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_TICKLE),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(12, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(16, MOVE_CHARM),
     LEVEL_UP_MOVE(20, MOVE_PSYSHOCK),
@@ -13623,6 +13625,7 @@ static const struct LevelUpMove sGothitelleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TICKLE),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 1, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(12, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(16, MOVE_CHARM),
     LEVEL_UP_MOVE(20, MOVE_PSYSHOCK),
