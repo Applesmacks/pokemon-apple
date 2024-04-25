@@ -235,26 +235,26 @@ FortreeCity_Gym_Text_DariusPostBattle:
 FortreeCity_Gym_Text_WinonaIntro:
 	.string "I am MATT. I am the LEADER of\n"
 	.string "the FORTREE POKéMON GYM.\p"
-	.string "I have become one with BIRD POKéMON\n"
-	.string "and have soared the skies…\p"
+	.string "I have become one with STEEL POKéMON,\n"
+	.string "stalwart and unflinching…\p"
 	.string "However grueling the battle, we have\n"
-	.string "triumphed with grace…\p"
-	.string "Witness the elegant choreography\n"
-	.string "of BIRD POKéMON and I!$"
-
+	.string "proven ourselves unstoppable.\p"
+	.string "Witness the unyeilding bulwark\n"
+	.string "of STEEL POKéMON and I!$"
+	
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
-	.string "than I…\p"
+	.string "With true immovability comes a lack\n"
+	.string "of adaptability, a fact which you\l"
+	.string "have masterfully exploited.\p"
 	.string "In recognition of your prowess,\n"
 	.string "I present to you this GYM BADGE.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{PLAYER} received the FEATHER BADGE\n"
+	.string "{PLAYER} received the BULWARK BADGE\n"
 	.string "from MATT.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "With the FEATHER BADGE, all POKéMON up\n"
+	.string "With the BULWARK BADGE, all POKéMON up\n"
 	.string "to LV 70, even those received through\l"
 	.string "trades, will obey your every command.\p"
 	.string "You will also be able to use\n"
@@ -263,18 +263,17 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 	.string "This is a gift from me.$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "TM40 contains AERIAL ACE.\p"
-	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
-	.string "… … … … … …$"
+	.string "TMXX contains HEAVY SLAM.\p"
+	.string "The heavier the user is than the target,\n"
+	.string "the greater the punch this move packs.$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
 	.string "Registered GYM LEADER MATT\n"
 	.string "in the POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "Though I fell to you, I will remain\n"
-	.string "devoted to BIRD POKéMON.$"
+	.string "Alas, no single substance is perfect.\n"
+	.string "Even STEEL has its weaknesses.$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "FORTREE CITY POKéMON GYM$"

@@ -3108,11 +3108,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_TINKATON] =
     {
         .baseHP        = 110,
-        .baseAttack    = 113,
+        .baseAttack    = 123,
         .baseDefense   = 77,
         .baseSpeed     = 100,
         .baseSpAttack  = 70,
-        .baseSpDefense = 130,
+        .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 253,

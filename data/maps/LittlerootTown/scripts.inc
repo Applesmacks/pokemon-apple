@@ -944,9 +944,7 @@ LittlerootTown_EventScript_SetReceivedRunningShoes::
 
 LittlerootTown_EventScript_GiveRunningShoes::
 	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_Text_SwitchShoesWithRunningShoes
-	waitfanfare
+	giveitem ITEM_EXP_SHARE
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
@@ -977,20 +975,18 @@ LittlerootTown_Text_WearTheseRunningShoes:
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with POKéMON!\p"
 	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "adventure, take this EXP SHARE.\p"
+	.string "It'll help your party grow with you!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "MOM: {PLAYER}, that item came\n"
+	.string "with instructions.\p"
+	.string "“Open your bag and select the EXP\n"
+	.string "SHARE to toggle its effects on and off.”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"

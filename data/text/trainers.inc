@@ -569,12 +569,12 @@ Route106_Text_NedIntro:
 	.string "I'm in the washroom? I just can't go…$"
 
 Route106_Text_NedDefeated:
-	.string "I lost because I'm trying to not go\n"
-	.string "to the washroom…$"
+	.string "Just so you know, the rocks on this\n"
+	.string "beach hold secrets…$"
 
 Route106_Text_NedPostBattle:
-	.string "Oh, no! I've got this feeling I'll hook\n"
-	.string "a big one!$"
+	.string "Just so you know, the rocks on this\n"
+	.string "beach hold secrets…$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"

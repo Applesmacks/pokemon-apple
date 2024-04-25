@@ -10858,7 +10858,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
             .self = TRUE,
-            .chance = 70,
+            .chance = 100,
         }),
         .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -10934,23 +10934,23 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Defend Order"),
         .description = COMPOUND_STRING(
-            "Raises Defense and Sp. Def\n"
+            "Protects the user\n"
             "with a living shield."),
-        .effect = EFFECT_COSMIC_POWER,
+        .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_BUG,
         .accuracy = 0,
         .pp = 10,
         .target = MOVE_TARGET_USER,
-        .priority = 0,
+        .priority = B_UPDATED_MOVE_DATA >= GEN_5 ? 4 : 3,
         .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
-        .snatchAffected = TRUE,
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .assistBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
-        .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = COMBO_STARTER_DEFEND_ORDER,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_ATTACK_ORDER, COMBO_STARTER_HEAL_ORDER},
     },
 

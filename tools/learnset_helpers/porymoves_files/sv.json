@@ -1071,21 +1071,45 @@
   "PIDGEY": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CHARGE_BEAM",
+      "MOVE_ELECTRO_BALL",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_THUNDERBOLT",
+      "MOVE_VOLT_SWITCH",
+      "MOVE_WILD_CHARGE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PIDGEOTTO": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CHARGE_BEAM",
+      "MOVE_ELECTRO_BALL",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_THUNDERBOLT",
+      "MOVE_VOLT_SWITCH",
+      "MOVE_WILD_CHARGE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PIDGEOT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CHARGE_BEAM",
+      "MOVE_ELECTRO_BALL",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_THUNDERBOLT",
+      "MOVE_VOLT_SWITCH",
+      "MOVE_WILD_CHARGE"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

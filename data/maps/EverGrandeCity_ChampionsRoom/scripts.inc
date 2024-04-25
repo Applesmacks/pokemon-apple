@@ -226,9 +226,9 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "TREVOR: Welcome, {PLAYER}{KUN}.\p"
 	.string "That incident in SOOTOPOLIS CITY…\n"
-	.string "That was superb work, putting an end\l"
-	.string "to that crisis all by yourself.\p"
-	.string "Oops!\p"
+	.string "You convinced one super-POKéMON to\l"
+	.string "stop two other super-POKéMON!\p"
+	.string "That's impressive!\p"
 	.string "It wouldn't be fair to say that you\n"
 	.string "alone ended the crisis.\p"
 	.string "You overcame that difficult situation\n"

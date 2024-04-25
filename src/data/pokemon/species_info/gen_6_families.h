@@ -2100,7 +2100,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_HONEDGE
     [SPECIES_HONEDGE] =
     {
-        .baseHP        = 45,
+        .baseHP        = 65,
         .baseAttack    = 80,
         .baseDefense   = 100,
         .baseSpeed     = 28,
@@ -2149,7 +2149,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Honedge)
         .levelUpLearnset = sHonedgeLevelUpLearnset,
         .teachableLearnset = sHonedgeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_DOUBLADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DOUBLADE}),
     },
 
     [SPECIES_DOUBLADE] =
@@ -2159,7 +2159,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseDefense   = 150,
         .baseSpeed     = 35,
         .baseSpAttack  = 45,
-        .baseSpDefense = 59,
+        .baseSpDefense = 49,
         .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
         .catchRate = 255,
         .expYield = 157,
@@ -2203,14 +2203,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         FOOTPRINT(Doublade)
         .levelUpLearnset = sDoubladeLevelUpLearnset,
         .teachableLearnset = sDoubladeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 78, SPECIES_AEGISLASH_SHIELD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_AEGISLASH_SHIELD}),
     },
 
-#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 160 : 160)
+#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 150 : 150)
 
     [SPECIES_AEGISLASH_SHIELD] =
     {
-        .baseHP        = 79,
+        .baseHP        = 80,
         .baseAttack    = 50,
         .baseDefense   = AEGISLASH_MAIN_STAT,
         .baseSpeed     = 60,

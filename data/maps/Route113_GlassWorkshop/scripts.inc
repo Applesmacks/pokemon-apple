@@ -2,13 +2,13 @@ Route113_GlassWorkshop_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route113_GlassWorkshop_OnTransition
 	.byte 0
 
-	.set BLUE_FLUTE_PRICE,   250
-	.set YELLOW_FLUTE_PRICE, 500
-	.set RED_FLUTE_PRICE,    500
-	.set WHITE_FLUTE_PRICE,  1000
-	.set BLACK_FLUTE_PRICE,  1000
-	.set PRETTY_CHAIR_PRICE, 6000
-	.set PRETTY_DESK_PRICE,  8000
+	.set BLUE_FLUTE_PRICE,   500
+	.set YELLOW_FLUTE_PRICE, 1000
+	.set RED_FLUTE_PRICE,    1500
+	.set WHITE_FLUTE_PRICE,  2000
+	.set BLACK_FLUTE_PRICE,  2500
+	.set PRETTY_CHAIR_PRICE, 3000
+	.set PRETTY_DESK_PRICE,  3500
 	.set LOWEST_ASH_PRICE,   BLUE_FLUTE_PRICE
 
 Route113_GlassWorkshop_OnTransition:
@@ -72,7 +72,7 @@ Route113_GlassWorkshop_EventScript_ChooseGlassItem::
 	end
 
 Route113_GlassWorkshop_EventScript_BlueFlute::
-	setvar VAR_0x8008, ITEM_BLUE_FLUTE
+	setvar VAR_0x8008, ITEM_TM_CONFUSE_RAY
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, BLUE_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, BLUE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -84,7 +84,7 @@ Route113_GlassWorkshop_EventScript_BlueFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_YellowFlute::
-	setvar VAR_0x8008, ITEM_YELLOW_FLUTE
+	setvar VAR_0x8008, ITEM_TM_WILL_O_WISP
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, YELLOW_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, YELLOW_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -96,7 +96,7 @@ Route113_GlassWorkshop_EventScript_YellowFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_RedFlute::
-	setvar VAR_0x8008, ITEM_RED_FLUTE
+	setvar VAR_0x8008, ITEM_TM_LOW_SWEEP
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, RED_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, RED_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -108,7 +108,7 @@ Route113_GlassWorkshop_EventScript_RedFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_WhiteFlute::
-	setvar VAR_0x8008, ITEM_WHITE_FLUTE
+	setvar VAR_0x8008, ITEM_TM_GRASS_KNOT
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, WHITE_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, WHITE_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -120,7 +120,7 @@ Route113_GlassWorkshop_EventScript_WhiteFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_BlackFlute::
-	setvar VAR_0x8008, ITEM_BLACK_FLUTE
+	setvar VAR_0x8008, ITEM_TM_LEECH_LIFE
 	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, BLACK_FLUTE_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, BLACK_FLUTE_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
@@ -132,9 +132,8 @@ Route113_GlassWorkshop_EventScript_BlackFlute::
 	end
 
 Route113_GlassWorkshop_EventScript_PrettyChair::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_CHAIR
-	bufferdecorationname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x8008, ITEM_TM_ICE_SPINNER
+	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, PRETTY_CHAIR_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, PRETTY_CHAIR_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
 	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
@@ -145,9 +144,8 @@ Route113_GlassWorkshop_EventScript_PrettyChair::
 	end
 
 Route113_GlassWorkshop_EventScript_PrettyDesk::
-	setvar VAR_0x8009, 1
-	setvar VAR_0x8008, DECOR_PRETTY_DESK
-	bufferdecorationname STR_VAR_1, VAR_0x8008
+	setvar VAR_0x8008, ITEM_TM_CRUNCH
+	bufferitemname STR_VAR_1, VAR_0x8008
 	setvar VAR_0x800A, PRETTY_DESK_PRICE
 	goto_if_lt VAR_ASH_GATHER_COUNT, PRETTY_DESK_PRICE, Route113_GlassWorkshop_EventScript_NotEnoughAshForItem
 	msgbox Route113_GlassWorkshop_Text_IsThatTheItemForYou, MSGBOX_YESNO
@@ -318,7 +316,7 @@ Route113_GlassWorkshop_Text_NotEnoughAshNeedX:
 	.string "I can't make glass with this, huff-puff.\p"
 	.string "Let's see… {STR_VAR_1} is the number of steps\n"
 	.string "you'll need to walk for me to make you\l"
-	.string "a BLUE FLUTE, huff-puff.$"
+	.string "a TM, huff-puff.$"
 
 Route113_GlassWorkshop_Text_WhichGlassItemWoudYouLike:
 	.string "Oh!\n"
@@ -375,7 +373,7 @@ Route113_GlassWorkshop_Text_HaventGotYourSootSack:
 	.string "volcanic ash, huff-puff.$"
 
 Route113_GlassWorkshop_Text_FunToBlowGlassFlute:
-	.string "It's fun to blow a glass flute while\n"
+	.string "It's fun to make a TM while\n"
 	.string "my boss is talking.\p"
 	.string "Huff-huff! Puff-puff!$"
 
