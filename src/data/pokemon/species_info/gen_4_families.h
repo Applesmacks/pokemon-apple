@@ -3379,6 +3379,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Riolu,
         .iconPalIndex = 2,
         FOOTPRINT(Riolu)
+        .isLegendary = TRUE,
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_LUCARIO}),
@@ -3433,6 +3434,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Lucario,
         .iconPalIndex = 2,
         FOOTPRINT(Lucario)
+        .isLegendary = TRUE,
         .levelUpLearnset = sLucarioLevelUpLearnset,
         .teachableLearnset = sLucarioTeachableLearnset,
         .formSpeciesIdTable = sLucarioFormSpeciesIdTable,

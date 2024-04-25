@@ -458,7 +458,7 @@ Route110_EventScript_MayBattleMudkip::
 	end
 
 Route110_EventScript_MayDefeated::
-	setvar VAR_LEVEL_CAP, 36
+	setflag FLAG_RIVAL_ROUTE110_BEAT
 	msgbox Route110_Text_MayTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
 	msgbox Route110_Text_MayExplainItemfinder, MSGBOX_DEFAULT

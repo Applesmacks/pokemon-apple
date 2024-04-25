@@ -161,9 +161,9 @@ LegendChallengeLobby_EventScripts_Yveltal::
 
 LegendChallengeLobby_EventScripts_Zygarde::
 	lock
-	bufferspeciesname 0, SPECIES_ZYGARDE
+	bufferspeciesname 0, SPECIES_ZYGARDE_50_POWER_CONSTRUCT
 	msgbox LegendChalengeLobby_Text_PrepareToChallenge, MSGBOX_DEFAULT
-	setwildbattle SPECIES_ZYGARDE, 80
+	setwildbattle SPECIES_ZYGARDE_50_POWER_CONSTRUCT, 80 
 	dowildbattle
 	release
 	end

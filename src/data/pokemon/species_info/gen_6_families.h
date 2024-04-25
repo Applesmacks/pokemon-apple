@@ -4835,8 +4835,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
-        .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
-        .formChangeTable = sZygarde50AuraBreakFormChangeTable,
+        // .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
+        // .formChangeTable = sZygarde50AuraBreakFormChangeTable,
     },
     [SPECIES_ZYGARDE_50_POWER_CONSTRUCT] =
     {
@@ -4892,11 +4892,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_ZYGARDE_10_AURA_BREAK]      =
     {
         .baseHP        = 54,
-        .baseAttack    = 100,
+        .baseAttack    = 110,
         .baseDefense   = 71,
         .baseSpeed     = 115,
         .baseSpAttack  = 61,
-        .baseSpDefense = 85,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 219,
@@ -4937,8 +4937,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sZygardeLevelUpLearnset,
         .teachableLearnset = sZygardeTeachableLearnset,
-        .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
-        .formChangeTable = sZygarde10AuraBreakFormChangeTable,
+        // .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
+        // .formChangeTable = sZygarde10AuraBreakFormChangeTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_ZYGARDE_50_AURA_BREAK}),
     },
 
     [SPECIES_ZYGARDE_10_POWER_CONSTRUCT] =

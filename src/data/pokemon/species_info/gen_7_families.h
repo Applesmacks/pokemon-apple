@@ -5766,6 +5766,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 0,
         FOOTPRINT(Poipole)
         .isUltraBeast = TRUE,
+        .isLegendary = TRUE,
         .levelUpLearnset = sPoipoleLevelUpLearnset,
         .teachableLearnset = sPoipoleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 72, SPECIES_NAGANADEL}),
@@ -5820,6 +5821,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 0,
         FOOTPRINT(Naganadel)
         .isUltraBeast = TRUE,
+        .isLegendary = TRUE,
         .levelUpLearnset = sNaganadelLevelUpLearnset,
         .teachableLearnset = sNaganadelTeachableLearnset,
     },

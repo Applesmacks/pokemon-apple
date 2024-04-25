@@ -60,10 +60,10 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "Ahahaha!\p"
-	.string "I'm JACOB of the ELITE FOUR.\n"
+	.string "I'm CIRO of the ELITE FOUR.\n"
 	.string "I did my training on MT. EVEREST.\p"
 	.string "While I trained, I gained the ability\n"
-	.string "to commune with ICE-type POKéMON.\p"
+	.string "to commune with GHOST-type POKéMON.\p"
 	.string "Yes, the bond I developed with POKéMON\n"
 	.string "is extremely tight.\p"
 	.string "So, come on, just try and see if you can\n"

@@ -726,7 +726,7 @@
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_HIPPOPOTAS"
+                "species": "SPECIES_GIBLE"
               },
               {
                 "min_level": 40,
@@ -9531,7 +9531,7 @@
               {
                 "min_level": 34,
                 "max_level": 36,
-                "species": "SPECIES_GIBLE"
+                "species": "SPECIES_ZYGARDE_10_AURA_BREAK"
               },
               {
                 "min_level": 34,
