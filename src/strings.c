@@ -958,6 +958,7 @@ const u8 gText_Box[] = _("BOX");
 const u8 gText_CheckMapOfHoenn[] = _("Check the map of the HOENN region.");
 const u8 gText_CheckPokemonInDetail[] = _("Check POKéMON in detail.");
 const u8 gText_CallRegisteredTrainer[] = _("Call a registered TRAINER.");
+const u8 gText_MenuPC[] = _("PC");
 const u8 gText_CheckObtainedRibbons[] = _("Check obtained RIBBONS.");
 const u8 gText_PutAwayPokenav[] = _("Put away the POKéNAV.");
 const u8 gText_NoRibbonWinners[] = _("There are no RIBBON winners.");

@@ -1663,16 +1663,35 @@ void ShowPokemonStorageSystemPC(void)
 
 static void FieldTask_ReturnToPcMenu(void)
 {
+    // u8 taskId;
+    // MainCallback vblankCb = gMain.vblankCallback;
+
+    // SetVBlankCallback(NULL);
+    // taskId = CreateTask(Task_PCMainMenu, 80);
+    // gTasks[taskId].tState = 0;
+    // gTasks[taskId].tSelectedOption = sPreviousBoxOption;
+    // Task_PCMainMenu(taskId);
+    // SetVBlankCallback(vblankCb);
+    // FadeInFromBlack();
+    
     u8 taskId;
     MainCallback vblankCb = gMain.vblankCallback;
-
-    SetVBlankCallback(NULL);
-    taskId = CreateTask(Task_PCMainMenu, 80);
-    gTasks[taskId].tState = 0;
-    gTasks[taskId].tSelectedOption = sPreviousBoxOption;
-    Task_PCMainMenu(taskId);
-    SetVBlankCallback(vblankCb);
-    FadeInFromBlack();
+	if (FlagGet(FLAG_POKEMONPCMENU)==TRUE)
+	{
+        SetVBlankCallback(NULL);
+        taskId = CreateTask(Task_PCMainMenu, 80);
+        gTasks[taskId].tState = 0;
+        gTasks[taskId].tSelectedOption = sPreviousBoxOption;
+        Task_PCMainMenu(taskId);
+        SetVBlankCallback(vblankCb);
+        FadeInFromBlack();
+	}
+	else
+	{
+	    SetVBlankCallback(CB2_ReturnToField);
+		FadeInFromBlack();
+		//DisableInterrupts(FLAG_POKEMONPCMENU);
+	}
 }
 
 #undef tState
