@@ -60853,7 +60853,9 @@
   "ZYGARDE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_DRAGON_CLAW"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -67972,7 +67974,8 @@
       "MOVE_SUPER_FANG",
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_TEMPER_FLARE"
+      "MOVE_TEMPER_FLARE",
+      "MOVE_BRICK_BREAK"
     ],
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
@@ -68070,7 +68073,8 @@
       "MOVE_WEATHER_BALL",
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_TEMPER_FLARE"
+      "MOVE_TEMPER_FLARE",
+      "MOVE_BRICK_BREAK"
     ],
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
@@ -68194,7 +68198,8 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SANDS",
+      "MOVE_BRICK_BREAK"
     ],
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",

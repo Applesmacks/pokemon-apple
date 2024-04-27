@@ -586,16 +586,16 @@ MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
 	.string "obtain that ORB… Fufufu…$"
 
 MtChimney_Text_TabithaIntro:
-	.string "Hehehe!\p"
-	.string "So you've come all the way here!\p"
-	.string "But you're too late!\n"
-	.string "I've already delivered the METEORITE\l"
-	.string "from METEOR FALLS to the BOSS!$"
+	.string "Pfffft!\p"
+	.string "This kid thinks he's getting to\n"
+	.string "the BOSS!\p"
+	.string "Time to teach you's a lesson in\l"
+	.string "respect!$"
 
 MtChimney_Text_TabithaDefeat:
-	.string "Hehehe…\p"
-	.string "Even though I've lost, if our leader\n"
-	.string "awakens that thing…$"
+	.string "Bah!\p"
+	.string "It don't matter, the BOSS will\n"
+	.string "still summon that freaky thing…$"
 
 MtChimney_Text_TabithaPostBattle:
 	.string "BOSS, hurry!\n"

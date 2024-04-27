@@ -2030,11 +2030,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_EXCADRILL] =
     {
         .baseHP        = 120,
-        .baseAttack    = 155,
+        .baseAttack    = 145,
         .baseDefense   = 60,
         .baseSpeed     = 98,
         .baseSpAttack  = 50,
-        .baseSpDefense = 85,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 255,
         .expYield = 178,

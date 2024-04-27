@@ -184,15 +184,15 @@
       "flag": "FLAG_TEMP_1F"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 37,
-      "y": 12,
+      "graphics_id": "OBJ_EVENT_GFX_WATTSON",
+      "x": 34,
+      "y": 26,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "VictoryRoad_B1F_EventScript_Samuel",
       "flag": "0"
     },
@@ -211,9 +211,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 5,
-      "y": 21,
-      "elevation": 3,
+      "x": -5,
+      "y": -5,
+      "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
@@ -262,29 +262,29 @@
       "flag": "FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 14,
-      "y": 16,
+      "graphics_id": "OBJ_EVENT_GFX_TATE",
+      "x": 4,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "VictoryRoad_B1F_EventScript_Mitchell",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 14,
-      "y": 20,
+      "graphics_id": "OBJ_EVENT_GFX_LIZA",
+      "x": 5,
+      "y": 17,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "VictoryRoad_B1F_EventScript_Halle",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "VictoryRoad_B1F_EventScript_Mitchell",
       "flag": "0"
     }
   ],
@@ -295,13 +295,6 @@
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_B2F",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 17,
-      "y": 16,
-      "elevation": 3,
-      "dest_map": "MAP_VICTORY_ROAD_B2F",
-      "dest_warp_id": "2"
     },
     {
       "x": 42,
