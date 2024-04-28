@@ -437,7 +437,16 @@
     "ArchiveOfLegends4",
     "ArchiveOfLegends_5",
     "ArchiveOfLegends_6",
-    "LegendChallengeLobby"
+    "LegendChallengeLobby",
+    "VictoryRoad_Hub",
+    "VictoryRoad_RoxanneChamber",
+    "VictoryRoad_BrawlyChamber",
+    "VictoryRoad_WattsonChamber",
+    "VictoryRoad_FlanneryChamber",
+    "VictoryRoad_NormanChamber",
+    "VictoryRoad_WinonaChamber",
+    "VictoryRoad_TateLizaChamber",
+    "VictoryRoad_JuanChamber"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

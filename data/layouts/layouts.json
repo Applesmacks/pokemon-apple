@@ -4490,6 +4490,96 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/LegendChallengeLobby/border.bin",
       "blockdata_filepath": "data/layouts/LegendChallengeLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_HUB",
+      "name": "VictoryRoad_Hub_Layout",
+      "width": 55,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_Hub/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_Hub/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_ROXANNE_CHAMBER",
+      "name": "VictoryRoad_RoxanneChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_RustboroGym",
+      "border_filepath": "data/layouts/VictoryRoad_RoxanneChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_RoxanneChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_BRAWLY_CHAMBER",
+      "name": "VictoryRoad_BrawlyChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordGym",
+      "border_filepath": "data/layouts/VictoryRoad_BrawlyChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_BrawlyChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_WATTSON_CHAMBER",
+      "name": "VictoryRoad_WattsonChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGym",
+      "border_filepath": "data/layouts/VictoryRoad_WattsonChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_WattsonChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_FLANNERY_CHAMBER",
+      "name": "VictoryRoad_FlanneryChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LavaridgeGym",
+      "border_filepath": "data/layouts/VictoryRoad_FlanneryChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_FlanneryChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_NORMAN_CHAMBER",
+      "name": "VictoryRoad_NormanChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/VictoryRoad_NormanChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_NormanChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_WINONA_CHAMBER",
+      "name": "VictoryRoad_WinonaChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_FortreeGym",
+      "border_filepath": "data/layouts/VictoryRoad_WinonaChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_WinonaChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_TATE_LIZA_CHAMBER",
+      "name": "VictoryRoad_TateLizaChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MossdeepGym",
+      "border_filepath": "data/layouts/VictoryRoad_TateLizaChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_TateLizaChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_JUAN_CHAMBER",
+      "name": "VictoryRoad_JuanChamber_Layout",
+      "width": 10,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/VictoryRoad_JuanChamber/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_JuanChamber/map.bin"
     }
   ]
 }

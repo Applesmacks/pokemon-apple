@@ -408,6 +408,15 @@
 #define MAP_ARCHIVE_OF_LEGENDS_5                     (113 | (24 << 8))
 #define MAP_ARCHIVE_OF_LEGENDS_6                     (114 | (24 << 8))
 #define MAP_LEGEND_CHALLENGE_LOBBY                   (115 | (24 << 8))
+#define MAP_VICTORY_ROAD_HUB                         (116 | (24 << 8))
+#define MAP_VICTORY_ROAD_ROXANNE_CHAMBER             (117 | (24 << 8))
+#define MAP_VICTORY_ROAD_BRAWLY_CHAMBER              (118 | (24 << 8))
+#define MAP_VICTORY_ROAD_WATTSON_CHAMBER             (119 | (24 << 8))
+#define MAP_VICTORY_ROAD_FLANNERY_CHAMBER            (120 | (24 << 8))
+#define MAP_VICTORY_ROAD_NORMAN_CHAMBER              (121 | (24 << 8))
+#define MAP_VICTORY_ROAD_WINONA_CHAMBER              (122 | (24 << 8))
+#define MAP_VICTORY_ROAD_TATE_LIZA_CHAMBER           (123 | (24 << 8))
+#define MAP_VICTORY_ROAD_JUAN_CHAMBER                (124 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

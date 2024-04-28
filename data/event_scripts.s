@@ -1089,3 +1089,21 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ArchiveOfLegends_6/scripts.inc"
 
 	.include "data/maps/LegendChallengeLobby/scripts.inc"
+
+	.include "data/maps/VictoryRoad_Hub/scripts.inc"
+
+	.include "data/maps/VictoryRoad_RoxanneChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_BrawlyChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_WattsonChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_FlanneryChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_NormanChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_WinonaChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_TateLizaChamber/scripts.inc"
+
+	.include "data/maps/VictoryRoad_JuanChamber/scripts.inc"

@@ -12084,6 +12084,70 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_VICTORY_ROAD_HUB",
+          "base_label": "gVictoryRoad_Hub0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_SAMUROTT"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_DECIDUEYE_HISUIAN"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_LILLIGANT_HISUIAN"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_SLIGGOO_HISUIAN"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_BRAVIARY"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_CASTFORM"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_ROTOM"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_EXEGGUTOR"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_AVALUGG"
+              },
+              {
+                "min_level": 80,
+                "max_level": 90,
+                "species": "SPECIES_WEEZING"
+              }
+            ]
+          }
         }
       ]
     },

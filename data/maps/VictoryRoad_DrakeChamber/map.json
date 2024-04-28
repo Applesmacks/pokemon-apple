@@ -111,8 +111,8 @@
       "x": 2,
       "y": 8,
       "elevation": 3,
-      "dest_map": "MAP_VICTORY_ROAD_1F",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_VICTORY_ROAD_HUB",
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [
