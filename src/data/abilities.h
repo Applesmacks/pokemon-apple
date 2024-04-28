@@ -2473,7 +2473,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_TEAL] =
+    [ABILITY_EMBODY_ASPECT_TEAL_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2488,7 +2488,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_HEARTHFLAME] =
+    [ABILITY_EMBODY_ASPECT_HEARTHFLAME_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2503,7 +2503,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_WELLSPRING] =
+    [ABILITY_EMBODY_ASPECT_WELLSPRING_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
@@ -2518,7 +2518,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_EMBODY_ASPECT_CORNERSTONE] =
+    [ABILITY_EMBODY_ASPECT_CORNERSTONE_MASK] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Embody Aspect"),
