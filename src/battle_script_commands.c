@@ -6035,6 +6035,7 @@ static void Cmd_moveend(void)
             break;
         }
         case MOVEEND_EJECT_BUTTON:
+            u32 ejectPackBattlers = 0, ejectButtonBattlers = 0, i;
             if (gMovesInfo[gCurrentMove].effect != EFFECT_HIT_SWITCH_TARGET
               && IsBattlerAlive(gBattlerAttacker)
               && !TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove)
