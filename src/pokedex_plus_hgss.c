@@ -293,8 +293,8 @@ static const u32 sPokedexPlusHGSS_ScreenSearchHoenn_Tilemap[] = INCBIN_U32("grap
 static const u32 sPokedexPlusHGSS_ScreenSearchNational_Tilemap[] = INCBIN_U32("graphics/pokedex/hgss/tilemap_search_screen_national.bin.lz");
 
 #define SCROLLING_MON_X 146
-#define HGSS_DECAPPED FALSE
-#define HGSS_DARK_MODE FALSE
+#define HGSS_DECAPPED TRUE
+#define HGSS_DARK_MODE TRUE
 #define HGSS_HIDE_UNSEEN_EVOLUTION_NAMES FALSE
 
 // For scrolling search parameter
@@ -319,7 +319,7 @@ static EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
 //Pokedex Plus HGSS_Ui
 #define MOVES_COUNT_TOTAL (EGG_MOVES_ARRAY_COUNT + MAX_LEVEL_UP_MOVES + NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
 EWRAM_DATA static u16 sStatsMoves[MOVES_COUNT_TOTAL] = {0};
-EWRAM_DATA static u16 sStatsMovesTMHM_ID[NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES] = {0};
+//EWRAM_DATA static u16 sStatsMovesTMHM_ID[NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES] = {0};
 
 
 struct SearchOptionText
@@ -5121,7 +5121,7 @@ static bool8 CalculateMoves(void)
     u8 numTMHMMoves = 0;
     u8 numTutorMoves = 0;
     u16 movesTotal = 0;
-    u8 i,j;
+    u8 i; //j;
 
     // Mega pokemon don't have distinct learnsets from their base form; so use base species for calculation
     if (species >= SPECIES_VENUSAUR_MEGA && species <= SPECIES_GROUDON_PRIMAL)
@@ -5148,37 +5148,40 @@ static bool8 CalculateMoves(void)
     for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
     {
         move = teachableLearnset[i];
-        for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
-        {
-            if (ItemIdToBattleMoveId(ITEM_TM01 + j) == move)
-            {
-                sStatsMovesTMHM_ID[numTMHMMoves] = (ITEM_TM01 + j);
-                numTMHMMoves++;
+        numTMHMMoves++;
+        sStatsMoves[movesTotal] = move;
+        movesTotal++;
+        // for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
+        // {
+        //     if (ItemIdToBattleMoveId(ITEM_TM01 + j) == move)
+        //     {
+        //         sStatsMovesTMHM_ID[numTMHMMoves] = (ITEM_TM01 + j);
+        //         numTMHMMoves++;
 
-                sStatsMoves[movesTotal] = move;
-                movesTotal++;
-                break;
-            }
-        }
+        //         sStatsMoves[movesTotal] = move;
+        //         movesTotal++;
+        //         break;
+        //     }
+        // }
     }
 
-    for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
-    {
-        move = teachableLearnset[i];
-        for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
-        {
-            if (ItemIdToBattleMoveId(ITEM_TM01 + j) == move)
-                break;
-        }
-
-        if (j >= NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
-        {
-            numTutorMoves++;
-
-            sStatsMoves[movesTotal] = move;
-            movesTotal++;
-        }
-    }
+    // for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+    // {
+        // move = teachableLearnset[i];
+        // for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
+        // {
+            // if (ItemIdToBattleMoveId(ITEM_TM01 + j) == move)
+                // break;
+        // }
+// 
+        // if (j >= NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
+        // {
+            // numTutorMoves++;
+// 
+            // sStatsMoves[movesTotal] = move;
+            // movesTotal++;
+        // }
+    // }
 
     sPokedexView->numEggMoves = numEggMoves;
     sPokedexView->numLevelUpMoves = numLevelUpMoves;
@@ -5247,9 +5250,10 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
     }
     else if (selected < (numEggMoves + numLevelUpMoves + numTMHMMoves))
     {
-        CopyItemName(sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)], gStringVar1); //TM name
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gStringVar1, moves_x + 113, moves_y + 9);
-        item = sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)];
+        // CopyItemName(sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)], gStringVar1); //TM name
+        // PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gStringVar1, moves_x + 113, moves_y + 9);
+        // item = sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)];
+        item = ITEM_TM_WORK_UP;
     }
     else if (selected < (numEggMoves + numLevelUpMoves + numTMHMMoves + numTutorMoves))
     {

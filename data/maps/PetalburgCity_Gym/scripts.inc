@@ -1365,7 +1365,7 @@ PetalburgCity_Gym_Text_RandallDefeat:
 PetalburgCity_Gym_Text_RandallPostBattle:
 	.string "Go on to the next room where a new\n"
 	.string "challenge awaits you.\p"
-	.string "At the left is the CONFUSION ROOM.\p"
+	.string "At the left is the CRIT ROOM.\p"
 	.string "The right door leads to the DEFENSE\n"
 	.string "ROOM.$"
 
@@ -1377,7 +1377,7 @@ PetalburgCity_Gym_Text_RandallPostBadge:
 	.string "GYM LEADER is all about.$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
-	.string "This is the CONFUSION ROOM.\p"
+	.string "This is the CRITICAL HIT ROOM.\p"
 	.string "Let me see how well bonded you are\n"
 	.string "with your POKéMON!$"
 
@@ -1412,7 +1412,7 @@ PetalburgCity_Gym_Text_GeorgePostBattle:
 	.string "earned only through effort.\p"
 	.string "I lost because my own efforts\n"
 	.string "weren't enough.\p"
-	.string "Go on! The ONE-HIT KO ROOM is next.$"
+	.string "Go on! The RECOIL ROOM is next.$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
 	.string "I'm going to keep training at GYMS.\n"
@@ -1477,7 +1477,7 @@ PetalburgCity_Gym_Text_AlexiaPostBattle:
 	.string "Now, go on! The left door goes to\n"
 	.string "the STRENGTH ROOM.\p"
 	.string "The right door opens to\n"
-	.string "the ONE-HIT KO ROOM.\p"
+	.string "the RECOIL ROOM.\p"
 	.string "Both of them have TRAINERS who are\n"
 	.string "skilled at offense.$"
 
@@ -1524,7 +1524,7 @@ PetalburgCity_Gym_Text_EnterAccuracyRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "“CONFUSION ROOM,” the sign says.\p"
+	.string "“CRITICAL HIT ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
@@ -1540,7 +1540,7 @@ PetalburgCity_Gym_Text_EnterStrengthRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "“ONE-HIT KO ROOM,” the sign says.\p"
+	.string "“RECOIL ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:

@@ -4,16 +4,14 @@ Common_EventScript_CenterRelearner::
     msgbox Common_Text_CenterRelearnerSpeak MSGBOX_DEFAULT
 	dynmultipush Common_Text_CenterRelearn, 0
 	dynmultipush Common_Text_CenterStatus, 1
-	dynmultipush Common_Text_CheckIV, 2
-	dynmultipush Common_Text_CheckEV, 3
-	dynmultipush Common_Text_Close, 4
-	dynmultistack 0, 0, FALSE, 5 FALSE, 0, NULL
+	dynmultipush Common_Text_HyperTrain, 2
+	dynmultipush Common_Text_Close, 3
+	dynmultistack 0, 0, FALSE, 4 FALSE, 0, NULL
 	switch VAR_RESULT
 	case 0, EventScript_CenterRelearnMove
 	case 1, EventScript_CenterRelearner_InflictStatus1
-	case 2, EventScript_CenterRelearner_CheckIVs
-	case 3, EventScript_CenterRelearner_CheckEVs
-	case 4, EventScript_CenterRelearnerBye
+	case 2, EventScript_CenterRelearner_HyperTrain
+	case 3, EventScript_CenterRelearnerBye
 
 EventScript_CenterRelearner_Default_End::
 	goto EventScript_CenterRelearnerBye
@@ -31,22 +29,182 @@ EventScript_CenterRelearnMove::
 	goto Common_EventScript_CenterRelearner_ChooseMove
 	end
 
-EventScript_CenterRelearner_CheckIVs::
+EventScript_CenterRelearner_HyperTrain::
 	msgbox Common_Text_CenterRelearnerWhichMon, MSGBOX_DEFAULT
 	getpartysize
 	goto_if_eq VAR_RESULT, 0, Debug_NoPokemon
 	special ChoosePartyMon
 	waitstate
 	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_CenterRelearner_CheckIVs_End
-	callnative Script_GetChosenMonOffensiveIVs
-	msgbox EventScript_CenterRelearner_Text_OffensiveIVs, MSGBOX_DEFAULT
-	callnative Script_GetChosenMonDefensiveIVs
-	msgbox EventScript_CenterRelearner_Text_DefensiveIVs, MSGBOX_DEFAULT
+	msgbox Common_Text_CenterRelearnerWhichStat, MSGBOX_DEFAULT
+	dynmultipush Common_Text_All, 0
+	dynmultipush Common_Text_HP, 1
+	dynmultipush Common_Text_ATK, 2
+	dynmultipush Common_Text_DEF, 3
+	dynmultipush Common_Text_SPATK, 4
+	dynmultipush Common_Text_SPDEF, 5
+	dynmultipush Common_Text_SPD, 6
+	dynmultipush Common_Text_Close, 7
+	dynmultistack 0, 0, FALSE, 5 FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, CenterRelearner_EventScript_HyperAll	
+	case 1, CenterRelearner_EventScript_TryHyperHP
+	case 2, CenterRelearner_EventScript_TryHyperATK
+	case 3, CenterRelearner_EventScript_TryHyperDEF
+	case 4, CenterRelearner_EventScript_TryHyperSPATK
+	case 5, CenterRelearner_EventScript_TryHyperSPDEF
+	case 6, CenterRelearner_EventScript_TryHyperSPD
+	case 7, EventScript_CenterRelearnerBye
+
+EventScript_CenterRelearner_HyperTrain_End::
+	goto EventScript_CenterRelearnerBye
+	releaseall
+	end
+
+CenterRelearner_EventScript_HyperAll::
+	canhypertrain STAT_HP, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperHP
+	canhypertrain STAT_ATK, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperATK
+	canhypertrain STAT_DEF, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperDEF
+	canhypertrain STAT_SPATK, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperSPATK
+	canhypertrain STAT_SPDEF, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperSPDEF
+	canhypertrain STAT_SPEED, VAR_0x8004
+	compare VAR_RESULT, TRUE
+	call_if_eq CenterRelearner_EventScript_AllHyperSPD
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrainedAll, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_AllHyperHP::
+	hypertrain STAT_HP, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_AllHyperATK::
+	hypertrain STAT_ATK, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_AllHyperDEF::
+	hypertrain STAT_DEF, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_AllHyperSPATK::
+	hypertrain STAT_SPATK, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_AllHyperSPDEF::
+	hypertrain STAT_SPDEF, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_AllHyperSPD::
+	hypertrain STAT_SPEED, VAR_0x8004
+	return
+
+CenterRelearner_EventScript_TryHyperHP::
+	canhypertrain STAT_HP, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_HP, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_TryHyperATK::
+	canhypertrain STAT_ATK, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_ATK, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_TryHyperDEF::
+	canhypertrain STAT_DEF, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_DEF, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_TryHyperSPATK::
+	canhypertrain STAT_SPATK, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_SPATK, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_TryHyperSPDEF::
+	canhypertrain STAT_SPDEF, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_SPDEF, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
+
+CenterRelearner_EventScript_TryHyperSPD::
+	canhypertrain STAT_SPEED, VAR_0x8004
+	compare VAR_RESULT, FALSE
+	goto_if_eq CenterRelearner_EventScript_StatNoHyper
+	hypertrain STAT_SPEED, VAR_0x8004
+	closemessage
+	playse SE_USE_ITEM
+	waitse
+	msgbox CenterRelearner_Text_StatHyperTrained, MSGBOX_DEFAULT
+	releaseall
+	end 
 
 EventScript_CenterRelearner_CheckIVs_End::
 	goto EventScript_CenterRelearnerBye
 	release
 	end
+
+CenterRelearner_EventScript_StatNoHyper::
+	msgbox CenterRelearner_Text_StatNoHyper, MSGBOX_DEFAULT
+	goto EventScript_CenterRelearner_HyperTrain
+	end
+
+Common_Text_CenterRelearnerWhichStat:
+	.string "Which stat would you like to train?$"
+
+CenterRelearner_Text_StatHyperTrained:
+	.string "Your POKéMON's stat is trained!$"
+
+CenterRelearner_Text_StatHyperTrainedAll:
+	.string "All of your POKéMON's stats are trained!$"
+
+CenterRelearner_Text_StatNoHyper:
+	.string "That stat is already trained. Please\n"
+	.string "choose another POKéMON.$"
 
 EventScript_CenterRelearner_CheckEVs::
 	msgbox Common_Text_CenterRelearnerWhichMon, MSGBOX_DEFAULT
@@ -217,6 +375,27 @@ EventScript_CenterRelearner_InflictStatus1_Text_Freeze:
 EventScript_CenterRelearner_InflictStatus1_Text_Frostbite:
 	.string "Frostbite$"
 
+Common_Text_All:
+	.string "All Stats$"
+
+Common_Text_HP:
+	.string "HP$"
+
+Common_Text_ATK:
+	.string "Attack$"
+
+Common_Text_DEF:
+	.string "Defense$"
+
+Common_Text_SPATK:
+	.string "Special Attack$"
+
+Common_Text_SPDEF:
+	.string "Special Defense$"
+
+Common_Text_SPD:
+	.string "Speed$"
+
 EventScript_CenterRelearnerBye::
     msgbox Common_Text_CenterRelearnerBye MSGBOX_DEFAULT
     return
@@ -277,6 +456,9 @@ Common_Text_CheckEV:
 
 Common_Text_Close:
 	.string "Close$"
+
+Common_Text_HyperTrain:
+	.string "Hyper Train$"
 
 EventScript_CenterRelearner_Text_OffensiveIVs:
 	.string "ATK IVs: {STR_VAR_1}, SPATK IVs: {STR_VAR_2}, SPEED IVs: {STR_VAR_3}$"

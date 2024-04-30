@@ -9291,7 +9291,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
         .secondaryId = MOVE_TOXIC,
     },
-    [ITEM_TM_HAIL] =
+    [ITEM_TM_FAKE_OUT] =
     {
         .name = _("TM07"),
         .price = 3000,
@@ -9300,7 +9300,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HAIL,
+        .secondaryId = MOVE_FAKE_OUT,
     },
     [ITEM_TM_BULK_UP] =
     {
