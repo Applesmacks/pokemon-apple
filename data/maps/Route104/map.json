@@ -403,7 +403,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GRASSY_SEED",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_TAKE_DOWN",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
     },
@@ -601,7 +601,7 @@
       "x": 7,
       "y": 6,
       "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
+      "item": "ITEM_AMULET_COIN",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
     },
     {
@@ -609,7 +609,7 @@
       "x": 3,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_BRIGHT_POWDER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
     },
     {
@@ -633,7 +633,7 @@
       "x": 21,
       "y": 68,
       "elevation": 3,
-      "item": "ITEM_SMOKE_BALL",
+      "item": "ITEM_MENTAL_HERB",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
     }
   ]

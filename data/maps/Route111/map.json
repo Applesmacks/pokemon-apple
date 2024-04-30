@@ -977,7 +977,7 @@
       "x": 26,
       "y": 70,
       "elevation": 0,
-      "item": "ITEM_TM_SANDSTORM",
+      "item": "ITEM_TM_DRAIN_PUNCH",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
     },
     {

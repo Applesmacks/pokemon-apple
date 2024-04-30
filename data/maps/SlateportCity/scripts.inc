@@ -525,17 +525,22 @@ SlateportCity_EventScript_DollClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration SlateportCity_PokemartDecor_Dolls
+	pokemart SlateportCity_PokemartDecor_Dolls
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 SlateportCity_PokemartDecor_Dolls:
-	.2byte DECOR_AZURILL_DOLL
-	.2byte DECOR_MARILL_DOLL
-	.2byte DECOR_SKITTY_DOLL
-	.2byte DECOR_NONE
+	.2byte ITEM_TM_GRASSY_TERRAIN
+	.2byte ITEM_TM_MISTY_TERRAIN
+	.2byte ITEM_TM_ELECTRIC_TERRAIN
+	.2byte ITEM_TM_PSYCHIC_TERRAIN
+	.2byte ITEM_GRASSY_SEED
+	.2byte ITEM_MISTY_SEED
+	.2byte ITEM_ELECTRIC_SEED
+	.2byte ITEM_PSYCHIC_SEED
+	.2byte ITEM_NONE
 	release
 	end
 
@@ -588,7 +593,7 @@ SlateportCity_EventScript_PowerTMClerk::
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_HIDDEN_POWER
-	.2byte ITEM_TM_NATURE_POWER
+	.2byte ITEM_TM_SECRET_POWER
 	.2byte ITEM_NONE
 	release
 	end

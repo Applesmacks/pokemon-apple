@@ -10270,7 +10270,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
         .secondaryId = MOVE_SNARL,
     },
-    [ITEM_TM_NATURE_POWER] =
+    [ITEM_TM_SECRET_POWER] =
     {
         .name = _("TM96"),
         .price = 3000,
@@ -10279,7 +10279,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NATURE_POWER,
+        .secondaryId = MOVE_SECRET_POWER,
     },
     [ITEM_TM_DARK_PULSE] =
     {
