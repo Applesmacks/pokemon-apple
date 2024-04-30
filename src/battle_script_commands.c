@@ -4416,7 +4416,15 @@ static void Cmd_getexp(void)
                         gBattleMoveDamage += GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);;
                     }
 
-                    ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
+                    if (EXP_CAP_HARD && gBattleMoveDamage != 0)
+                    {
+                        u32 growthRate = gSpeciesInfo[GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPECIES)].growthRate;
+                        if (gExperienceTables[growthRate][GetCurrentLevelCap()] < gExperienceTables[growthRate][GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL)] + gBattleMoveDamage)
+                            gBattleMoveDamage = gExperienceTables[growthRate][GetCurrentLevelCap()];
+                    }
+
+                    if (!EXP_CAP_HARD || gBattleMoveDamage != 0) // Edge case for hard level caps. Prevents mons from getting 1 exp
+                        ApplyExperienceMultipliers(&gBattleMoveDamage, *expMonId, gBattlerFainted);
 
                     if (IsTradedMon(&gPlayerParty[*expMonId]))
                     {
@@ -6038,22 +6046,66 @@ static void Cmd_moveend(void)
                 SortBattlersBySpeed(battlers, FALSE);
                 for (i = 0; i < gBattlersCount; i++)
                 {
-                    u8 battler = battlers[i];
-                    // Attacker is the damage-dealer, battler is mon to be switched out
-                    if (IsBattlerAlive(battler)
-                      && gBattlerAttacker != battler
-                      && GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_EJECT_BUTTON
-                      && BATTLER_TURN_DAMAGED(battler)
-                      && CountUsablePartyMons(battler) > 0)  // Has mon to switch into
+                    u32 holdEffect;
+                    holdEffect = GetBattlerHoldEffect(i, TRUE);
+                    if (holdEffect == HOLD_EFFECT_EJECT_BUTTON)
+                        ejectButtonBattlers |= gBitTable[i];
+                    else if (holdEffect == HOLD_EFFECT_EJECT_PACK)
+                        ejectPackBattlers |= gBitTable[i];
+                }
+                if (ejectButtonBattlers || ejectPackBattlers)
+                {
+                    u8 battlers[4] = {0, 1, 2, 3};
+                    SortBattlersBySpeed(battlers, FALSE);
+
+                    for (i = 0; i < gBattlersCount; i++)
                     {
-                        gBattleScripting.battler = battler;
-                        gLastUsedItem = gBattleMons[battler].item;
-                        if (gMovesInfo[gCurrentMove].effect == EFFECT_HIT_ESCAPE)
-                            gBattlescriptCurrInstr = BattleScript_MoveEnd;  // Prevent user switch-in selection
-                        BattleScriptPushCursor();
-                        gBattlescriptCurrInstr = BattleScript_EjectButtonActivates;
-                        effect = TRUE;
-                        break; // Only the fastest Eject Button activates
+                        u32 battler = battlers[i];
+
+                        if (battler != gBattlerAttacker && ejectButtonBattlers & gBitTable[battler])
+                        {
+                            if (TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove)) // Apparently Sheer Force blocks Eject Button, but not Eject Pack
+                                continue;
+                            // Since we check if battler was damaged, we don't need to check move result.
+                            // In fact, doing so actually prevents multi-target moves from activating eject button properly
+                            if (!BATTLER_TURN_DAMAGED(battler))
+                                continue;
+                        }
+                        else if (ejectPackBattlers & gBitTable[battler])
+                        {
+                            if (!gProtectStructs[battler].statFell || gProtectStructs[battler].disableEjectPack)
+                                continue;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+
+                        if (IsBattlerAlive(battler)
+                            && CountUsablePartyMons(battler) > 0 // Has mon to switch into
+                            // Does not activate if attacker used Parting Shot and can switch out
+                            && !(gMovesInfo[gCurrentMove].effect == EFFECT_HIT_SWITCH_TARGET && CanBattlerSwitch(gBattlerAttacker))
+                            )
+                        {
+                            gBattleScripting.battler = battler;
+                            gLastUsedItem = gBattleMons[battler].item;
+                            if (gMovesInfo[gCurrentMove].effect == EFFECT_HIT_ESCAPE)
+                                gBattlescriptCurrInstr = BattleScript_MoveEnd;  // Prevent user switch-in selection
+                            effect = TRUE;
+                            BattleScriptPushCursor();
+                            if (ejectButtonBattlers & gBitTable[battler])
+                            {
+                                gBattlescriptCurrInstr = BattleScript_EjectButtonActivates;
+                            }
+                            else // Eject Pack
+                            {
+                                gBattlescriptCurrInstr = BattleScript_EjectPackActivates;
+                                // Are these 2 lines below needed?
+                                gProtectStructs[battler].statFell = FALSE;
+                                gSpecialStatuses[gBattlerAttacker].preventLifeOrbDamage = TRUE;
+                            }
+                            break; // Only the fastest Eject item activates
+                        }
                     }
                 }
             }
@@ -7000,6 +7052,8 @@ static void SetDmgHazardsBattlescript(u8 battler, u8 multistringId)
         gBattlescriptCurrInstr = BattleScript_DmgHazardsOnTarget;
     else if (gBattlescriptCurrInstr[1] == BS_ATTACKER)
         gBattlescriptCurrInstr = BattleScript_DmgHazardsOnAttacker;
+    else if (gBattlescriptCurrInstr[1] == BS_SCRIPTING)
+        gBattlescriptCurrInstr = BattleScript_DmgHazardsOnBattlerScripting;
     else
         gBattlescriptCurrInstr = BattleScript_DmgHazardsOnFaintedBattler;
 }
@@ -15933,6 +15987,7 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
 
         value *= sExperienceScalingFactors[(faintedLevel * 2) + 10];
         value /= sExperienceScalingFactors[faintedLevel + expGetterLevel + 10];
+
         *expAmount = value + 1;
     }
 }
