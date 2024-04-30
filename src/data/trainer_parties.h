@@ -493,7 +493,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LIFE_ORB,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_PORYGON_Z,
     .ability = ABILITY_DOWNLOAD,
     .moves = {MOVE_TRI_ATTACK, MOVE_ICE_BEAM, MOVE_THUNDERBOLT, MOVE_AGILITY},
@@ -502,7 +502,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_THROAT_SPRAY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_EXPLOUD,
     .ability = ABILITY_PUNK_ROCK,
     .moves = {MOVE_OVERDRIVE, MOVE_TORCH_SONG, MOVE_BOOMBURST, MOVE_SURF},
@@ -511,7 +511,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CHOICE_SPECS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_ZOROARK_HISUIAN,
     .ability = ABILITY_ILLUSION,
     .moves = {MOVE_SHADOW_BALL, MOVE_HYPER_VOICE, MOVE_FOCUS_BLAST, MOVE_FLAMETHROWER},
@@ -520,7 +520,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LUM_BERRY,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_SLAKING,
     .ability = ABILITY_STALL,
     .moves = {MOVE_EARTHQUAKE, MOVE_GIGA_IMPACT, MOVE_PLAY_ROUGH, MOVE_GUNK_SHOT},
@@ -529,7 +529,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_ASSAULT_VEST,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_MELOETTA,
     .ability = ABILITY_SERENE_GRACE,
     .moves = {MOVE_ALLURING_VOICE, MOVE_HYPER_VOICE, MOVE_PSYCHIC, MOVE_ENERGY_BALL},
@@ -538,7 +538,7 @@ static const struct TrainerMon sParty_Felix[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_KANGASKHANITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_KANGASKHAN,
     .ability = ABILITY_SCRAPPY,
     .moves = {MOVE_FAKE_OUT, MOVE_SEISMIC_TOSS, MOVE_SHADOW_CLAW, MOVE_BODY_SLAM},
@@ -1250,7 +1250,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_EJECT_BUTTON,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_PALAFIN,
     .ability = ABILITY_ZERO_TO_HERO,
     .moves = {MOVE_JET_PUNCH, MOVE_FLIP_TURN, MOVE_WAVE_CRASH, MOVE_ZEN_HEADBUTT},
@@ -1259,7 +1259,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_PELIPPER,
     .ability = ABILITY_DRIZZLE,
     .moves = {MOVE_SURF, MOVE_HURRICANE, MOVE_ROOST, MOVE_TOXIC},
@@ -1268,7 +1268,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_FOCUS_SASH,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_SAMUROTT_HISUIAN,
     .ability = ABILITY_SHARPNESS,
     .moves = {MOVE_CEASELESS_EDGE, MOVE_RAZOR_SHELL, MOVE_AQUA_JET, MOVE_SUCKER_PUNCH},
@@ -1277,7 +1277,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CHOICE_SPECS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_KINGDRA,
     .ability = ABILITY_SWIFT_SWIM,
     .moves = {MOVE_HURRICANE, MOVE_DRACO_METEOR, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM},
@@ -1286,7 +1286,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_VOLCANION,
     .ability = ABILITY_WATER_ABSORB,
     .moves = {MOVE_STEAM_ERUPTION, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_EARTH_POWER},
@@ -1295,7 +1295,7 @@ static const struct TrainerMon sParty_Edgar[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_GYARADOSITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_GYARADOS,
     .ability = ABILITY_INTIMIDATE,
     .moves = {MOVE_WATERFALL, MOVE_CRUNCH, MOVE_BOUNCE, MOVE_EARTHQUAKE},
@@ -1307,7 +1307,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LUM_BERRY,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_QUAQUAVAL,
     .ability = ABILITY_MOXIE,
     .moves = {MOVE_SWORDS_DANCE, MOVE_AQUA_STEP, MOVE_CLOSE_COMBAT, MOVE_TRIPLE_AXEL},
@@ -1316,7 +1316,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_BOOSTER_ENERGY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_SLITHER_WING,
     .ability = ABILITY_PROTOSYNTHESIS,
     .moves = {MOVE_WILD_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FIRST_IMPRESSION, MOVE_FLARE_BLITZ},
@@ -1325,7 +1325,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LEFTOVERS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_KOMMO_O,
     .ability = ABILITY_SOUNDPROOF,
     .moves = {MOVE_CLANGOROUS_SOUL, MOVE_DRAIN_PUNCH, MOVE_THUNDER_PUNCH, MOVE_ICE_PUNCH},
@@ -1334,7 +1334,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_SITRUS_BERRY,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_IRON_HANDS,
     .ability = ABILITY_QUARK_DRIVE,
     .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_PROTECT, MOVE_FAKE_OUT},
@@ -1343,7 +1343,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_ROSELI_BERRY,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_ZAPDOS_GALARIAN,
     .ability = ABILITY_DEFIANT,
     .moves = {MOVE_BRAVE_BIRD, MOVE_THUNDEROUS_KICK, MOVE_COACHING, MOVE_KNOCK_OFF},
@@ -1352,7 +1352,7 @@ static const struct TrainerMon sParty_Albert[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_MEDICHAMITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_MEDICHAM,
     .ability = ABILITY_PURE_POWER,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_ZEN_HEADBUTT, MOVE_FAKE_OUT, MOVE_BULLET_PUNCH},
@@ -1364,7 +1364,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_VIKAVOLT,
     .ability = ABILITY_LEVITATE,
     .moves = {MOVE_STICKY_WEB, MOVE_BUG_BUZZ, MOVE_THUNDERBOLT, MOVE_ENERGY_BALL},
@@ -1373,7 +1373,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_KILOWATTREL,
     .ability = ABILITY_ELECTRIC_SURGE,
     .moves = {MOVE_THUNDERBOLT, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND},
@@ -1382,7 +1382,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_THROAT_SPRAY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_TOXTRICITY,
     .ability = ABILITY_PUNK_ROCK,
     .moves = {MOVE_SHIFT_GEAR, MOVE_BOOMBURST, MOVE_OVERDRIVE, MOVE_SLUDGE_BOMB},
@@ -1391,7 +1391,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LIFE_ORB,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_RAICHU_ALOLAN,
     .ability = ABILITY_SURGE_SURFER,
     .moves = {MOVE_FOCUS_BLAST, MOVE_PSYCHIC, MOVE_RISING_VOLTAGE, MOVE_GRASS_KNOT},
@@ -1400,7 +1400,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LEFTOVERS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_RAIKOU,
     .ability = ABILITY_VOLT_ABSORB,
     .moves = {MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_SHADOW_BALL, MOVE_AURA_SPHERE},
@@ -1409,7 +1409,7 @@ static const struct TrainerMon sParty_Samuel[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_AMPHAROSITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_AMPHAROS,
     .ability = ABILITY_STATIC,
     .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_PULSE, MOVE_FOCUS_BLAST, MOVE_DAZZLING_GLEAM},
@@ -1718,7 +1718,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LEFTOVERS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_TYRANITAR,
     .ability = ABILITY_SAND_STREAM,
     .moves = {MOVE_STONE_EDGE, MOVE_KNOCK_OFF, MOVE_THUNDER_WAVE, MOVE_STEALTH_ROCK},
@@ -1727,7 +1727,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_FOCUS_SASH,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_GLIMMORA,
     .ability = ABILITY_TOXIC_DEBRIS,
     .moves = {MOVE_MORTAL_SPIN, MOVE_POWER_GEM, MOVE_EARTH_POWER, MOVE_SPIKES},
@@ -1736,7 +1736,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CHOICE_BAND,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_STONJOURNER,
     .ability = ABILITY_POWER_SPOT,
     .moves = {MOVE_STONE_EDGE, MOVE_HEAT_CRASH, MOVE_EARTHQUAKE, MOVE_SUPERPOWER},
@@ -1745,7 +1745,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CUSTAP_BERRY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_AVALUGG_HISUIAN,
     .ability = ABILITY_STURDY,
     .moves = {MOVE_MOUNTAIN_GALE, MOVE_BODY_PRESS, MOVE_RECOVER, MOVE_EARTHQUAKE},
@@ -1754,7 +1754,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CORNERSTONE_MASK,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_OGERPON_CORNERSTONE_MASK,
     .ability = ABILITY_STURDY,
     .moves = {MOVE_SWORDS_DANCE, MOVE_IVY_CUDGEL, MOVE_HORN_LEECH, MOVE_SPIKY_SHIELD},
@@ -1763,7 +1763,7 @@ static const struct TrainerMon sParty_Hope[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_AERODACTYLITE,
-    .lvl = 95 ,
+    .lvl = 97 ,
     .species = SPECIES_AERODACTYL,
     .ability = ABILITY_PRESSURE,
     .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_FIRE_FANG, MOVE_CRUNCH},
@@ -1801,7 +1801,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_ROCKY_HELMET,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_LANDORUS_THERIAN,
     .ability = ABILITY_INTIMIDATE,
     .moves = {MOVE_EARTHQUAKE, MOVE_STEALTH_ROCK, MOVE_STONE_EDGE, MOVE_KNOCK_OFF},
@@ -1810,7 +1810,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_FOCUS_SASH,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_NOIVERN,
     .ability = ABILITY_INFILTRATOR,
     .moves = {MOVE_TAILWIND, MOVE_DRACO_METEOR, MOVE_FLAMETHROWER, MOVE_AIR_SLASH},
@@ -1819,7 +1819,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_VESPIQUEN,
     .ability = ABILITY_GOOD_AS_GOLD,
     .moves = {MOVE_ATTACK_ORDER, MOVE_DEFEND_ORDER, MOVE_POWER_GEM, MOVE_AIR_SLASH},
@@ -1828,7 +1828,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LEFTOVERS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_CORVIKNIGHT,
     .ability = ABILITY_PRESSURE,
     .moves = {MOVE_BODY_PRESS, MOVE_BRAVE_BIRD, MOVE_IRON_HEAD, MOVE_IRON_DEFENSE},
@@ -1837,7 +1837,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LIFE_ORB,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_BRAVIARY_HISUIAN,
     .ability = ABILITY_SHEER_FORCE,
     .moves = {MOVE_AGILITY, MOVE_PSYCHIC, MOVE_HURRICANE, MOVE_HEAT_WAVE},
@@ -1846,7 +1846,7 @@ static const struct TrainerMon sParty_Caroline[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_PIDGEOTITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_PIDGEOT_MEGA,
     .ability = ABILITY_COMPETITIVE,
     .moves = {MOVE_THUNDER, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_TOXIC},
@@ -1858,7 +1858,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_EJECT_BUTTON,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_NINETALES,
     .ability = ABILITY_DROUGHT,
     .moves = {MOVE_FLAMETHROWER, MOVE_WILL_O_WISP, MOVE_MEMENTO, MOVE_HEALING_WISH},
@@ -1867,7 +1867,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CHOICE_SPECS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_ORICORIO,
     .ability = ABILITY_DANCER,
     .moves = {MOVE_REVELATION_DANCE, MOVE_HURRICANE, MOVE_U_TURN, MOVE_ALLURING_VOICE},
@@ -1876,7 +1876,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_THROAT_SPRAY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_SKELEDIRGE,
     .ability = ABILITY_UNAWARE,
     .moves = {MOVE_TORCH_SONG, MOVE_HEX, MOVE_WILL_O_WISP, MOVE_SLACK_OFF},
@@ -1885,7 +1885,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_VOLCARONA,
     .ability = ABILITY_FLAME_BODY,
     .moves = {MOVE_QUIVER_DANCE, MOVE_FLAMETHROWER, MOVE_MORNING_SUN, MOVE_WILL_O_WISP},
@@ -1894,7 +1894,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_MOLTRES,
     .ability = ABILITY_FLAME_BODY,
     .moves = {MOVE_FLAMETHROWER, MOVE_U_TURN, MOVE_WILL_O_WISP, MOVE_ROOST},
@@ -1903,7 +1903,7 @@ static const struct TrainerMon sParty_Julie[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_BLAZIKENITE,
-    .lvl = 95 ,
+    .lvl = 97,
     .species = SPECIES_BLAZIKEN,
     .ability = ABILITY_SPEED_BOOST,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, MOVE_STONE_EDGE, MOVE_SWORDS_DANCE},
@@ -9342,7 +9342,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_CHOICE_SCARF,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_TAPU_LELE,
     .ability = ABILITY_PSYCHIC_SURGE,
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_FOCUS_BLAST, MOVE_PSYSHOCK},
@@ -9351,7 +9351,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_WEAKNESS_POLICY,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_ARMAROUGE,
     .ability = ABILITY_WEAK_ARMOR,
     .moves = {MOVE_ARMOR_CANNON, MOVE_EXPANDING_FORCE, MOVE_STORED_POWER, MOVE_ENERGY_BALL},
@@ -9360,7 +9360,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_LUM_BERRY,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_GALLADE,
     .ability = ABILITY_SHARPNESS,
     .moves = {MOVE_SWORDS_DANCE, MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_X_SCISSOR},
@@ -9369,7 +9369,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .lvl = 94,
+    .lvl = 96,
     .species = SPECIES_SLOWKING_GALARIAN,
     .ability = ABILITY_REGENERATOR,
     .moves = {MOVE_FUTURE_SIGHT, MOVE_SLUDGE_BOMB, MOVE_PSYCHIC, MOVE_THUNDER_WAVE},
@@ -9378,7 +9378,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_PSYCHIC_SEED,
-    .lvl = 93,
+    .lvl = 95,
     .species = SPECIES_ESPATHRA,
     .ability = ABILITY_SPEED_BOOST,
     .moves = {MOVE_CALM_MIND, MOVE_STORED_POWER, MOVE_DAZZLING_GLEAM, MOVE_PROTECT},
@@ -9387,7 +9387,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     {
     .iv = IV_SPREAD_HIGH,
     .heldItem = ITEM_ALAKAZITE,
-    .lvl = 95,
+    .lvl = 97,
     .species = SPECIES_ALAKAZAM,
     .ability = ABILITY_INNER_FOCUS,
     .moves = {MOVE_EXPANDING_FORCE, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_SUBSTITUTE},
