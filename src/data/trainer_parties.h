@@ -476,17 +476,23 @@ static const struct TrainerMon sParty_Daisy[] = {
 
 static const struct TrainerMon sParty_Rose1[] = {
     {
-    .lvl = 14,
-    .species = SPECIES_ROSELIA,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_MIRROR_HERB,
+    .lvl = 52,
+    .species = SPECIES_BELLOSSOM,
+    .ability = ABILITY_DANCER,
+    .moves = {MOVE_PROTECT, MOVE_PETAL_BLIZZARD, MOVE_GIGA_DRAIN, MOVE_MOONBLAST},
+    .nature = NATURE_TIMID,
     },
     {
-    .lvl = 14,
-    .species = SPECIES_SHROOMISH,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_MIRROR_HERB,
+    .lvl = 52,
+    .species = SPECIES_LUDICOLO,
+    .ability = ABILITY_DANCER,
+    .moves = {MOVE_ENERGY_BALL, MOVE_HYDRO_PUMP, MOVE_MIST, MOVE_ICE_BEAM},
+    .nature = NATURE_TIMID,
     },
-    {
-    .lvl = 14,
-    .species = SPECIES_ROSELIA,
-    }
 };
 
 static const struct TrainerMon sParty_Felix[] = {
@@ -3139,13 +3145,32 @@ static const struct TrainerMon sParty_Fernando1[] = {
 
 static const struct TrainerMon sParty_Dalton1[] = {
     {
-    .lvl = 15,
-    .species = SPECIES_MAGNEMITE,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_MUSCLE_BAND,
+    .lvl = 52,
+    .species = SPECIES_BOLTUND,
+    .ability = ABILITY_STRONG_JAW,
+    .moves = {MOVE_THUNDER_FANG, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS, MOVE_ICE_FANG},
+    .nature = NATURE_JOLLY,
     },
     {
-    .lvl = 15,
-    .species = SPECIES_WHISMUR,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LIFE_ORB,
+    .lvl = 52,
+    .species = SPECIES_RAICHU,
+    .ability = ABILITY_LIGHTNING_ROD,
+    .moves = {MOVE_NASTY_PLOT, MOVE_THUNDERBOLT, MOVE_FOCUS_BLAST, MOVE_SURF},
+    .nature = NATURE_TIMID,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .lvl = 53,
+    .species = SPECIES_ZEBSTRIKA,
+    .ability = ABILITY_RECKLESS,
+    .moves = {MOVE_WILD_CHARGE, MOVE_DOUBLE_EDGE, MOVE_SMART_STRIKE, MOVE_HIGH_HORSEPOWER},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_Dalton2[] = {
@@ -12803,17 +12828,23 @@ static const struct TrainerMon sParty_Charlotte[] = {
 
 static const struct TrainerMon sParty_Deandre[] = {
     {
-    .lvl = 14,
-    .species = SPECIES_ZIGZAGOON,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_FOCUS_SASH,
+    .lvl = 52,
+    .species = SPECIES_VENOMOTH,
+    .ability = ABILITY_TINTED_LENS,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_BUG_BUZZ, MOVE_SLUDGE_WAVE, MOVE_PSYCHIC},
+    .nature = NATURE_TIMID,
     },
     {
-    .lvl = 14,
-    .species = SPECIES_ARON,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_FOCUS_SASH,
+    .lvl = 52,
+    .species = SPECIES_MASQUERAIN,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_AIR_SLASH, MOVE_GIGA_DRAIN, MOVE_SCALD},
+    .nature = NATURE_TIMID,
     },
-    {
-    .lvl = 14,
-    .species = SPECIES_ELECTRIKE,
-    }
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout1[] = {

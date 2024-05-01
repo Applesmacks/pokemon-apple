@@ -186,7 +186,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_FIDOUGH"
+                "species": "SPECIES_FENNEKIN"
               },
               {
                 "min_level": 2,
@@ -2246,7 +2246,7 @@
               {
                 "min_level": 38,
                 "max_level": 40,
-                "species": "SPECIES_FENNEKIN"
+                "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 38,
@@ -3949,7 +3949,7 @@
               {
                 "min_level": 65,
                 "max_level": 67,
-                "species": "SPECIES_SIMIPOUR"
+                "species": "SPECIES_MASQUERAIN"
               },
               {
                 "min_level": 65,
@@ -3984,7 +3984,7 @@
               {
                 "min_level": 65,
                 "max_level": 67,
-                "species": "SPECIES_MASQUERAIN"
+                "species": "SPECIES_MANAPHY"
               },
               {
                 "min_level": 65,
@@ -8017,7 +8017,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_FIDOUGH"
               },
               {
                 "min_level": 3,
