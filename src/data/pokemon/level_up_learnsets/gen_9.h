@@ -21447,6 +21447,11 @@ static const struct LevelUpMove sTinkatinkLevelUpLearnset[] = {
 static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_FAIRY_WIND),
+    LEVEL_UP_MOVE( 1, MOVE_WOOD_HAMMER),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_HAMMER),
+    LEVEL_UP_MOVE( 1, MOVE_ICE_HAMMER),
+    LEVEL_UP_MOVE( 1, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE( 1, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE( 5, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE( 8, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(11, MOVE_COVET),
