@@ -391,8 +391,8 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
         .trainerName = _("SHELLY"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_ShellyWeatherInstitute),
     },
 
@@ -9144,9 +9144,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_DAYTON] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
+        .trainerClass = TRAINER_CLASS_PSYCHIC,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
         .trainerName = _("DAYTON"),
         .items = {},
         .doubleBattle = FALSE,

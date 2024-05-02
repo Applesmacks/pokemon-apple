@@ -242,7 +242,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_MAGNET",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_SUPER_REPEL"
     },
@@ -255,7 +255,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_MUDDY_WATER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ZINC"
     },
@@ -268,7 +268,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_POISON_JAB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_1"
     },
@@ -281,7 +281,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_LEAF_STONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_FLAME_ORB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_LEAF_STONE"
     },
@@ -294,7 +294,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_BAND",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_RARE_CANDY"
     },
@@ -307,7 +307,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TWISTED_SPOON",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_1"
     },
@@ -437,7 +437,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_ELECTRO_BALL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_2"
     },
@@ -541,7 +541,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_CHOICE_SCARF",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_NUGGET"
     },
@@ -554,7 +554,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_TOXIC_ORB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_119_ELIXIR_2"
     },
@@ -846,7 +846,7 @@
       "x": 17,
       "y": 82,
       "elevation": 3,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_METAL_COAT",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
     },
     {
@@ -854,7 +854,7 @@
       "x": 38,
       "y": 63,
       "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
+      "item": "ITEM_COVERT_CLOAK",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
     },
     {
@@ -897,7 +897,7 @@
       "x": 26,
       "y": 120,
       "elevation": 3,
-      "item": "ITEM_FULL_HEAL",
+      "item": "ITEM_FAIRY_FEATHER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL"
     },
     {
@@ -905,7 +905,7 @@
       "x": 20,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_MAX_ETHER",
+      "item": "ITEM_TM_THUNDER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_MAX_ETHER"
     },
     {

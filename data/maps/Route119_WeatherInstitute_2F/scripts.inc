@@ -6,14 +6,23 @@
 .set LOCALID_GRUNT_4, 8
 
 Route119_WeatherInstitute_2F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route119_WeatherInstitute_2F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_WeatherInstitute_2F_OnTransition
 	.byte 0
+
+Route119_WeatherInstitute_2F_OnLoad::
+	goto_if_defeated TRAINER_GRUNT_WEATHER_INST_2, Route119_WeatherInstitute_2F_EventScript_SetGruntsPos
+	return
 
 Route119_WeatherInstitute_2F_OnTransition:
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone
 	call_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear
 	end
+
+Route119_WeatherInstitute_2F_EventScript_SetGruntsPos::
+	setobjectxyperm LOCALID_GRUNT_1, 16, 2
+	setobjectxyperm LOCALID_GRUNT_4, 18, 2
 
 Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere::
 	setobjectxyperm LOCALID_SCIENTIST, 1, 6
@@ -43,6 +52,8 @@ Route119_WeatherInstitute_2F_EventScript_Grunt2::
 Route119_WeatherInstitute_2F_EventScript_Grunt3::
 	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_3, Route119_WeatherInstitute_2F_Text_Grunt3Intro, Route119_WeatherInstitute_2F_Text_Grunt3Defeat
 	msgbox Route119_WeatherInstitute_2F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_GRUNT_2, Common_Movement_WalkDown2
+	waitmovement 0
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Shelly::
