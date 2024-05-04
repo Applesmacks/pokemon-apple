@@ -52,8 +52,6 @@ Route119_WeatherInstitute_2F_EventScript_Grunt2::
 Route119_WeatherInstitute_2F_EventScript_Grunt3::
 	trainerbattle_single TRAINER_GRUNT_WEATHER_INST_3, Route119_WeatherInstitute_2F_Text_Grunt3Intro, Route119_WeatherInstitute_2F_Text_Grunt3Defeat
 	msgbox Route119_WeatherInstitute_2F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkDown2
-	waitmovement 0
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Shelly::
