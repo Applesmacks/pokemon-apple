@@ -583,6 +583,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVAL_HERB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_REVIVAL_HERB"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 119,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route123_EventScript_BlockadeGrunts",
+      "flag": "FLAG_RECEIVED_RED_OR_BLUE_ORB"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 120,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route123_EventScript_BlockadeGrunts",
+      "flag": "FLAG_RECEIVED_RED_OR_BLUE_ORB"
     }
   ],
   "warp_events": [

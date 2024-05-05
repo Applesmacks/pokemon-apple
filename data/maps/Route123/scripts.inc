@@ -149,6 +149,12 @@ Route123_EventScript_Davis::
 	msgbox Route123_Text_DavisPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route123_EventScript_BlockadeGrunts::
+	lock
+	msgbox Route123_Text_BlockadeGrunts, MSGBOX_DEFAULT
+	release
+	end
+
 Route123_EventScript_Fernando::
 	trainerbattle_single TRAINER_FERNANDO_1, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat, Route123_EventScript_RegisterFernando
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -195,4 +201,8 @@ Route123_Text_RouteSignMtPyre:
 
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
+
+Route123_Text_BlockadeGrunts:
+	.string "Nyeh! No ROUTE for you! We\n"
+	.string "are being nefarious!$"
 

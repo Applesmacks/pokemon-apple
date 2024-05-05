@@ -229,6 +229,12 @@ LilycoveCity_EventScript_AquaGrunt4::
 	msgbox LilycoveCity_Text_IfWorldBecomesOurs, MSGBOX_NPC
 	end
 
+LilycoveCity_EventScript_BlockadeGrunts::
+	lock
+	msgbox LilycoveCity_Text_BlockadeGrunts, MSGBOX_DEFAULT
+	release
+	end
+
 LilycoveCity_EventScript_Rival::
 	lock
 	faceplayer
@@ -241,7 +247,7 @@ LilycoveCity_EventScript_May::
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	call_if_set FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattleAgain
 	call_if_unset FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE, LilycoveCity_EventScript_MayAskToBattle
-	@goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
+	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
 	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
 	case 0, LilycoveCity_EventScript_BattleMayTreecko
@@ -767,4 +773,9 @@ LilycoveCity_Text_MayExplainMegas:
 	.string "Hopefully that gives you the edge you\n"
 	.string "need in your coming battles.\p"
 	.string "See you again soon!$"
+
+LilycoveCity_Text_BlockadeGrunts:
+	.string "Nyeh! No MALL for you until the\n"
+	.string "BOSS is done on MT. PYRE!\p"
+	.string "We are being nefarious!$"
 

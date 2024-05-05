@@ -6,7 +6,7 @@ MtPyre_1F_EventScript_CleanseTagWoman::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_CLEANSE_TAG, MtPyre_1F_EventScript_ReceivedCleanseTag
 	msgbox MtPyre_1F_Text_TakeThisForYourOwnGood, MSGBOX_DEFAULT
-	giveitem ITEM_CLEANSE_TAG
+	giveitem ITEM_TM_DREAM_EATER
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CLEANSE_TAG
 	release
@@ -23,6 +23,12 @@ MtPyre_1F_EventScript_PokefanF::
 
 MtPyre_1F_EventScript_Man::
 	msgbox MtPyre_1F_Text_RestingPlaceOfZigzagoon, MSGBOX_NPC
+	end
+
+MtPyre_1F_EventScript_Grunts::
+	lock
+	msgbox MtPyre_1F_Text_Grunts, MSGBOX_DEFAULT
+	release
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
@@ -45,3 +51,10 @@ MtPyre_1F_Text_RestingPlaceOfZigzagoon:
 	.string "This is the final resting place of my\n"
 	.string "ZIGZAGOON. I cherished it…$"
 
+MtPyre_1F_Text_Grunts:
+	.string "Say, do you think we should stand guard\n"
+	.string "closer to the door there? There's a\l"
+	.string "literal hole in the ceiling behind us…\p"
+	.string "Don't be absurd! What, you think some\n"
+	.string "kid is gonna climb all the way to the\l"
+	.string "top floor and then drop down right there?$"
