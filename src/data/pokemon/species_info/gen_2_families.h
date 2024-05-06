@@ -1418,8 +1418,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_MAREEP
     [SPECIES_MAREEP] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 40,
+        .baseHP        = 65,
+        .baseAttack    = 90,
         .baseDefense   = 40,
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
@@ -1433,7 +1433,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_COTTON_DOWN, ABILITY_SERENE_GRACE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Mareep"),
         .cryId = CRY_MAREEP,
@@ -1467,13 +1467,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Mareep)
         .levelUpLearnset = sMareepLevelUpLearnset,
         .teachableLearnset = sMareepTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_FLAAFFY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_FLAAFFY}),
     },
 
     [SPECIES_FLAAFFY] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 55,
+        .baseHP        = 80,
+        .baseAttack    = 105,
         .baseDefense   = 55,
         .baseSpeed     = 45,
         .baseSpAttack  = 80,
@@ -1487,7 +1487,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_COTTON_DOWN, ABILITY_SERENE_GRACE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Flaaffy"),
         .cryId = CRY_FLAAFFY,
@@ -1520,20 +1520,20 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Flaaffy)
         .levelUpLearnset = sFlaaffyLevelUpLearnset,
         .teachableLearnset = sFlaaffyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_AMPHAROS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_AMPHAROS}),
     },
 
 #define AMPHAROS_DEFENSE (P_UPDATED_STATS >= GEN_6 ? 95 : 95)
 
     [SPECIES_AMPHAROS] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 75,
+        .baseHP        = 100,
+        .baseAttack    = 125,
         .baseDefense   = AMPHAROS_DEFENSE,
         .baseSpeed     = 55,
         .baseSpAttack  = 125,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 255,
@@ -1550,7 +1550,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_COTTON_DOWN, ABILITY_SERENE_GRACE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ampharos"),
         .cryId = CRY_AMPHAROS,
@@ -1591,8 +1591,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_AMPHAROS_MEGA] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 95,
+        .baseHP        = 100,
+        .baseAttack    = 145,
         .baseDefense   = AMPHAROS_DEFENSE + 20,
         .baseSpeed     = 45,
         .baseSpAttack  = 175,
@@ -1606,7 +1606,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER },
+        .abilities = { ABILITY_TERAVOLT, ABILITY_TERAVOLT, ABILITY_TERAVOLT },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ampharos"),
         .cryId = CRY_AMPHAROS_MEGA,
@@ -4217,7 +4217,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_POISON_TOUCH, ABILITY_UNBURDEN, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_MERCILESS, ABILITY_UNBURDEN, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Sneasel"),
@@ -4277,7 +4277,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_POISON_TOUCH, ABILITY_UNBURDEN, ABILITY_POISON_TOUCH },
+        .abilities = { ABILITY_MERCILESS, ABILITY_UNBURDEN, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Sneasler"),
         .cryId = CRY_SNEASLER,

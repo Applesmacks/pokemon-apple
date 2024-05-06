@@ -56,7 +56,7 @@ VerdanturfTown_EventScript_DrakePartyFull::
 
 VerdanturfTown_EventScript_DrakeGiveRandom::
 	setflag FLAG_FORCE_SHINY
-	random 19
+	random 21
 	switch VAR_RESULT
 	case 0, VerdanturfTown_EventScript_DrakeTrapinch
 	case 1, VerdanturfTown_EventScript_DrakeBeldum
@@ -76,7 +76,9 @@ VerdanturfTown_EventScript_DrakeGiveRandom::
 	case 15, VerdanturfTown_EventScript_DrakeGoomy
 	case 16, VerdanturfTown_EventScript_DrakeDreepy
 	case 17, VerdanturfTown_EventScript_DrakeHorsea
-	case 17, VerdanturfTown_EventScript_DrakeFrigibax
+	case 18, VerdanturfTown_EventScript_DrakeFrigibax
+	case 19, VerdanturfTown_EventScript_DrakeMareep
+	case 20, VerdanturfTown_EventScript_DrakeIgglybuff
 	return
 
 VerdanturfTown_EventScript_DrakeTrapinch::
@@ -298,6 +300,30 @@ VerdanturfTown_EventScript_DrakeHorsea::
 VerdanturfTown_EventScript_DrakeFrigibax::
 	bufferspeciesname 1, SPECIES_FRIGIBAX
 	givemon SPECIES_FRIGIBAX, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
+	setflag FLAG_VERDANTURF_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox VerdanturfTown_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox VerdanturfTown_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+VerdanturfTown_EventScript_DrakeMareep::
+	bufferspeciesname 1, SPECIES_MAREEP
+	givemon SPECIES_MAREEP, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
+	setflag FLAG_VERDANTURF_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox VerdanturfTown_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox VerdanturfTown_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+VerdanturfTown_EventScript_DrakeIgglybuff::
+	bufferspeciesname 1, SPECIES_IGGLYBUFF
+	givemon SPECIES_IGGLYBUFF, 5, ITEM_NONE
 	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_VERDANTURF_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
