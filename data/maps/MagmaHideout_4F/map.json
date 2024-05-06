@@ -67,8 +67,8 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 22,
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 21,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",

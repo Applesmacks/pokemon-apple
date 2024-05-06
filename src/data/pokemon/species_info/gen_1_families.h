@@ -9223,7 +9223,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_UPDATED_ABILITIES >= GEN_7
-#define GENGAR_ABILITIES {ABILITY_CURSED_BODY, ABILITY_NONE}
+#define GENGAR_ABILITIES {ABILITY_LEVITATE, ABILITY_NONE}
 #else
 #define GENGAR_ABILITIES {ABILITY_LEVITATE, ABILITY_NONE}
 #endif
@@ -12536,7 +12536,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 115,
         .baseSpAttack  = 65,
         .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 72 : 106,
         .evYield_Speed = 1,
@@ -12592,7 +12592,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 125,
         .baseSpAttack  = 95,
         .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 156,
         .evYield_Speed = 2,
@@ -12648,7 +12648,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 115,
         .baseSpAttack  = 95,
         .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIGHTING),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 270,
@@ -12711,7 +12711,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 83,
         .baseSpAttack  = 80,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 73 : 117,
         .evYield_Speed = 1,
@@ -12767,7 +12767,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 93,
         .baseSpAttack  = 110,
         .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 167,
         .evYield_SpAttack = 2,
@@ -12822,7 +12822,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 83,
         .baseSpAttack  = 135,
         .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 270,

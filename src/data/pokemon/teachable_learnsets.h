@@ -11312,8 +11312,10 @@ static const u16 sJynxTeachableLearnset[] = {
 #if P_GEN_2_CROSS_EVOS
 static const u16 sElekidTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
+    MOVE_BULK_UP,
     MOVE_CHARGE,
     MOVE_CHARGE_BEAM,
     MOVE_CONFIDE,
@@ -11352,6 +11354,7 @@ static const u16 sElekidTeachableLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
     MOVE_THIEF,
+    MOVE_THROAT_CHOP,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
     MOVE_THUNDER_PUNCH,
@@ -11367,6 +11370,7 @@ static const u16 sElekidTeachableLearnset[] = {
 
 static const u16 sElectabuzzTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -11415,6 +11419,7 @@ static const u16 sElectabuzzTeachableLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
     MOVE_THIEF,
+    MOVE_THROAT_CHOP,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
     MOVE_THUNDER_PUNCH,
@@ -11430,6 +11435,7 @@ static const u16 sElectabuzzTeachableLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 static const u16 sElectivireTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -11484,6 +11490,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
     MOVE_THIEF,
+    MOVE_THROAT_CHOP,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
     MOVE_THUNDER_PUNCH,
@@ -11532,6 +11539,7 @@ static const u16 sMagbyTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
+    MOVE_PSYSHOCK,
     MOVE_REST,
     MOVE_ROCK_SMASH,
     MOVE_ROUND,
@@ -11546,6 +11554,7 @@ static const u16 sMagbyTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UPROAR,
     MOVE_WILL_O_WISP,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -11587,6 +11596,7 @@ static const u16 sMagmarTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
+    MOVE_PSYSHOCK,
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_SMASH,
@@ -11605,6 +11615,7 @@ static const u16 sMagmarTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UPROAR,
     MOVE_WILL_O_WISP,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -11649,6 +11660,7 @@ static const u16 sMagmortarTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
+    MOVE_PSYSHOCK,
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_SLIDE,
@@ -11674,6 +11686,7 @@ static const u16 sMagmortarTeachableLearnset[] = {
     MOVE_UPROAR,
     MOVE_WEATHER_BALL,
     MOVE_WILL_O_WISP,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS

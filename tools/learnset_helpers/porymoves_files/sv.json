@@ -10205,7 +10205,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB",
-      "MOVE_METAL_SOUND"
+      "MOVE_METAL_SOUND",
+      "MOVE_BULK_UP",
+      "MOVE_AURA_SPHERE",
+      "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -10320,7 +10323,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_PSYCHIC",
+      "MOVE_PSYSHOCK",
+      "MOVE_ZEN_HEADBUTT"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -21744,7 +21750,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB",
-      "MOVE_METAL_SOUND"
+      "MOVE_METAL_SOUND",
+      "MOVE_BULK_UP",
+      "MOVE_AURA_SPHERE",
+      "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
       "MOVE_DYNAMIC_PUNCH",
@@ -21851,7 +21860,10 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_PSYCHIC",
+      "MOVE_PSYSHOCK",
+      "MOVE_ZEN_HEADBUTT"
     ],
     "EggMoves": [
       "MOVE_MACH_PUNCH",
@@ -41577,7 +41589,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB",
-      "MOVE_METAL_SOUND"
+      "MOVE_METAL_SOUND",
+      "MOVE_BULK_UP",
+      "MOVE_AURA_SPHERE",
+      "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -41701,7 +41716,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_SCORCHING_SANDS",
-      "MOVE_CURSE"
+      "MOVE_CURSE",
+      "MOVE_PSYCHIC",
+      "MOVE_PSYSHOCK",
+      "MOVE_ZEN_HEADBUTT"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -66493,7 +66511,8 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_WHIRLPOOL",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_PSYCHIC_NOISE"
+      "MOVE_PSYCHIC_NOISE",
+      "MOVE_ICE_FANG"
     ],
     "EggMoves": [
       "MOVE_ICE_FANG",

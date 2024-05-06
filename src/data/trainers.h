@@ -1394,10 +1394,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRUNT_SPACE_CENTER_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,
+        .trainerName = _("COURTNEY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -7997,8 +7997,8 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("KATI"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MayLilycoveMudkip),
     },
 
@@ -8009,8 +8009,8 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("KATI"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MayLilycoveTreecko),
     },
 
@@ -8021,8 +8021,8 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("KATI"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_MayLilycoveTorchic),
     },
 
@@ -8810,8 +8810,8 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
-        .trainerName = _("TABITHA"),
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,
+        .trainerName = _("COURTNEY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

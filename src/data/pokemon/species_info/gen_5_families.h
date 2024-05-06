@@ -7894,11 +7894,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_CRYOGONAL
     [SPECIES_CRYOGONAL] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 80 : 70,
+        .baseHP        = 1,
         .baseAttack    = 50,
         .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 50 : 30,
         .baseSpeed     = 105,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 115,
         .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_ICE, TYPE_ROCK),
         .catchRate = 255,
@@ -7910,7 +7910,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_ANGER_SHELL, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_WONDER_GUARD, ABILITY_WONDER_GUARD, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Cryogonal"),
         .cryId = CRY_CRYOGONAL,
