@@ -1210,7 +1210,7 @@
               {
                 "min_level": 50,
                 "max_level": 52,
-                "species": "SPECIES_CLEFAIRY"
+                "species": "SPECIES_TANDEMAUS"
               },
               {
                 "min_level": 50,
@@ -7377,7 +7377,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_DHELMISE"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 13,
@@ -7392,7 +7392,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_SANDYGAST"
+                "species": "SPECIES_TORCHIC"
               },
               {
                 "min_level": 13,
@@ -9688,7 +9688,7 @@
               {
                 "min_level": 24,
                 "max_level": 26,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_KUBFU"
               },
               {
                 "min_level": 24,
@@ -10338,7 +10338,7 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_TORCHIC"
+                "species": "SPECIES_GROWLITHE"
               },
               {
                 "min_level": 2,

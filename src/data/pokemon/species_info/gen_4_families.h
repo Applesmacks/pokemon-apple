@@ -5278,12 +5278,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_MANAPHY
     [SPECIES_PHIONE] =
     {
-        .baseHP        = 80,
+        .baseHP        = 90,
         .baseAttack    = 80,
         .baseDefense   = 80,
         .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -5339,12 +5339,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_MANAPHY] =
     {
-        .baseHP        = 100,
+        .baseHP        = 110,
         .baseAttack    = 100,
         .baseDefense   = 100,
         .baseSpeed     = 100,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 100,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8

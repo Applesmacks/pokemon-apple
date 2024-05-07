@@ -5988,12 +5988,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_GROWLITHE
     [SPECIES_GROWLITHE] =
     {
-        .baseHP        = 75,
+        .baseHP        = 65,
         .baseAttack    = 90,
-        .baseDefense   = 65,
-        .baseSpeed     = 80,
+        .baseDefense   = 55,
+        .baseSpeed     = 70,
         .baseSpAttack  = 90,
-        .baseSpDefense = 70,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 91,
@@ -6039,17 +6039,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGrowlitheLevelUpLearnset,
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ARCANINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_ARCANINE}),
     },
 
     [SPECIES_ARCANINE] =
     {
-        .baseHP        = 110,
+        .baseHP        = 100,
         .baseAttack    = 130,
-        .baseDefense   = 100,
-        .baseSpeed     = 115,
+        .baseDefense   = 90,
+        .baseSpeed     = 105,
         .baseSpAttack  = 120,
-        .baseSpDefense = 100,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 194 : 213,
