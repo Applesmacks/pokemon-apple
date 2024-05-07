@@ -294,7 +294,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_CALCIUM",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_HIGH_HORSEPOWER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_CALCIUM"
     },
@@ -437,7 +437,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ULTRA_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_ADRENALINE_ORB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_ULTRA_BALL"
     },
@@ -450,7 +450,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_CHILLING_WATER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_ELIXIR"
     },
@@ -495,8 +495,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 66,
-      "y": 16,
+      "x": 65,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -508,7 +508,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 66,
+      "x": 65,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -541,7 +541,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_ZEN_HEADBUTT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_PP_UP"
     },
@@ -580,7 +580,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REVIVAL_HERB",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SCALE_SHOT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_REVIVAL_HERB"
     },
@@ -812,7 +812,7 @@
       "x": 75,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_SUPER_REPEL",
+      "item": "ITEM_RED_CARD",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL"
     },
     {
@@ -835,7 +835,7 @@
       "x": 12,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_TM_POLLEN_PUFF",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE"
     },
     {
@@ -843,7 +843,7 @@
       "x": 91,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_HYPER_POTION",
+      "item": "ITEM_EJECT_PACK",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_HYPER_POTION"
     },
     {
@@ -851,7 +851,7 @@
       "x": 139,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_PP_UP",
+      "item": "ITEM_PUNCHING_GLOVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP"
     },
     {
@@ -859,7 +859,7 @@
       "x": 138,
       "y": 18,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_THROAT_SPRAY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY"
     }
   ]

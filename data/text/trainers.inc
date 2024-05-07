@@ -4796,7 +4796,7 @@ VSSeeker_Text_TrainersNotReady::
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
 
 Route118_Text_DrakeDefeat::
-	.string "...Ain't that something...$"
+	.string "…Ain't that something…$"
 
 DrakeChamber_Text_RayIntro::
 	.string "I'm using the team that RAY RIZZO\n"
