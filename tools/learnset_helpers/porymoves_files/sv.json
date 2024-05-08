@@ -678,7 +678,8 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
-      "MOVE_DRAGON_CHEER"
+      "MOVE_DRAGON_CHEER",
+      "MOVE_DRACO_METEOR"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",

@@ -14160,9 +14160,32 @@ static const struct TrainerMon sParty_Deandre[] = {
 
 static const struct TrainerMon sParty_GruntMagmaHideout1[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_ZUBAT,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 67,
+    .species = SPECIES_TORKOAL,
+    .ability = ABILITY_SHELL_ARMOR,
+    .moves = {MOVE_HEAT_WAVE, MOVE_POWER_GEM, MOVE_STEAM_ERUPTION, MOVE_CURSE},
+    .nature = NATURE_MODEST,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 67,
+    .species = SPECIES_CAMERUPT,
+    .ability = ABILITY_MOODY,
+    .moves = {MOVE_HEAT_WAVE, MOVE_EARTH_POWER, MOVE_HYPER_BEAM, MOVE_REST},
+    .nature = NATURE_MODEST,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SAFETY_GOGGLES,
+    .lvl = 68,
+    .species = SPECIES_BOMBIRDIER,
+    .ability = ABILITY_ROCKY_PAYLOAD,
+    .moves = {MOVE_HEAT_WAVE, MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_KNOCK_OFF},
+    .nature = NATURE_MODEST,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout2[] = {
@@ -14197,59 +14220,204 @@ static const struct TrainerMon sParty_GruntMagmaHideout2[] = {
 
 static const struct TrainerMon sParty_GruntMagmaHideout3[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_NUMEL,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .lvl = 67,
+    .species = SPECIES_CLODSIRE,
+    .ability = ABILITY_UNAWARE,
+    .moves = {MOVE_BULLDOZE, MOVE_RECOVER, MOVE_TOXIC, MOVE_POISON_JAB},
+    .nature = NATURE_CAREFUL,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SILK_SCARF,
+    .lvl = 67,
+    .species = SPECIES_DIGGERSBY,
+    .ability = ABILITY_HUGE_POWER,
+    .friendship = 255,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH},
+    .nature = NATURE_JOLLY,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_CHOICE_BAND,
+    .lvl = 68,
+    .species = SPECIES_EXCADRILL,
+    .ability = ABILITY_SAND_RUSH,
+    .moves = {MOVE_DRILL_RUN, MOVE_ROCK_SLIDE, MOVE_IRON_HEAD, MOVE_CRUSH_CLAW},
+    .nature = NATURE_ADAMANT,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout4[] = {
     {
-    .lvl = 28,
-    .species = SPECIES_BALTOY,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_MUSCLE_BAND,
+    .lvl = 67,
+    .species = SPECIES_MAROWAK,
+    .ability = ABILITY_BATTLE_ARMOR,
+    .moves = {MOVE_BONEMERANG, MOVE_THRASH, MOVE_REST, MOVE_PROTECT},
+    .nature = NATURE_NAUGHTY,
     },
     {
-    .lvl = 28,
-    .species = SPECIES_ZUBAT,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SOFT_SAND,
+    .lvl = 67,
+    .species = SPECIES_SANDACONDA,
+    .ability = ABILITY_SHED_SKIN,
+    .moves = {MOVE_GLARE, MOVE_COIL, MOVE_HIGH_HORSEPOWER, MOVE_SKITTER_SMACK},
+    .nature = NATURE_IMPISH,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .lvl = 68,
+    .species = SPECIES_SANDSLASH,
+    .ability = ABILITY_SAND_VEIL,
+    .moves = {MOVE_GYRO_BALL, MOVE_EARTHQUAKE, MOVE_CRUSH_CLAW, MOVE_CURSE},
+    .nature = NATURE_IMPISH,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout5[] = {
     {
-    .lvl = 28,
-    .species = SPECIES_BALTOY,
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .lvl = 67,
+    .species = SPECIES_SUDOWOODO,
+    .ability = ABILITY_STURDY,
+    .moves = {MOVE_HEAD_SMASH, MOVE_PLAY_ROUGH, MOVE_MIMIC, MOVE_LOW_KICK},
+    .nature = NATURE_ADAMANT,
     },
     {
-    .lvl = 28,
-    .species = SPECIES_NUMEL,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_NEVER_MELT_ICE,
+    .lvl = 67,
+    .species = SPECIES_AVALUGG_HISUIAN,
+    .ability = ABILITY_STRONG_JAW,
+    .moves = {MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_WIDE_GUARD, MOVE_CURSE},
+    .nature = NATURE_IMPISH,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .lvl = 68,
+    .species = SPECIES_MINIOR,
+    .ability = ABILITY_SHIELDS_DOWN,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_POWER_GEM, MOVE_ACROBATICS, MOVE_COSMIC_POWER},
+    .nature = NATURE_NAIVE,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout6[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_MIGHTYENA,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 68,
+    .species = SPECIES_CENTISKORCH,
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_FIRE_LASH, MOVE_LEECH_LIFE, MOVE_COIL, MOVE_PROTECT},
+    .nature = NATURE_CAREFUL,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_FOCUS_BAND,
+    .lvl = 68,
+    .species = SPECIES_TALONFLAME,
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_SWORDS_DANCE, MOVE_WILL_O_WISP},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout7[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_ZUBAT,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .lvl = 67,
+    .species = SPECIES_HEATMOR,
+    .ability = ABILITY_GLUTTONY,
+    .moves = {MOVE_FIRE_LASH, MOVE_BUG_BITE, MOVE_HONE_CLAWS, MOVE_AMNESIA},
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_CHARCOAL,
+    .lvl = 68,
+    .species = SPECIES_EMBOAR,
+    .ability = ABILITY_TURBOBLAZE,
+    .moves = {MOVE_HEAT_CRASH, MOVE_HEADLONG_RUSH, MOVE_GYRO_BALL, MOVE_BODY_PRESS},
+    .nature = NATURE_RELAXED,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .lvl = 68,
+    .species = SPECIES_MAGCARGO,
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_HYDRO_STEAM, MOVE_FLAMETHROWER, MOVE_EARTH_POWER, MOVE_ANCIENT_POWER},
+    .nature = NATURE_QUIET,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout8[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_POOCHYENA,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LUM_BERRY,
+    .lvl = 67,
+    .species = SPECIES_HOUNDOOM,
+    .ability = ABILITY_BERSERK,
+    .moves = {MOVE_FLAMETHROWER, MOVE_SNARL, MOVE_SOLAR_BEAM, MOVE_WILL_O_WISP},
+    .nature = NATURE_MODEST,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_WHITE_HERB,
+    .lvl = 68,
+    .species = SPECIES_CHARIZARD,
+    .ability = ABILITY_SOLAR_POWER,
+    .moves = {MOVE_DRACO_METEOR, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_AIR_SLASH},
+    .nature = NATURE_MODEST,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_WHITE_HERB,
+    .lvl = 68,
+    .species = SPECIES_TURTONATOR,
+    .ability = ABILITY_SHELL_ARMOR,
+    .moves = {MOVE_DRACO_METEOR, MOVE_FLAMETHROWER, MOVE_TOXIC, MOVE_BURNING_BULWARK},
+    .nature = NATURE_MODEST,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout9[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_ZUBAT,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_SHELL_BELL,
+    .lvl = 67,
+    .species = SPECIES_RAPIDASH,
+    .ability = ABILITY_RECKLESS,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_WILD_CHARGE, MOVE_FLARE_BLITZ, MOVE_HEADLONG_RUSH},
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LUM_BERRY,
+    .lvl = 67,
+    .species = SPECIES_TAUROS_PALDEAN_BLAZE_BREED,
+    .ability = ABILITY_ANGER_POINT,
+    .moves = {MOVE_RAGING_BULL, MOVE_HEADBUTT, MOVE_ZEN_HEADBUTT, MOVE_SWAGGER},
+    .nature = NATURE_JOLLY,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_FOCUS_SASH,
+    .lvl = 68,
+    .species = SPECIES_SALAZZLE,
+    .ability = ABILITY_CORROSION,
+    .moves = {MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_VENOSHOCK, MOVE_TOXIC},
+    .nature = NATURE_MODEST,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout10[] = {
@@ -14282,16 +14450,53 @@ static const struct TrainerMon sParty_GruntMagmaHideout13[] = {
 
 static const struct TrainerMon sParty_GruntMagmaHideout14[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_MIGHTYENA,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LUM_BERRY,
+    .lvl = 67,
+    .species = SPECIES_MAWILE,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_IRON_HEAD, MOVE_SUCKER_PUNCH, MOVE_CRUNCH},
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 67,
+    .species = SPECIES_COPPERAJAH,
+    .ability = ABILITY_SHEER_FORCE,
+    .moves = {MOVE_STRENGTH, MOVE_PLAY_ROUGH, MOVE_HIGH_HORSEPOWER, MOVE_IRON_HEAD},
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_AIR_BALLOON,
+    .lvl = 68,
+    .species = SPECIES_KINGAMBIT,
+    .ability = ABILITY_DEFIANT,
+    .moves = {MOVE_KOWTOW_CLEAVE, MOVE_NIGHT_SLASH, MOVE_ZEN_HEADBUTT, MOVE_THUNDER_WAVE},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout15[] = {
     {
-    .lvl = 29,
-    .species = SPECIES_NUMEL,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_QUICK_CLAW,
+    .lvl = 68,
+    .species = SPECIES_COALOSSAL,
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_BURN_UP, MOVE_STONE_EDGE, MOVE_EXPLOSION, MOVE_STEALTH_ROCK},
+    .nature = NATURE_BRAVE,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_TOXIC_ORB,
+    .lvl = 68,
+    .species = SPECIES_FLAREON,
+    .ability = ABILITY_GUTS,
+    .moves = {MOVE_FLARE_BLITZ, MOVE_FLAME_CHARGE, MOVE_SUPERPOWER, MOVE_FACADE},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout16[] = {

@@ -67,7 +67,8 @@ Route118_EventScript_DrakePartyFull::
 
 Route118_EventScript_DrakeGivePokemon::
 	msgbox Route118_Text_DrakeGive, MSGBOX_DEFAULT
-	random 9
+	setflag FLAG_FORCE_SHINY
+	random 10
 	switch VAR_RESULT
 	case 0, Route118_EventScript_DrakeKubfu
 	case 1, Route118_EventScript_DrakeMeltan
@@ -78,11 +79,13 @@ Route118_EventScript_DrakeGivePokemon::
 	case 6, Route118_EventScript_DrakeCarbink
 	case 7, Route118_EventScript_DrakeCosmog
 	case 8, Route118_EventScript_DrakeZygarde
+	case 9, Route118_EventScript_DrakeGrowlithe
 	return
 
 Route118_EventScript_DrakeKubfu::
 	bufferspeciesname 1, SPECIES_KUBFU
 	givemon SPECIES_KUBFU, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -94,6 +97,7 @@ Route118_EventScript_DrakeKubfu::
 Route118_EventScript_DrakeMeltan::
 	bufferspeciesname 1, SPECIES_MELTAN
 	givemon SPECIES_MELTAN, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -105,6 +109,7 @@ Route118_EventScript_DrakeMeltan::
 Route118_EventScript_DrakeTypeNull::
 	bufferspeciesname 1, SPECIES_TYPE_NULL
 	givemon SPECIES_TYPE_NULL, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -116,6 +121,7 @@ Route118_EventScript_DrakeTypeNull::
 Route118_EventScript_DrakePoipole::
 	bufferspeciesname 1, SPECIES_POIPOLE
 	givemon SPECIES_POIPOLE, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -127,6 +133,7 @@ Route118_EventScript_DrakePoipole::
 Route118_EventScript_DrakeRiolu::
 	bufferspeciesname 1, SPECIES_RIOLU
 	givemon SPECIES_RIOLU, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -138,6 +145,7 @@ Route118_EventScript_DrakeRiolu::
 Route118_EventScript_DrakePhione::
 	bufferspeciesname 1, SPECIES_PHIONE
 	givemon SPECIES_PHIONE, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -149,6 +157,7 @@ Route118_EventScript_DrakePhione::
 Route118_EventScript_DrakeCarbink::
 	bufferspeciesname 1, SPECIES_CARBINK
 	givemon SPECIES_CARBINK, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -160,6 +169,7 @@ Route118_EventScript_DrakeCarbink::
 Route118_EventScript_DrakeCosmog::
 	bufferspeciesname 1, SPECIES_COSMOG
 	givemon SPECIES_COSMOG, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
@@ -171,6 +181,19 @@ Route118_EventScript_DrakeCosmog::
 Route118_EventScript_DrakeZygarde::
 	bufferspeciesname 1, SPECIES_ZYGARDE_10_AURA_BREAK
 	givemon SPECIES_ZYGARDE_10_AURA_BREAK, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
+	setflag FLAG_ROUTE118_DRAKE_POKEMON
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox Route118_Text_DrakeEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+Route118_EventScript_DrakeGrowlithe::
+	bufferspeciesname 1, SPECIES_GROWLITHE
+	givemon SPECIES_GROWLITHE, 5, ITEM_NONE
+	clearflag FLAG_FORCE_SHINY
 	setflag FLAG_ROUTE118_DRAKE_POKEMON
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route118_Text_Received_Pokemon, MSGBOX_DEFAULT

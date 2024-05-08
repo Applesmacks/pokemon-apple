@@ -617,6 +617,7 @@ static const u16 sCharizardTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRACO_METEOR,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,

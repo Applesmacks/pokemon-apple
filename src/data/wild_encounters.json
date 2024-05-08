@@ -8846,57 +8846,57 @@
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_HIPPOWDON"
+                "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_PUPITAR"
+                "species": "SPECIES_SOLROCK"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_BOLDORE"
+                "species": "SPECIES_NINETALES"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_EXCADRILL"
+                "species": "SPECIES_CHARMELEON"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_VIBRAVA"
+                "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_GASTRODON_EAST_SEA"
+                "species": "SPECIES_IVYSAUR"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_GABITE"
+                "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_SANDACONDA"
+                "species": "SPECIES_HOUNDOOM"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_DONPHAN"
+                "species": "SPECIES_CAMERUPT"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_LANDORUS"
+                "species": "SPECIES_SUNFLORA"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_GENESECT"
+                "species": "SPECIES_LEAFEON"
               }
             ]
           }
@@ -8974,57 +8974,57 @@
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_HIPPOWDON"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_PUPITAR"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_NINETALES"
+                "species": "SPECIES_BOLDORE"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_EXCADRILL"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_TROPIUS"
+                "species": "SPECIES_VIBRAVA"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_GASTRODON_EAST_SEA"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_MAGCARGO"
+                "species": "SPECIES_GABITE"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_HOUNDOOM"
+                "species": "SPECIES_SANDACONDA"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_CAMERUPT"
+                "species": "SPECIES_DONPHAN"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_SUNFLORA"
+                "species": "SPECIES_LANDORUS"
               },
               {
                 "min_level": 60,
                 "max_level": 62,
-                "species": "SPECIES_LEAFEON"
+                "species": "SPECIES_GENESECT"
               }
             ]
           }
