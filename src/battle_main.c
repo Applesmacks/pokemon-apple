@@ -3250,6 +3250,19 @@ static void BattleMainCB1(void)
         gBattlerControllerFuncs[battler](battler);
 }
 
+static void ClearSetBScriptingStruct(void)
+{
+    // windowsType is set up earlier in BattleInitBgsAndWindows, so we need to save the value
+    u32 temp = gBattleScripting.windowsType;
+    u32 specialBattleType = gBattleScripting.specialTrainerBattleType;
+    memset(&gBattleScripting, 0, sizeof(gBattleScripting));
+
+    gBattleScripting.windowsType = temp;
+    gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
+    gBattleScripting.expOnCatch = (B_EXP_CATCH >= GEN_6);
+    gBattleScripting.specialTrainerBattleType = specialBattleType;
+}
+
 static void BattleStartClearSetData(void)
 {
     s32 i;
