@@ -164,7 +164,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MAX_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_SCOPE_LENS",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL"
     },
@@ -527,7 +527,7 @@
       "x": 36,
       "y": 31,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_TM_MUD_SHOT",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE"
     },
     {
@@ -535,7 +535,7 @@
       "x": 61,
       "y": 7,
       "elevation": 0,
-      "item": "ITEM_PP_UP",
+      "item": "ITEM_TM_ROCK_POLISH",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP"
     },
     {
@@ -543,7 +543,7 @@
       "x": 64,
       "y": 31,
       "elevation": 0,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_WHITE_HERB",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
     }
   ]
