@@ -13,9 +13,32 @@ static const struct TrainerMon sParty_Sawyer1[] = {
 
 static const struct TrainerMon sParty_GruntAquaHideout1[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_POOCHYENA,
-    }
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 67,
+    .species = SPECIES_QUAGSIRE,
+    .ability = ABILITY_UNAWARE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_LIQUIDATION, MOVE_RECOVER, MOVE_ICE_PUNCH},
+    .nature = NATURE_IMPISH,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_FLYING_GEM,
+    .lvl = 67,
+    .species = SPECIES_SIMIPOUR,
+    .ability = ABILITY_TORRENT,
+    .moves = {MOVE_ACROBATICS, MOVE_BRICK_BREAK, MOVE_WATERFALL, MOVE_SHADOW_CLAW},
+    .nature = NATURE_JOLLY,
+    },
+    {
+    .iv = IV_SPREAD_MEDIUM,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .lvl = 68,
+    .species = SPECIES_DREDNAW,
+    .ability = ABILITY_STRONG_JAW,
+    .moves = {MOVE_CRUNCH, MOVE_JAW_LOCK, MOVE_LIQUIDATION, MOVE_HEAD_SMASH},
+    .nature = NATURE_IMPISH,
+    },
 };
 
 static const struct TrainerMon sParty_GruntAquaHideout2[] = {
