@@ -69,7 +69,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT
-	closemessage
+	trainerbattle_no_intro TRAINER_DREW, MeteorFalls_1F_1R_Text_ArchieDefeat
 	applymovement LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1ApproachArchie
 	applymovement LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2ApproachArchie
 	waitmovement 0
@@ -277,7 +277,13 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "They engage in destruction, claiming\n"
 	.string "to expand the land mass.\p"
 	.string "They are the rivals to us,\n"
-	.string "the sea-loving TEAM AQUA!$"
+	.string "the sea-loving TEAM AQUA!\p"
+	.string "Truth be told, I expect that you\n"
+	.string "will be a thorn in my side. I'll\l"
+	.string "take you down here and now!$"
+
+MeteorFalls_1F_1R_Text_ArchieDefeat:
+	.string "Looks like my instinct was correct!$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
