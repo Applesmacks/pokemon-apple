@@ -1781,7 +1781,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EXP_CANDY_XL] =
     {
         .name = _("Exp.Candy XL"),
-        .pluralName = _("Exp.Candies L"),
+        .pluralName = _("Exp.Candies XL"),
         .price = 10000,
         .holdEffectParam = EXP_30000,
         .description = COMPOUND_STRING(
@@ -3682,7 +3682,7 @@ const struct Item gItemsInfo[] =
         .name = _("Dubious Disc"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
-            "A transparent device\n"
+            "A clear device\n"
             "overflowing with\n"
             "dubious data."),
         .pocket = POCKET_ITEMS,
@@ -9361,7 +9361,14 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM13"),
         .price = 3000,
-        .description = sQuestionMarksDesc,
+        .description = COMPOUND_STRING(
+            "Fires an icy cold\n"
+            "beam that may\n"
+        #if B_USE_FROSTBITE == TRUE
+            "inflict frostbite."),
+        #else
+            "freeze the foe."),
+        #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -9371,8 +9378,17 @@ const struct Item gItemsInfo[] =
     [ITEM_TM_BLIZZARD] =
     {
         .name = _("TM14"),
-        .price = 3000,
-        .description = sQuestionMarksDesc,
+        .price = 5500,
+        .description = COMPOUND_STRING(
+        #if B_USE_FROSTBITE == TRUE
+            "A snow-and-wind\n"
+            "attack that may\n"
+            "inflict frostbite."),
+        #else
+            "A brutal snow-and-\n"
+            "wind attack that\n"
+            "may freeze the foe."),
+        #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
