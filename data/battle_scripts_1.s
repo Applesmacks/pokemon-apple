@@ -7015,10 +7015,8 @@ BattleScript_CudChewActivates::
 	end3
 
 BattleScript_ApplyDisguiseFormChangeHPLoss::
-.if B_DISGUISE_HP_LOSS >= GEN_8
 	healthbarupdate BS_SCRIPTING
 	datahpupdate BS_SCRIPTING
-.endif
 	return
 
 BattleScript_TargetFormChangeNoPopup:

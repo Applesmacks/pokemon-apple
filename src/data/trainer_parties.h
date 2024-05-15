@@ -637,15 +637,59 @@ static const struct TrainerMon sParty_Fredrick[] = {
 
 static const struct TrainerMon sParty_Matt[] = {
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 34,
-    .species = SPECIES_MIGHTYENA,
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_ELECTRIC_SEED,
+    .lvl = 68,
+    .species = SPECIES_TAPU_KOKO,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_THUNDERBOLT, MOVE_DAZZLING_GLEAM, MOVE_GRASS_KNOT, MOVE_ROOST},
+    .nature = NATURE_TIMID,
     },
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 34,
-    .species = SPECIES_GOLBAT,
-    }
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 69,
+    .species = SPECIES_LANTURN,
+    .ability = ABILITY_VOLT_ABSORB,
+    .moves = {MOVE_SCALD, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_THUNDER_WAVE},
+    .nature = NATURE_CALM,
+    },
+    {
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .lvl = 69,
+    .species = SPECIES_BELLIBOLT,
+    .ability = ABILITY_ELECTROMORPHOSIS,
+    .moves = {MOVE_TOXIC, MOVE_SLACK_OFF, MOVE_MUDDY_WATER, MOVE_PARABOLIC_CHARGE},
+    .nature = NATURE_BOLD,
+    },
+    {
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .lvl = 68,
+    .species = SPECIES_AMPHAROS,
+    .ability = ABILITY_COTTON_DOWN,
+    .moves = {MOVE_THUNDER, MOVE_DRAGON_PULSE, MOVE_DAZZLING_GLEAM, MOVE_EARTH_POWER},
+    .nature = NATURE_TIMID,
+    },
+    {
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .lvl = 68,
+    .species = SPECIES_IRON_THORNS,
+    .ability = ABILITY_QUARK_DRIVE,
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_STONE_EDGE, MOVE_ICE_PUNCH, MOVE_BRICK_BREAK},
+    .nature = NATURE_JOLLY,
+    },
+    {
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_MANECTITE,
+    .lvl = 70,
+    .species = SPECIES_MANECTRIC,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_WILD_CHARGE, MOVE_CRUNCH, MOVE_STRENGTH, MOVE_FIRE_FANG},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_Zander[] = {
