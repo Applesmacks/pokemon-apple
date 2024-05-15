@@ -5172,8 +5172,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_MANTYKE] =
     {
         .baseHP        = 65,
-        .baseAttack    = 20,
-        .baseDefense   = 50,
+        .baseAttack    = 50,
+        .baseDefense   = 20,
         .baseSpeed     = 60,
         .baseSpAttack  = 70,
         .baseSpDefense = 120,
@@ -5226,8 +5226,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_MANTINE] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 105 : 105,
-        .baseAttack    = 40,
-        .baseDefense   = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 40,
         .baseSpeed     = 80,
         .baseSpAttack  = 90,
         .baseSpDefense = 140,
