@@ -1221,7 +1221,7 @@
 #define FLAG_DRAKE_CHAMBER_COMPLETE                                          0x493 // Unused Flag
 #define FLAG_TREVOR_TALK_DONE                                           0x494 // Unused Flag
 #define FLAG_TREVOR_DEFEAT                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
+#define FLAG_SHOAL_CAVE_ACCESS                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag

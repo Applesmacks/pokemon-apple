@@ -500,33 +500,140 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
+//NEW CLASS OF STAB ABILITIES /////////////////////////////////////////////
+
+    [ABILITY_BORING] =
+    {
+        .name = _("Boring"),
+        .description = COMPOUND_STRING("Powers up Normal moves."),
+        .aiRating = 6,
+    },
+    
     [ABILITY_OVERGROW] =
     {
         .name = _("Overgrow"),
-        .description = COMPOUND_STRING("Ups Grass moves in a pinch."),
-        .aiRating = 5,
+        .description = COMPOUND_STRING("Powers up Grass moves."),
+        .aiRating = 6,
     },
 
     [ABILITY_BLAZE] =
     {
         .name = _("Blaze"),
-        .description = COMPOUND_STRING("Ups Fire moves in a pinch."),
-        .aiRating = 5,
+        .description = COMPOUND_STRING("Powers up Fire moves."),
+        .aiRating = 6,
     },
 
     [ABILITY_TORRENT] =
     {
         .name = _("Torrent"),
-        .description = COMPOUND_STRING("Ups Water moves in a pinch."),
-        .aiRating = 5,
+        .description = COMPOUND_STRING("Powers up Water moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_MARTIAL_ARTS] =
+    {
+        .name = _("Martial Arts"),
+        .description = COMPOUND_STRING("Powers up Fighting moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_ATMOSPHERE] =
+    {
+        .name = _("Atmosphere"),
+        .description = COMPOUND_STRING("Powers up Flying moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_CONTAGION] =
+    {
+        .name = _("Contagion"),
+        .description = COMPOUND_STRING("Powers up Poison moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_TERRA_FIRMA] =
+    {
+        .name = _("Terra Firma"),
+        .description = COMPOUND_STRING("Powers up Ground moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_ROCKY_PAYLOAD] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Rocky Payload"),
+    #else
+        .name = _("RockyPayload"),
+    #endif
+        .description = COMPOUND_STRING("Powers up Rock moves."),
+        .aiRating = 6,
     },
 
     [ABILITY_SWARM] =
     {
         .name = _("Swarm"),
-        .description = COMPOUND_STRING("Ups Bug moves in a pinch."),
-        .aiRating = 5,
+        .description = COMPOUND_STRING("Powers up Bug moves."),
+        .aiRating = 6,
     },
+
+    [ABILITY_SPOOKY] =
+    {
+        .name = _("Spooky"),
+        .description = COMPOUND_STRING("Powers up Ghost moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_TRANSISTOR] =
+    {
+        .name = _("Transistor"),
+        .description = COMPOUND_STRING("Powers up Electric moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_MYSTIC_MIND] =
+    {
+        .name = _("Mystic Mind"),
+        .description = COMPOUND_STRING("Powers up Psychic moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_SUB_ZERO] =
+    {
+        .name = _("Sub-Zero"),
+        .description = COMPOUND_STRING("Powers up Ice moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_DRAGONS_MAW] =
+    {
+        .name = _("Dragon's Maw"),
+        .description = COMPOUND_STRING("Powers up Dragon moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_DARK_AURA] =
+    {
+        .name = _("Dark Aura"),
+        .description = COMPOUND_STRING("Powers up Dark moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_STEELWORKER] =
+    {
+        .name = _("Steelworker"),
+        .description = COMPOUND_STRING("Powers up Steel moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_FAIRY_AURA] =
+    {
+        .name = _("Fairy Aura"),
+        .description = COMPOUND_STRING("Powers up Fairy moves."),
+        .aiRating = 6,
+    },
+
+
+///////////////////////////////////////////////////////////////
 
     [ABILITY_ROCK_HEAD] =
     {
@@ -1410,20 +1517,6 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
 
-    [ABILITY_DARK_AURA] =
-    {
-        .name = _("Dark Aura"),
-        .description = COMPOUND_STRING("Boosts Dark moves."),
-        .aiRating = 6,
-    },
-
-    [ABILITY_FAIRY_AURA] =
-    {
-        .name = _("Fairy Aura"),
-        .description = COMPOUND_STRING("Boosts Fairy moves."),
-        .aiRating = 6,
-    },
-
     [ABILITY_AURA_BREAK] =
     {
         .name = _("Aura Break"),
@@ -1527,13 +1620,6 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Water Bubble"),
         .description = COMPOUND_STRING("Guards from fire and burns."),
         .aiRating = 8,
-    },
-
-    [ABILITY_STEELWORKER] =
-    {
-        .name = _("Steelworker"),
-        .description = COMPOUND_STRING("Powers up Steel moves."),
-        .aiRating = 6,
     },
 
     [ABILITY_BERSERK] =
@@ -2095,20 +2181,6 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
-    [ABILITY_TRANSISTOR] =
-    {
-        .name = _("Transistor"),
-        .description = COMPOUND_STRING("Ups Electric-type moves."),
-        .aiRating = 6,
-    },
-
-    [ABILITY_DRAGONS_MAW] =
-    {
-        .name = _("Dragon's Maw"),
-        .description = COMPOUND_STRING("Ups Dragon-type moves."),
-        .aiRating = 6,
-    },
-
     [ABILITY_CHILLING_NEIGH] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
@@ -2226,17 +2298,6 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Cannot be intimidated."),
         .aiRating = 5,
         .breakable = TRUE,
-    },
-
-    [ABILITY_ROCKY_PAYLOAD] =
-    {
-    #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Rocky Payload"),
-    #else
-        .name = _("RockyPayload"),
-    #endif
-        .description = COMPOUND_STRING("Powers up Rock moves."),
-        .aiRating = 6,
     },
 
     [ABILITY_WIND_POWER] =

@@ -64,11 +64,23 @@ Route125_EventScript_RematchErnest::
 Route125_EventScript_Kim::
 	trainerbattle_double TRAINER_KIM_AND_IRIS, Route125_Text_KimIntro, Route125_Text_KimDefeat, Route125_Text_KimNotEnoughMons
 	msgbox Route125_Text_KimPostBattle, MSGBOX_AUTOCLOSE
+	closemessage
+	fadescreen 1
+	removeobject 7
+	removeobject 6
+	setflag FLAG_SHOAL_CAVE_ACCESS
+	fadescreen 0
 	end
 
 Route125_EventScript_Iris::
 	trainerbattle_double TRAINER_KIM_AND_IRIS, Route125_Text_IrisIntro, Route125_Text_IrisDefeat, Route125_Text_IrisNotEnoughMons
 	msgbox Route125_Text_IrisPostBattle, MSGBOX_AUTOCLOSE
+	closemessage
+	fadescreen 1
+	removeobject 7
+	removeobject 6
+	setflag FLAG_SHOAL_CAVE_ACCESS
+	fadescreen 0
 	end
 
 Route125_EventScript_Presley::

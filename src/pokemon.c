@@ -108,7 +108,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
 //HOENN_TO_NATIONAL(),
-static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
+static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT] =
 {
     HOENN_TO_NATIONAL(BULBASAUR),
     HOENN_TO_NATIONAL(IVYSAUR),
