@@ -85374,7 +85374,10 @@
       "MOVE_HYPER_BEAM",
       "MOVE_TERA_BLAST",
       "MOVE_FLIP_TURN",
-      "MOVE_WHIRLPOOL"
+      "MOVE_WHIRLPOOL",
+      "MOVE_AURA_SPHERE",
+      "MOVE_DARK_PULSE",
+      "MOVE_DRAGON_PULSE"
     ],
     "EggMoves": [],
     "TutorMoves": []
