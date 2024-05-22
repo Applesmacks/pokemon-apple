@@ -9980,20 +9980,32 @@ static const struct TrainerMon sParty_Hector[] = {
 
 static const struct TrainerMon sParty_TabithaMossdeep[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 36,
-    .species = SPECIES_CAMERUPT,
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 78,
+    .species = SPECIES_WO_CHIEN,
+    .ability = ABILITY_TABLETS_OF_RUIN,
+    .moves = {MOVE_LEECH_SEED, MOVE_PROTECT, MOVE_KNOCK_OFF, MOVE_RUINATION},
+    .nature = NATURE_IMPISH,
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 38,
-    .species = SPECIES_MIGHTYENA,
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_LIFE_ORB,
+    .lvl = 79,
+    .species = SPECIES_ROSERADE,
+    .ability = ABILITY_SOLAR_POWER,
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_LEAF_STORM, MOVE_SYNTHESIS, MOVE_WEATHER_BALL},
+    .nature = NATURE_TIMID,
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 40,
-    .species = SPECIES_GOLBAT,
-    }
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_VENUSAURITE,
+    .lvl = 80,
+    .species = SPECIES_VENUSAUR,
+    .ability = ABILITY_CHLOROPHYLL,
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_SYNTHESIS, MOVE_EARTH_POWER, MOVE_GIGA_DRAIN},
+    .nature = NATURE_MODEST,
+    },
 };
 
 static const struct TrainerMon sParty_Edwin2[] = {
@@ -15176,20 +15188,32 @@ static const struct TrainerMon sParty_Darcy[] = {
 
 static const struct TrainerMon sParty_MaxieMossdeep[] = {
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 42,
-    .species = SPECIES_MIGHTYENA,
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_CHARIZARDITE_Y,
+    .lvl = 78,
+    .species = SPECIES_CHARIZARD,
+    .ability = ABILITY_BLAZE,
+    .moves = {MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_SCORCHING_SANDS, MOVE_FOCUS_BLAST},
+    .nature = NATURE_MODEST,
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 43,
-    .species = SPECIES_CROBAT,
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 79,
+    .species = SPECIES_GOUGING_FIRE,
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_FLARE_BLITZ, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_MORNING_SUN},
+    .nature = NATURE_ADAMANT,
     },
     {
-    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 44,
-    .species = SPECIES_CAMERUPT,
-    }
+    .iv = IV_SPREAD_MAX,
+    .heldItem = ITEM_RED_ORB,
+    .lvl = 80,
+    .species = SPECIES_GROUDON,
+    .ability = ABILITY_DROUGHT,
+    .moves = {MOVE_PRECIPICE_BLADES, MOVE_HEAT_CRASH, MOVE_ROCK_SLIDE, MOVE_IRON_HEAD},
+    .nature = NATURE_IMPISH,
+    },
 };
 
 //Champion Trevor Fiery Path

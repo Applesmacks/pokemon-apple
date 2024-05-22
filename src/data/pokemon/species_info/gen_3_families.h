@@ -5477,11 +5477,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_VIBRAVA] =
     {
         .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 70,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 60,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_DRAGON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 126,
@@ -5535,11 +5535,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_FLYGON] =
     {
         .baseHP        = 80,
-        .baseAttack    = 80,
-        .baseDefense   = 100,
-        .baseSpeed     = 110,
+        .baseAttack    = 110,
+        .baseDefense   = 90,
+        .baseSpeed     = 100,
         .baseSpAttack  = 130,
-        .baseSpDefense = 100,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_BUG, TYPE_DRAGON),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -7943,11 +7943,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SPHEAL] =
     {
         .baseHP        = 75,
-        .baseAttack    = 80,
-        .baseDefense   = 60,
+        .baseAttack    = 60,
+        .baseDefense   = 80,
         .baseSpeed     = 5,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 75,
@@ -7997,11 +7997,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SEALEO] =
     {
         .baseHP        = 95,
-        .baseAttack    = 100,
-        .baseDefense   = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
         .baseSpeed     = 25,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 128,
@@ -8049,12 +8049,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_WALREIN] =
     {
-        .baseHP        = 115,
-        .baseAttack    = 120,
-        .baseDefense   = 100,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 100,
+        .baseHP        = 135,
+        .baseAttack    = 100,
+        .baseDefense   = 120,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 120,
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8

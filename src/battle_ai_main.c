@@ -853,6 +853,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 case EFFECT_WILL_O_WISP:
                 case EFFECT_TOXIC:
                 case EFFECT_LEECH_SEED:
+                case EFFECT_MIST:
                     ADJUST_SCORE(-5);
                     break;
                 case EFFECT_CURSE:
@@ -3508,7 +3509,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
           || HasMoveEffect(battlerDef, EFFECT_WILL_O_WISP)
           || HasMoveEffect(battlerDef, EFFECT_MIST)
           || HasMoveEffect(battlerDef, EFFECT_CONFUSE)
-          || HasMoveEffect(battlerDef, EFFECT_LEECH_SEED))
+          || HasMoveEffect(battlerDef, EFFECT_LEECH_SEED)
+          || HasMoveEffect(battlerDef, EFFECT_MIST))
             ADJUST_SCORE(GOOD_EFFECT);
         if (!gBattleMons[battlerDef].status2 & (STATUS2_WRAPPED | STATUS2_ESCAPE_PREVENTION && aiData->hpPercents[battlerAtk] > 70))
             ADJUST_SCORE(WEAK_EFFECT);

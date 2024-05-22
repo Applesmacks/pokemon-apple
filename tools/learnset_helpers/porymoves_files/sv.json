@@ -28532,7 +28532,9 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLAMETHROWER",
-      "MOVE_FIRE_BLAST"
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -36517,7 +36519,12 @@
   "BUDEW": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -36526,7 +36533,9 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLAMETHROWER",
-      "MOVE_FIRE_BLAST"
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -73025,7 +73034,8 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_BREAKING_SWIPE",
       "MOVE_METAL_SOUND",
-      "MOVE_DRAGON_CHEER"
+      "MOVE_DRAGON_CHEER",
+      "MOVE_SHOCK_WAVE"
     ],
     "EggMoves": [
       "MOVE_SLASH",
@@ -88552,7 +88562,8 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_METAL_SOUND",
       "MOVE_HARD_PRESS",
-      "MOVE_DRAGON_CHEER"
+      "MOVE_DRAGON_CHEER",
+      "MOVE_SHOCK_WAVE"
     ],
     "EggMoves": [],
     "TutorMoves": []

@@ -25833,7 +25833,11 @@
       "MOVE_LEAF_STORM",
       "MOVE_POWER_WHIP",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_FLAMETHROWER",
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",
@@ -31949,7 +31953,11 @@
       "MOVE_ENERGY_BALL",
       "MOVE_LEAF_STORM",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_FLAMETHROWER",
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",
@@ -32080,7 +32088,11 @@
       "MOVE_POWER_WHIP",
       "MOVE_GRASS_KNOT",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLING_GLEAM",
+      "MOVE_FLAMETHROWER",
+      "MOVE_FIRE_BLAST",
+      "MOVE_PSYCHIC",
+      "MOVE_HEX"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",

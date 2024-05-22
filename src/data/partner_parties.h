@@ -7,7 +7,7 @@ static const struct TrainerMon sParty_StevenPartner[] = {
     .lvl = 79,
     .species = SPECIES_ZACIAN,
     .ability = ABILITY_INTREPID_SWORD,
-    .moves = {MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_CLOSE_COMBAT, MOVE_WILD_CHARGE},
+    .moves = {MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_CLOSE_COMBAT, MOVE_PSYCHIC_FANGS},
     .nature = NATURE_JOLLY,
     },
     {
@@ -16,7 +16,7 @@ static const struct TrainerMon sParty_StevenPartner[] = {
     .lvl = 79,
     .species = SPECIES_MELMETAL,
     .ability = ABILITY_IRON_FIST,
-    .moves = {MOVE_SUBSTITUTE, MOVE_DOUBLE_IRON_BASH, MOVE_THUNDER_PUNCH, MOVE_EARTHQUAKE},
+    .moves = {MOVE_SUPERPOWER, MOVE_DOUBLE_IRON_BASH, MOVE_MEGA_PUNCH, MOVE_HIGH_HORSEPOWER},
     .nature = NATURE_ADAMANT,
     },
     {
@@ -25,7 +25,7 @@ static const struct TrainerMon sParty_StevenPartner[] = {
     .lvl = 80,
     .species = SPECIES_DIALGA,
     .ability = ABILITY_PRESSURE,
-    .moves = {MOVE_DRACO_METEOR, MOVE_FIRE_BLAST, MOVE_THUNDER, MOVE_ROAR_OF_TIME},
+    .moves = {MOVE_FLASH_CANNON, MOVE_FIRE_BLAST, MOVE_AURA_SPHERE, MOVE_ROAR_OF_TIME},
     .nature = NATURE_MODEST,
     },
 };
