@@ -35571,7 +35571,8 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_WHIRLPOOL",
       "MOVE_TRIPLE_AXEL",
-      "MOVE_FEATHER_DANCE"
+      "MOVE_FEATHER_DANCE",
+      "MOVE_IRON_HEAD"
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
@@ -35719,7 +35720,8 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_FEATHER_DANCE",
       "MOVE_THROAT_CHOP",
-      "MOVE_METAL_SOUND"
+      "MOVE_METAL_SOUND",
+      "MOVE_IRON_HEAD"
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
@@ -80289,7 +80291,8 @@
       "MOVE_KNOCK_OFF",
       "MOVE_LUNGE",
       "MOVE_GRASSY_GLIDE",
-      "MOVE_PAIN_SPLIT"
+      "MOVE_PAIN_SPLIT",
+      "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -80423,7 +80426,8 @@
       "MOVE_LUNGE",
       "MOVE_GRASSY_GLIDE",
       "MOVE_PAIN_SPLIT",
-      "MOVE_SKITTER_SMACK"
+      "MOVE_SKITTER_SMACK",
+      "MOVE_MUDDY_WATER"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
