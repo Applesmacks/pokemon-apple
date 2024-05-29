@@ -6587,7 +6587,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //.backAnimId = BACK_ANIM_NONE,
         //.palette = gMonPalette_TerapagosNormal,
         //.shinyPalette = gMonShinyPalette_TerapagosNormal,
-        .iconSprite = gMonIcon_TerapagosNormal,
+        //.iconSprite = gMonIcon_TerapagosNormal,
         .iconPalIndex = 0,
         FOOTPRINT(TerapagosNormal)
         .isLegendary = TRUE,
