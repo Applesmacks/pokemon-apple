@@ -11562,19 +11562,23 @@ static const struct TrainerMon sParty_Leonardo[] = {
 
 static const struct TrainerMon sParty_Athena[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 32,
-    .species = SPECIES_MANECTRIC,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_NONE}
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_LEFTOVERS,
+    .lvl = 82,
+    .species = SPECIES_FLORGES,
+    .ability = ABILITY_FLOWER_VEIL,
+    .moves = {MOVE_WISH, MOVE_PROTECT, MOVE_MOONBLAST, MOVE_PSYCHIC_NOISE},
+    .nature = NATURE_BOLD,
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 32,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SURF, MOVE_THIEF, MOVE_NONE, MOVE_NONE}
-    }
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_LIFE_ORB,
+    .lvl = 82,
+    .species = SPECIES_PAWMOT,
+    .ability = ABILITY_IRON_FIST,
+    .moves = {MOVE_DOUBLE_SHOCK, MOVE_CLOSE_COMBAT, MOVE_ICE_PUNCH, MOVE_KNOCK_OFF},
+    .nature = NATURE_JOLLY,
+    },
 };
 
 static const struct TrainerMon sParty_Harrison[] = {
@@ -13768,43 +13772,45 @@ static const struct TrainerMon sParty_MayLilycoveTorchic[] = {
 
 static const struct TrainerMon sParty_Jonah[] = {
     {
-    .lvl = 30,
-    .species = SPECIES_WAILMER,
+    .lvl = 81,
+    .species = SPECIES_LUDICOLO,
     },
     {
-    .lvl = 31,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 81,
+    .species = SPECIES_LUMINEON,
     },
-    {
-    .lvl = 32,
-    .species = SPECIES_SHARPEDO,
-    }
 };
 
 static const struct TrainerMon sParty_Henry[] = {
     {
-    .lvl = 31,
-    .species = SPECIES_CARVANHA,
+    .lvl = 81,
+    .species = SPECIES_LAPRAS,
     },
     {
-    .lvl = 34,
-    .species = SPECIES_TENTACRUEL,
-    }
+    .lvl = 81,
+    .species = SPECIES_STUNFISK,
+    },
 };
 
 static const struct TrainerMon sParty_Roger[] = {
     {
-    .lvl = 15,
-    .species = SPECIES_MAGIKARP,
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_SPELL_TAG,
+    .lvl = 82,
+    .species = SPECIES_DHELMISE,
+    .ability = ABILITY_STEELWORKER,
+    .moves = {MOVE_POWER_WHIP, MOVE_POLTERGEIST, MOVE_ANCHOR_SHOT, MOVE_SYNTHESIS},
+    .nature = NATURE_IMPISH,
     },
     {
-    .lvl = 25,
-    .species = SPECIES_MAGIKARP,
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_CHOICE_BAND,
+    .lvl = 82,
+    .species = SPECIES_BARRASKEWDA,
+    .ability = ABILITY_PROPELLER_TAIL,
+    .moves = {MOVE_LIQUIDATION, MOVE_CLOSE_COMBAT, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS},
+    .nature = NATURE_ADAMANT,
     },
-    {
-    .lvl = 35,
-    .species = SPECIES_GYARADOS,
-    }
 };
 
 static const struct TrainerMon sParty_Alexa[] = {
@@ -13835,9 +13841,23 @@ static const struct TrainerMon sParty_Ruben[] = {
 
 static const struct TrainerMon sParty_Koji1[] = {
     {
-    .lvl = 34,
-    .species = SPECIES_MACHOKE,
-    }
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_FLAME_ORB,
+    .lvl = 82,
+    .species = SPECIES_CONKELDURR,
+    .ability = ABILITY_GUTS,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_FACADE, MOVE_ROCK_SLIDE, MOVE_ICE_PUNCH},
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_FLAME_ORB,
+    .lvl = 82,
+    .species = SPECIES_BUZZWOLE,
+    .ability = ABILITY_GUTS,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_ICE_PUNCH, MOVE_LEECH_LIFE, MOVE_POISON_JAB},
+    .nature = NATURE_ADAMANT,
+    },
 };
 
 static const struct TrainerMon sParty_Wayne[] = {
@@ -13857,13 +13877,23 @@ static const struct TrainerMon sParty_Wayne[] = {
 
 static const struct TrainerMon sParty_Aidan[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_SWELLOW,
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_LIFE_ORB,
+    .lvl = 82,
+    .species = SPECIES_CROBAT,
+    .ability = ABILITY_INNER_FOCUS,
+    .moves = {MOVE_BRAVE_BIRD, MOVE_ROOST, MOVE_SUPER_FANG, MOVE_CROSS_POISON},
+    .nature = NATURE_JOLLY,
     },
     {
-    .lvl = 32,
-    .species = SPECIES_SKARMORY,
-    }
+    .iv = IV_SPREAD_HIGH,
+    .heldItem = ITEM_WHITE_HERB,
+    .lvl = 82,
+    .species = SPECIES_MINIOR,
+    .ability = ABILITY_SHIELDS_DOWN,
+    .moves = {MOVE_SHELL_SMASH, MOVE_ACROBATICS, MOVE_EARTHQUAKE, MOVE_STONE_EDGE},
+    .nature = NATURE_ADAMANT,
+    },
 };
 
 static const struct TrainerMon sParty_Reed[] = {
