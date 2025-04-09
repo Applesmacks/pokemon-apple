@@ -37,7 +37,6 @@
 
 static void CB2_StarterChoose(void);
 static void ClearStarterLabel(void);
-static void RandomizeStarters(void);
 static void Task_StarterChoose(u8 taskId);
 static void Task_HandleStarterChooseInput(u8 taskId);
 static void Task_WaitForStarterSprite(u8 taskId);
@@ -116,9 +115,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    VAR_GRASS_STARTER,
-    VAR_FIRE_STARTER,
-    VAR_WATER_STARTER
+    SPECIES_NIDORAN_M,
+    SPECIES_VANNILITE,
+    SPECIES_SHINX
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -380,7 +379,6 @@ void CB2_ChooseStarter(void)
     u8 taskId;
     u8 spriteId;
 
-    RandomizeStarters();
     SetVBlankCallback(NULL);
 
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
@@ -669,57 +667,4 @@ static void SpriteCB_StarterPokemon(struct Sprite *sprite)
         sprite->y -= 2;
     if (sprite->y < STARTER_PKMN_POS_Y)
         sprite->y += 2;
-}
-
-static void RandomizeStarters(void)
-{
-    u16 sGrassStarters[9] =
-        {
-            SPECIES_BULBASAUR,
-            SPECIES_CHIKORITA,
-            SPECIES_TREECKO,
-            SPECIES_TURTWIG,
-            SPECIES_SNIVY,
-            SPECIES_CHESPIN,
-            SPECIES_ROWLET,
-            SPECIES_GROOKEY,
-            SPECIES_SPRIGATITO
-        };
-
-u16 sFireStarters[9] =
-        {
-            SPECIES_CHARMANDER,
-            SPECIES_CYNDAQUIL,
-            SPECIES_TORCHIC,
-            SPECIES_CHIMCHAR,
-            SPECIES_TEPIG,
-            SPECIES_FENNEKIN,
-            SPECIES_LITTEN,
-            SPECIES_SCORBUNNY,
-            SPECIES_FUECOCO
-        };
-
-u16 sWaterStarters[9] =
-        {
-            SPECIES_SQUIRTLE,
-            SPECIES_TOTODILE,
-            SPECIES_MUDKIP,
-            SPECIES_PIPLUP,
-            SPECIES_OSHAWOTT,
-            SPECIES_FROAKIE,
-            SPECIES_POPPLIO,
-            SPECIES_SOBBLE,
-            SPECIES_QUAXLY
-        };
-        
-    Shuffle(sGrassStarters, 9, sizeof(sGrassStarters[0]));
-    u16 randomGrass = Random() % 9;
-    Shuffle(sFireStarters, 9, sizeof(sFireStarters[0]));
-    u16 randomFire = Random() % 9;
-    Shuffle(sWaterStarters, 9, sizeof(sWaterStarters[0]));
-    u16 randomWater = Random() % 9;
-
-    VarSet(VAR_GRASS_STARTER, sGrassStarters[randomGrass]);
-    VarSet(VAR_FIRE_STARTER, sFireStarters[randomFire]);
-    VarSet(VAR_WATER_STARTER, sWaterStarters[randomWater]);
 }
