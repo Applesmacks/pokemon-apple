@@ -13656,9 +13656,9 @@ static const struct LevelUpMove sSwannaLevelUpLearnset[] = {
 
 #if P_FAMILY_VANILLITE
 static const struct LevelUpMove sVanilliteLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    LEVEL_UP_MOVE( 4, MOVE_TAUNT),
+    LEVEL_UP_MOVE( 4, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE( 8, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(16, MOVE_AVALANCHE),

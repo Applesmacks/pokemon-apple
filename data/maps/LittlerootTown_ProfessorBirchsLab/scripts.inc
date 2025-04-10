@@ -120,10 +120,27 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
 	waitfanfare
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GiveEeveeEvent
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveEeveeEvent
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveEeveeEvent::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_GiveEevee
+	givemon SPECIES_EEVEE, 5, ITEM_NONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_ReceivedEevee, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToEevee, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameEevee
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_NicknameEevee::
 	setvar VAR_0x8004, 0
 	call Common_EventScript_NameReceivedPartyMon
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
@@ -1002,3 +1019,20 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+LittlerootTown_ProfessorBirchsLab_Text_GiveEevee:
+	.string "If you didn't already know,\n"
+	.string "HOENN is a region of double battles!\p"
+	.string "Every trainer is proficient at\n"
+	.string "battling with two partners at once.\p"
+	.string "With that in mind, please take this.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToEevee:
+	.string "This is EEVEE! It can evolve into\n"
+	.string "one of eight different forms!\p."
+	.string "I'm sure it will serve you well in\n"
+	.string "your travels.\p"
+	.string "Would you like to give it a nickname?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_ReceivedEevee:
+	.string "{PLAYER} received EEVEE!$"
