@@ -6,11 +6,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_TURTWIG
     [SPECIES_TURTWIG] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 78,
+        .baseHP        = 55,
+        .baseAttack    = 68,
         .baseDefense   = 74,
-        .baseSpeed     = 31,
-        .baseSpAttack  = 45,
+        .baseSpeed     = 21,
+        .baseSpAttack  = 35,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 255,
@@ -59,11 +59,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_GROTLE] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 99,
+        .baseHP        = 75,
+        .baseAttack    = 89,
         .baseDefense   = 95,
-        .baseSpeed     = 36,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 26,
+        .baseSpAttack  = 45,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 255,
@@ -113,11 +113,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_TORTERRA] =
     {
-        .baseHP        = 105,
+        .baseHP        = 95,
         .baseAttack    = 119,
         .baseDefense   = 115,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 75,
+        .baseSpeed     = 36,
+        .baseSpAttack  = 65,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
         .catchRate = 255,
@@ -702,11 +702,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_BIDOOF
     [SPECIES_BIDOOF] =
     {
-        .baseHP        = 79,
+        .baseHP        = 69,
         .baseAttack    = 65,
-        .baseDefense   = 50,
-        .baseSpeed     = 51,
-        .baseSpAttack  = 45,
+        .baseDefense   = 40,
+        .baseSpeed     = 41,
+        .baseSpAttack  = 35,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
@@ -933,12 +933,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_SHINX
     [SPECIES_SHINX] =
     {
-        .baseHP        = 55,
+        .baseHP        = 45,
         .baseAttack    = 75,
-        .baseDefense   = 44,
-        .baseSpeed     = 55,
+        .baseDefense   = 39,
+        .baseSpeed     = 57,
         .baseSpAttack  = 50,
-        .baseSpDefense = 44,
+        .baseSpDefense = 39,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 60,
@@ -990,12 +990,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_LUXIO] =
     {
-        .baseHP        = 70,
+        .baseHP        = 60,
         .baseAttack    = 95,
-        .baseDefense   = 59,
-        .baseSpeed     = 70,
+        .baseDefense   = 49,
+        .baseSpeed     = 72,
         .baseSpAttack  = 70,
-        .baseSpDefense = 59,
+        .baseSpDefense = 49,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 127 : 117,
@@ -1047,12 +1047,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_LUXRAY] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 120,
-        .baseDefense   = 79,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 79,
+        .baseHP        = 70,
+        .baseAttack    = 130,
+        .baseDefense   = 69,
+        .baseSpeed     = 103,
+        .baseSpAttack  = 94,
+        .baseSpDefense = 69,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -1838,12 +1838,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_PACHIRISU
     [SPECIES_PACHIRISU] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 65,
-        .baseDefense   = 90,
+        .baseHP        = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 80,
         .baseSpeed     = 95,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,

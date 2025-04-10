@@ -1424,12 +1424,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_WOOLOO
     [SPECIES_WOOLOO] =
     {
-        .baseHP        = 62,
+        .baseHP        = 52,
         .baseAttack    = 70,
         .baseDefense   = 55,
         .baseSpeed     = 48,
         .baseSpAttack  = 40,
-        .baseSpDefense = 45,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 122,
@@ -1477,12 +1477,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_DUBWOOL] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 90,
+        .baseHP        = 82,
+        .baseAttack    = 100,
         .baseDefense   = 100,
         .baseSpeed     = 88,
         .baseSpAttack  = 60,
-        .baseSpDefense = 90,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = 172,
