@@ -271,12 +271,12 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "HOENN region…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "KATI: {PLAYER}{KUN}!\p"
+	.string "BRENDAN: {PLAYER}{KUN}!\p"
 	.string "Here's some advice before you challenge\n"
 	.string "the CHAMPION…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "KATI: Huh?\n"
+	.string "BRENDAN: Huh?\n"
 	.string "What, what, what?\p"
 	.string "{PLAYER}{KUN}…\n"
 	.string "Could it be that…\l"
@@ -294,7 +294,7 @@ EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "PROF. BIRCH: See?\n"
-	.string "What did I tell you, KATI?\p"
+	.string "What did I tell you, BRENDAN?\p"
 	.string "Didn't I tell you that you don't need\n"
 	.string "to worry about {PLAYER}{KUN}?\p"
 	.string "… … … … … … … …\n"
@@ -327,7 +327,7 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "PROF. BIRCH.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "KATI: Groan…\p"
+	.string "BRENDAN: Groan…\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "I'm just joking! That's okay!\n"

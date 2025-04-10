@@ -317,7 +317,7 @@ RivalsHouse_2F_Text_MayWhoAreYou:
 	.string "… … … … … … … …\p"
 	.string "Oh, you're {PLAYER}{KUN}.\n"
 	.string "So your move was today.\p"
-	.string "Um… I'm KATI.\n"
+	.string "Um… I'm BRENDAN.\n"
 	.string "Glad to meet you!\p"
 	.string "I…\n"
 	.string "I have this dream of becoming friends\l"
@@ -363,11 +363,11 @@ RivalsHouse_2F_Text_BrendanGettingReady:
 	.string "Items all packed, and…$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "It's KATI's POKé BALL!\p"
+	.string "It's BRENDAN's POKé BALL!\p"
 	.string "Better leave it right where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "KATI: {PLAYER}{KUN}!\p"
+	.string "BRENDAN: {PLAYER}{KUN}!\p"
 	.string "I was just checking my POKéDEX.\p"
 	.string "There's still a lot of POKéMON that\n"
 	.string "I've seen but haven't caught.\p"
@@ -377,7 +377,7 @@ RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "some POKéMON next?$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "KATI: I wonder where I should go catch\n"
+	.string "BRENDAN: I wonder where I should go catch\n"
 	.string "some POKéMON next?\p"
 	.string "Wouldn't it be funny if we ran into each\n"
 	.string "other, {PLAYER}{KUN}?$"

@@ -486,7 +486,7 @@ Route119_EventScript_MegaStone::
 return
 
 Route119_Text_MayIntro:
-	.string "KATI: {PLAYER}{KUN}!\n"
+	.string "BRENDAN: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
@@ -500,12 +500,12 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "KATI: But I had absolutely nothing to\n"
+	.string "BRENDAN: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
 Route119_Text_MayExplainFly:
-	.string "KATI: Use FLY, and your POKéMON will\n"
+	.string "BRENDAN: Use FLY, and your POKéMON will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
 	.string "But, to use FLY, you have to get\n"
@@ -518,7 +518,7 @@ Route119_Text_MayExplainFly:
 	.string "See you again soon!$"
 
 Route119_Text_MayExplainMegas:
-	.string "KATI: This is a Mega Ring. It will\n"
+	.string "BRENDAN: This is a Mega Ring. It will\n"
 	.string "allow you to mega evolve your POKEMON.\p"
 	.string "Hopefully that gives you the edge you\n"
 	.string "need in your coming battles.\p"

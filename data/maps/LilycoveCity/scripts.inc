@@ -421,7 +421,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "KATI: Oh, hey?\n"
+	.string "BRENDAN: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of DOLLS and\n"
 	.string "POSTERS.\p"
@@ -434,17 +434,17 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "me your POKéMON, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "KATI: Oh, why? {PLAYER}{KUN}, haven't you\n"
+	.string "BRENDAN: Oh, why? {PLAYER}{KUN}, haven't you\n"
 	.string "been raising your POKéMON?\p"
 	.string "That's not a very good showing as a\n"
 	.string "TRAINER…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "KATI: Come on, battle with me, so I can\n"
+	.string "BRENDAN: Come on, battle with me, so I can\n"
 	.string "check out your POKéMON!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "KATI: The POKéMON I raised won't be\n"
+	.string "BRENDAN: The POKéMON I raised won't be\n"
 	.string "beaten by your POKéMON, {PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
@@ -455,7 +455,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "strong, {PLAYER}{KUN}, didn't it?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "KATI: I'm thinking of going back to\n"
+	.string "BRENDAN: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
 	.string "I've caught a decent group of POKéMON,\n"
 	.string "and my POKéDEX is coming along, so\l"
@@ -768,7 +768,7 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 LilycoveCity_Text_MayExplainMegas:
-	.string "KATI: This is a Mega Ring. It will\n"
+	.string "BRENDAN: This is a Mega Ring. It will\n"
 	.string "allow you to mega evolve your POKEMON.\p"
 	.string "Hopefully that gives you the edge you\n"
 	.string "need in your coming battles.\p"
