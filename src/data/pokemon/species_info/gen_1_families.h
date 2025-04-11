@@ -14770,12 +14770,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_MUNCHLAX] =
     {
-        .baseHP        = 135,
-        .baseAttack    = 100,
-        .baseDefense   = 64,
+        .baseHP        = 145,
+        .baseAttack    = 80,
+        .baseDefense   = 54,
         .baseSpeed     = 5,
         .baseSpAttack  = 40,
-        .baseSpDefense = 85,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 78 : 94,

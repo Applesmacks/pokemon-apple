@@ -166,10 +166,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_FENNEKIN
     [SPECIES_FENNEKIN] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 45,
+        .baseHP        = 30,
+        .baseAttack    = 35,
         .baseDefense   = 40,
-        .baseSpeed     = 70,
+        .baseSpeed     = 60,
         .baseSpAttack  = 72,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIRE),
@@ -219,11 +219,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_BRAIXEN] =
     {
-        .baseHP        = 59,
+        .baseHP        = 49,
         .baseAttack    = 59,
-        .baseDefense   = 58,
-        .baseSpeed     = 83,
-        .baseSpAttack  = 100,
+        .baseDefense   = 48,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 90,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 255,
@@ -273,9 +273,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_DELPHOX] =
     {
         .baseHP        = 75,
-        .baseAttack    = 69,
-        .baseDefense   = 72,
-        .baseSpeed     = 114,
+        .baseAttack    = 59,
+        .baseDefense   = 62,
+        .baseSpeed     = 94,
         .baseSpAttack  = 124,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
@@ -1674,7 +1674,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAP_SIPPER, ABILITY_GRASS_PELT, ABILITY_GRASS_PELT },
+        .abilities = { ABILITY_SAP_SIPPER, ABILITY_RECKLESS, ABILITY_GRASS_PELT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Skiddo"),
         .cryId = CRY_SKIDDO,
@@ -1712,7 +1712,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_GOGOAT] =
     {
-        .baseHP        = 123,
+        .baseHP        = 113,
         .baseAttack    = 100,
         .baseDefense   = 62,
         .baseSpeed     = 68,
@@ -1727,7 +1727,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAP_SIPPER, ABILITY_GRASS_PELT, ABILITY_GRASS_PELT },
+        .abilities = { ABILITY_SAP_SIPPER, ABILITY_RECKLESS, ABILITY_GRASS_PELT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gogoat"),
         .cryId = CRY_GOGOAT,

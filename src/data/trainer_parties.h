@@ -3,6 +3,7 @@
 #define IV_SPREAD_HIGH TRAINER_PARTY_IVS(23, 23, 23, 23, 23, 23)
 #define IV_SPREAD_MEDIUM TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16)
 #define IV_SPREAD_LOW TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10)
+#define IV_SPREAD_NONE TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0)
 
 static const struct TrainerMon sParty_Sawyer1[] = {
     {
@@ -6889,26 +6890,21 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 6,
+    .iv = IV_SPREAD_NONE,
+    .lvl = 8,
     .species = SPECIES_POOCHYENA,
-    .moves = {MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK, MOVE_NONE},
+    .ability = ABILITY_QUICK_FEET,
+    .moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_NONE, MOVE_NONE},
     .nature = NATURE_BASHFUL,
     },
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 6,
+    .iv = IV_SPREAD_NONE,
+    .lvl = 8,
     .species = SPECIES_LILLIPUP,
-    .moves = {MOVE_BITE, MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE},
+    .ability = ABILITY_VITAL_SPIRIT,
+    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_WORK_UP, MOVE_NONE},
     .nature = NATURE_BASHFUL,
     },
-    {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 7,
-    .species = SPECIES_ZIGZAGOON,
-    .moves = {MOVE_TACKLE, MOVE_SWAGGER, MOVE_SAND_ATTACK, MOVE_NONE},
-    .nature = NATURE_BASHFUL,
-    }
 };
 
 static const struct TrainerMon sParty_Billy[] = {
@@ -7237,25 +7233,21 @@ static const struct TrainerMon sParty_Eddie[] = {
 
 static const struct TrainerMon sParty_Allen[] = {
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 7,
-    .species = SPECIES_DARUMAKA,
+    .iv = IV_SPREAD_NONE,
+    .lvl = 9,
+    .species = SPECIES_GROWLITHE,
+    .ability = ABILITY_GUARD_DOG,
+    .moves = {MOVE_LEER, MOVE_EMBER, MOVE_HOWL, MOVE_BITE},
     .nature = NATURE_BASHFUL,
     },
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 8,
-    .species = SPECIES_TREECKO,
+    .iv = IV_SPREAD_NONE,
+    .lvl = 9,
+    .species = SPECIES_AZURILL,
+    .ability = ABILITY_ARMOR_TAIL,
+    .moves = {MOVE_TAIL_WHIP, MOVE_BUBBLE_BEAM, MOVE_TACKLE, MOVE_NONE},
     .nature = NATURE_BASHFUL,
     },
-    {
-    .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 7,
-    .species = SPECIES_TYMPOLE,
-    .ability = ABILITY_SWIFT_SWIM,
-    .nature = NATURE_BASHFUL,
-    }
 };
 
 static const struct TrainerMon sParty_Timmy[] = {
@@ -10555,9 +10547,21 @@ static const struct TrainerMon sParty_WallyVR1[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     {
+    .iv = IV_SPREAD_NONE,
     .lvl = 5,
-    .species = SPECIES_TREECKO,
-    }
+    .species = SPECIES_TRAPINCH,
+    .ability = ABILITY_DEFIANT,
+    .moves = {MOVE_SAND_ATTACK, MOVE_ASTONISH, MOVE_POUNCE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .iv = IV_SPREAD_NONE,
+    .lvl = 5,
+    .species = SPECIES_SEWADDLE,
+    .ability = ABILITY_SHARPNESS,
+    .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
 };
 
 static const struct TrainerMon sParty_BrendanRoute110Mudkip[] = {
@@ -10598,8 +10602,20 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     {
+    .iv = IV_SPREAD_NONE,
     .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_TRAPINCH,
+    .ability = ABILITY_DEFIANT,
+    .moves = {MOVE_SAND_ATTACK, MOVE_ASTONISH, MOVE_POUNCE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .iv = IV_SPREAD_NONE,
+    .lvl = 5,
+    .species = SPECIES_SEWADDLE,
+    .ability = ABILITY_SHARPNESS,
+    .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
     }
 };
 
@@ -10641,9 +10657,21 @@ static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     {
+    .iv = IV_SPREAD_NONE,
     .lvl = 5,
-    .species = SPECIES_MUDKIP,
-    }
+    .species = SPECIES_TRAPINCH,
+    .ability = ABILITY_DEFIANT,
+    .moves = {MOVE_SAND_ATTACK, MOVE_ASTONISH, MOVE_POUNCE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
+    {
+    .iv = IV_SPREAD_NONE,
+    .lvl = 5,
+    .species = SPECIES_SEWADDLE,
+    .ability = ABILITY_SHARPNESS,
+    .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE},
+    .nature = NATURE_HARDY,
+    },
 };
 
 static const struct TrainerMon sParty_BrendanRoute110Torchic[] = {
@@ -12528,30 +12556,42 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
 
 static const struct TrainerMon sParty_Tiana[] = {
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 8,
-    .species = SPECIES_WOOBAT,
-    .ability = ABILITY_UNAWARE,
-    .moves = {MOVE_WORK_UP, MOVE_GUST, MOVE_ATTRACT, MOVE_CONFUSION},
-    .nature = NATURE_BASHFUL,
-    },
-    {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 9,
-    .species = SPECIES_SHELLOS,
-    .ability = ABILITY_STORM_DRAIN,
-    .moves = {MOVE_MUD_SLAP, MOVE_HARDEN, MOVE_WATER_GUN, MOVE_ICY_WIND},
-    .nature = NATURE_BASHFUL,
-    },
-    {
-    .iv = IV_SPREAD_LOW,
-    .heldItem = ITEM_ORAN_BERRY,
-    .lvl = 9,
-    .ability = ABILITY_CONTRARY,
-    .species = SPECIES_SPINDA,
-    .moves = {MOVE_FAKE_OUT, MOVE_METRONOME, MOVE_NONE, MOVE_NONE},
-    .nature = NATURE_BASHFUL,
-    }
+        .iv = IV_SPREAD_NONE,
+        .lvl = 9,
+        .species = SPECIES_ZIGZAGOON,
+        .ability = ABILITY_LIMBER,
+        .moves = {MOVE_RETURN, MOVE_SAND_ATTACK, MOVE_SWAGGER, MOVE_NONE},
+        .nature = NATURE_BASHFUL,
+        .friendship = 162,
+        },
+        {
+        .iv = IV_SPREAD_NONE,
+        .lvl = 9,
+        .species = SPECIES_SENTRET,
+        .ability = ABILITY_SCRAPPY,
+        .moves = {MOVE_RETURN, MOVE_QUICK_ATTACK, MOVE_HELPING_HAND, MOVE_NONE},
+        .nature = NATURE_BASHFUL,
+        .friendship = 162,
+        },
+        {
+        .iv = IV_SPREAD_NONE,
+        .lvl = 10,
+        .species = SPECIES_FIDOUGH,
+        .ability = ABILITY_AROMA_VEIL,
+        .moves = {MOVE_RETURN, MOVE_LICK, MOVE_BITE, MOVE_CHARM},
+        .nature = NATURE_BASHFUL,
+        .friendship = 162,
+        },
+        {
+        .iv = IV_SPREAD_NONE,
+        .heldItem = ITEM_ORAN_BERRY,
+        .lvl = 10,
+        .species = SPECIES_GREAVARD,
+        .ability = ABILITY_SAND_RUSH,
+        .moves = {MOVE_RETURN, MOVE_LICK, MOVE_BITE, MOVE_TAIL_WHIP},
+        .nature = NATURE_BASHFUL,
+        .friendship = 162,
+        },
 };
 
 static const struct TrainerMon sParty_Haley1[] = {
@@ -12767,23 +12807,21 @@ static const struct TrainerMon sParty_Crissy[] = {
 
 static const struct TrainerMon sParty_Rick[] = {
     {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 7,
-    .species = SPECIES_SEWADDLE,
-    .nature = NATURE_BASHFUL,
-    },
-    {
-    .iv = IV_SPREAD_LOW,
-    .lvl = 7,
-    .species = SPECIES_WURMPLE,
-    .nature = NATURE_BASHFUL,
-    },
-    {
-    .iv = IV_SPREAD_LOW,
+    .iv = IV_SPREAD_NONE,
     .lvl = 8,
-    .species = SPECIES_SURSKIT,
+    .species = SPECIES_DEWPIDER,
+    .ability = ABILITY_WATER_BUBBLE,
+    .moves = {MOVE_BUG_BITE, MOVE_INFESTATION, MOVE_WATER_GUN, MOVE_BITE},
     .nature = NATURE_BASHFUL,
-    }
+    },
+    {
+    .iv = IV_SPREAD_NONE,
+    .lvl = 8,
+    .species = SPECIES_WURMPLE,
+    .ability = ABILITY_SHIELD_DUST,
+    .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_NONE},
+    .nature = NATURE_BASHFUL,
+    },
 };
 
 static const struct TrainerMon sParty_Lyle[] = {
